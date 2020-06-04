@@ -2,7 +2,7 @@
 date: "2018-09-09T00:00:00Z"
 draft: false
 lastmod: "2018-09-09T00:00:00Z"
-linktitle: An Example Course
+linktitle: Math 456 - Applied Statistics II
 menu:
   example:
     name: Overview

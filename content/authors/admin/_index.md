@@ -19,8 +19,8 @@ education:
     year: 2005
 email: "rdonatello@csuchico.edu"
 interests:
+- Racial Equity in STEM 
 - Data Science
-- Teaching scientists how to do more research with less pain
 - The Carpentries https://carpentries.org/
 - Data Editing and Imputation
 - Data Visualization
@@ -34,9 +34,9 @@ organizations:
   url: "https://www.csuchico.edu/math/"
 role: Associate Professor of Statistics and Data Science
 social:
-- icon: envelope
-  icon_pack: fas
-  link: '#contact'
+#- icon: envelope
+#  icon_pack: fas
+#  link: '#contact'
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/norcalbiostat
@@ -46,6 +46,22 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/norcalbiostat
+- icon: orcid
+  icon_pack: ai
+  link: http://orcid.org/0000-0001-8487-5995
+- icon: linkedin-in
+  icon_pack: fab
+  link: https://www.linkedin.com/in/rajeffries/
+- icon: stack-exchange
+  icon_pack: fab
+  link: https://stackexchange.com/users/4537509/robin-donatello
+- icon: publons
+  icon_pack: ai
+  link: https://publons.com/researcher/2874948/robin-a-donatello/
+- icon: researchgate
+  icon_pack: fab
+  link: https://www.researchgate.net/profile/Robin_Donatello
+  
 superuser: true
 title: Robin Donatello
 user_groups:
@@ -54,14 +70,14 @@ user_groups:
 ---
 
 
-When I'm not working in the garden to grow food for my family, I'd rather be in Upper Park with my dogs, or getting in some video game time. Otherwise I'm
+When I'm not working in the garden to grow food for my family, I'd rather be out adventuring with my dogs, or getting in some video game time. Otherwise I'm
 
-* [Teaching](#teaching) courses in Statistics and Data Science.
+* [Teaching courses](/courses) courses in Statistics and Data Science.
 * Leading the [Data Science Initative (DSI)](http://datascience.csuchico.edu) to develop Data Science capacity on our campus.
-* Supporting campus wide Student Success efforts including analysis of housing insecurity, supplemental insturuction, and course redesigns.    
-* Organizing the [Chico R Users Group](https://www.meetup.com/Chico-R-Users-Group/) (Help here?)
+* Providing analytical support for campus-level Basic Needs and Student Success programs.    
+* Organizing the [Chico R Users Group](https://www.meetup.com/Chico-R-Users-Group/) (Recruiting help)
 * Running [Software and Data Carpentry](https://carpentries.org/) workshops. 
-* Helping the [Center for Healthy Communities](https://www.csuchico.edu/chc/) develop data science and analytical tools to ensure their programs are effective and meeting the needs of students. 
+* Helping the [Center for Healthy Communities](https://www.csuchico.edu/chc/) develop data science and analytical tools to ensure their programs are effective and meeting the basic needs of students. 
 
 <span style="color:red">I am currently on Sabbatical until Fall 2021.</span>
 
