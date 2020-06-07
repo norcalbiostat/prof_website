@@ -34,7 +34,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-07T09:17:03-07:00</lastmod>
   </url>
   
   <url>
@@ -43,33 +43,53 @@
   </url>
   
   <url>
-    <loc>/project/</loc>
-    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+    <loc>/tag/ds/</loc>
+    <lastmod>2020-06-07T09:17:03-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/student-success/</loc>
-    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+    <loc>/tag/r-markdown/</loc>
+    <lastmod>2020-06-07T09:17:03-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/chem-ss/</loc>
-    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+    <loc>/post/2020-06-07-rebuild2020/</loc>
+    <lastmod>2020-06-07T09:17:03-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-07T09:17:03-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/website/</loc>
+    <lastmod>2020-06-07T09:17:03-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2020-06-06T18:30:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/ss/</loc>
+    <lastmod>2020-06-06T18:30:33-07:00</lastmod>
   </url>
   
   <url>
     <loc>/project/chem-ss/</loc>
-    <lastmod>2020-01-18T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-06T18:30:33-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/statistics/</loc>
-    <lastmod>2020-01-18T00:00:00+00:00</lastmod>
+    <loc>/project/chem-ss/</loc>
+    <lastmod>2020-06-06T18:30:33-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/stat/</loc>
+    <lastmod>2020-06-06T18:30:33-07:00</lastmod>
   </url>
   
   <url>
@@ -128,18 +148,13 @@
   </url>
   
   <url>
-    <loc>/project/dsi/</loc>
-    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/project/nsc-poster/</loc>
-    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-06T18:30:33-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/ds/</loc>
-    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+    <loc>/project/dsi/</loc>
+    <lastmod>2020-06-06T18:30:33-07:00</lastmod>
   </url>
   
   <url>
@@ -154,7 +169,7 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-05-29T19:10:27-07:00</lastmod>
+    <lastmod>2020-06-06T18:30:33-07:00</lastmod>
   </url>
   
   <url>
@@ -194,27 +209,22 @@
   
   <url>
     <loc>/post/2015-07-23-hello-r-markdown/</loc>
-    <lastmod>2020-05-29T19:10:27-07:00</lastmod>
+    <lastmod>2020-06-06T18:30:33-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/plot/</loc>
-    <lastmod>2020-05-29T19:10:27-07:00</lastmod>
+    <lastmod>2020-06-06T18:30:33-07:00</lastmod>
   </url>
   
   <url>
     <loc>/category/r/</loc>
-    <lastmod>2020-05-29T19:10:27-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/r-markdown/</loc>
-    <lastmod>2020-05-29T19:10:27-07:00</lastmod>
+    <lastmod>2020-06-06T18:30:33-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/regression/</loc>
-    <lastmod>2020-05-29T19:10:27-07:00</lastmod>
+    <lastmod>2020-06-06T18:30:33-07:00</lastmod>
   </url>
   
   <url>

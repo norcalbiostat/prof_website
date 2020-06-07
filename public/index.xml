@@ -119,6 +119,69 @@
     </item>
     
     <item>
+      <title>Rebuilding this Site, Again, from Near Scratch</title>
+      <link>/post/2020-06-07-rebuild2020/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-06-07-rebuild2020/</guid>
+      <description>&lt;p&gt;The last time I updated this website was in 2017 [link to other post]. I&amp;rsquo;m taking a full year sabbatical, and so I wanted to start by doing some updates to this site first. This post is a chronicle of my journey, mostly for my reference but also hopefully can help others. Technically I started tinkering about a week ago, but for the most part this post will be my &amp;lsquo;real time&amp;rsquo; thoughts and experiments.&lt;/p&gt;
+&lt;h2 id=&#34;list-of-tutorials&#34;&gt;List of tutorials&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic theme documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Allison hill - 
+&lt;a href=&#34;https://summer-of-blogdown.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Summer of blogdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;start-updating-engines&#34;&gt;Start: Updating engines&lt;/h2&gt;
+&lt;p&gt;Update all the things!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hugo: That&amp;rsquo;s easy, &lt;code&gt;blogdown::update_hugo&lt;/code&gt; gets me the latest and greatest, version 0.71.1&lt;/li&gt;
+&lt;li&gt;Updating the academic theme &amp;ndash; not so easy. Had to start from scratch, but that 
+&lt;a href=&#34;https://community.rstudio.com/t/updating-academic-theme-woes/68224&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;seems to be typical&lt;/a&gt;. Hard lesson learned, don&amp;rsquo;t wait 3 years to update.&lt;/li&gt;
+&lt;li&gt;R Studio just came out with 1.3, AND R released 4.0.0 in April. Get those also.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;start-customization-slowly&#34;&gt;Start customization (slowly)&lt;/h2&gt;
+&lt;p&gt;The documentation has been the best starting resource &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34;&gt;https://sourcethemes.com/academic/docs/get-started/&lt;/a&gt;. I want through it slowly, to make sure i&amp;rsquo;m learning how this new theme fits together. Because FOR SURE the Academic theme is at least twice as complicated as it was 3 years ago.&lt;/p&gt;
+&lt;h3 id=&#34;top-level-root&#34;&gt;Top level root&lt;/h3&gt;
+&lt;p&gt;The only file to customize here is &lt;code&gt;config.toml&lt;/code&gt;, and not much to do in here. Here&amp;rsquo;s what I changed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;title, copyright,&lt;/li&gt;
+&lt;li&gt;post url: I came across some post, i can&amp;rsquo;t recall where it now, that suggested a change to the URL for posts. The default was something like &lt;code&gt;/post/:year-:month-:day-:slug/:slug&lt;/code&gt; - where there was a separate folder for the slug. I don&amp;rsquo;t recall exactly, but here&amp;rsquo;s a note from 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/configuration.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the blogdown book&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;more-top-level-configuration-config_default&#34;&gt;More top level configuration &lt;code&gt;config/_default/&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;languages.toml&lt;/code&gt; didn&amp;rsquo;t need to change as i&amp;rsquo;m boring old plain english&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;menus.toml&lt;/code&gt; Navbar! Comment out everything I don&amp;rsquo;t need, change the order that it appears using weights.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❓ How to right justify?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;params.toml&lt;/code&gt; More to do here.
+&lt;ul&gt;
+&lt;li&gt;Theme: Green of course. Don&amp;rsquo;t care about font face, but I went with the slightly smaller text (&amp;lsquo;M&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;Basic info: Left most of this alone, but specified &lt;code&gt;site_type = &amp;quot;Person&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Site features: didn&amp;rsquo;t change these. May do so later. Probably for the &lt;code&gt;edit pages&lt;/code&gt; part. It depends on if I end up pulling my course materials over.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❓ What&amp;rsquo;s the privacy pack? This site sets cookies? Need to look more into what this does.
+- Contact details: updated all of this
+- Social: Just added Twitter name
+- Regional: changed to 24 hour time - personal preference.
+- Advanced: Updated &lt;code&gt;copyright_license&lt;/code&gt; to add a creative commons license since I post course materials and code.
+- Comments: disabled for now.
+- Search: defaults are fine
+- Maps: defaults are fine
+- Marketing: default
+- CMS: default&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;individual-widget-level-configuration&#34;&gt;Individual widget level configuration&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Sustaining Success in Chemistry</title>
       <link>/project/chem-ss/</link>
       <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
@@ -127,7 +190,7 @@
     </item>
     
     <item>
-      <title>Passion Driven Stats</title>
+      <title>Passion Driven Statistics</title>
       <link>/project/chem-ss/</link>
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/project/chem-ss/</guid>
@@ -605,14 +668,6 @@ Three
     </item>
     
     <item>
-      <title></title>
-      <link>/project/dsi/</link>
-      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
-      <guid>/project/dsi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>College of Natural Sciences Poster Session Abstract Webpage</title>
       <link>/project/nsc-poster/</link>
       <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
@@ -643,6 +698,14 @@ Three
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Data Science Initative</title>
+      <link>/project/dsi/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/dsi/</guid>
+      <description></description>
     </item>
     
     <item>

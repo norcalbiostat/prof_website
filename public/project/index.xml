@@ -21,18 +21,10 @@
     </item>
     
     <item>
-      <title>Passion Driven Stats</title>
+      <title>Passion Driven Statistics</title>
       <link>/project/chem-ss/</link>
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/project/chem-ss/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/project/dsi/</link>
-      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
-      <guid>/project/dsi/</guid>
       <description></description>
     </item>
     
@@ -67,6 +59,14 @@
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Data Science Initative</title>
+      <link>/project/dsi/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/dsi/</guid>
+      <description></description>
     </item>
     
   </channel>

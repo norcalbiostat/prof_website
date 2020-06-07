@@ -1,19 +1,115 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DS | Dr. D.</title>
+    <title>ds | Dr. D.</title>
     <link>/tag/ds/</link>
       <atom:link href="/tag/ds/index.xml" rel="self" type="application/rss+xml" />
-    <description>DS</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Tue, 29 May 2018 00:00:00 +0000</lastBuildDate>
+    <description>ds</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
-      <title>DS</title>
+      <title>ds</title>
       <link>/tag/ds/</link>
     </image>
     
     <item>
-      <title></title>
+      <title>Rebuilding this Site, Again, from Near Scratch</title>
+      <link>/post/2020-06-07-rebuild2020/</link>
+      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-06-07-rebuild2020/</guid>
+      <description>&lt;p&gt;The last time I updated this website was in 2017 [link to other post]. I&amp;rsquo;m taking a full year sabbatical, and so I wanted to start by doing some updates to this site first. This post is a chronicle of my journey, mostly for my reference but also hopefully can help others. Technically I started tinkering about a week ago, but for the most part this post will be my &amp;lsquo;real time&amp;rsquo; thoughts and experiments.&lt;/p&gt;
+&lt;h2 id=&#34;list-of-tutorials&#34;&gt;List of tutorials&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic theme documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Allison hill - 
+&lt;a href=&#34;https://summer-of-blogdown.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Summer of blogdown&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;start-updating-engines&#34;&gt;Start: Updating engines&lt;/h2&gt;
+&lt;p&gt;Update all the things!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hugo: That&amp;rsquo;s easy, &lt;code&gt;blogdown::update_hugo&lt;/code&gt; gets me the latest and greatest, version 0.71.1&lt;/li&gt;
+&lt;li&gt;Updating the academic theme &amp;ndash; not so easy. Had to start from scratch, but that 
+&lt;a href=&#34;https://community.rstudio.com/t/updating-academic-theme-woes/68224&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;seems to be typical&lt;/a&gt;. Hard lesson learned, don&amp;rsquo;t wait 3 years to update.&lt;/li&gt;
+&lt;li&gt;R Studio just came out with 1.3, AND R released 4.0.0 in April. Get those also.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;start-customization-slowly&#34;&gt;Start customization (slowly)&lt;/h2&gt;
+&lt;p&gt;The documentation has been the best starting resource &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34;&gt;https://sourcethemes.com/academic/docs/get-started/&lt;/a&gt;. I want through it slowly, to make sure i&amp;rsquo;m learning how this new theme fits together. Because FOR SURE the Academic theme is at least twice as complicated as it was 3 years ago.&lt;/p&gt;
+&lt;h3 id=&#34;top-level-root&#34;&gt;Top level root&lt;/h3&gt;
+&lt;p&gt;The only file to customize here is &lt;code&gt;config.toml&lt;/code&gt;, and not much to do in here. Here&amp;rsquo;s what I changed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;title, copyright,&lt;/li&gt;
+&lt;li&gt;post url: I came across some post, i can&amp;rsquo;t recall where it now, that suggested a change to the URL for posts. The default was something like &lt;code&gt;/post/:year-:month-:day-:slug/:slug&lt;/code&gt; - where there was a separate folder for the slug. I don&amp;rsquo;t recall exactly, but here&amp;rsquo;s a note from 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/configuration.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the blogdown book&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;more-top-level-configuration-config_default&#34;&gt;More top level configuration &lt;code&gt;config/_default/&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;languages.toml&lt;/code&gt; didn&amp;rsquo;t need to change as i&amp;rsquo;m boring old plain english&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;menus.toml&lt;/code&gt; Navbar! Comment out everything I don&amp;rsquo;t need, change the order that it appears using weights.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❓ How to right justify?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;params.toml&lt;/code&gt; More to do here.
+&lt;ul&gt;
+&lt;li&gt;Theme: Green of course. Don&amp;rsquo;t care about font face, but I went with the slightly smaller text (&amp;lsquo;M&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;Basic info: Left most of this alone, but specified &lt;code&gt;site_type = &amp;quot;Person&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Site features: didn&amp;rsquo;t change these. May do so later. Probably for the &lt;code&gt;edit pages&lt;/code&gt; part. It depends on if I end up pulling my course materials over.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❓ What&amp;rsquo;s the privacy pack? This site sets cookies? Need to look more into what this does.
+- Contact details: updated all of this
+- Social: Just added Twitter name
+- Regional: changed to 24 hour time - personal preference.
+- Advanced: Updated &lt;code&gt;copyright_license&lt;/code&gt; to add a creative commons license since I post course materials and code.
+- Comments: disabled for now.
+- Search: defaults are fine
+- Maps: defaults are fine
+- Marketing: default
+- CMS: default&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;individual-widget-level-configuration&#34;&gt;Individual widget level configuration&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>College of Natural Sciences Poster Session Abstract Webpage</title>
+      <link>/project/nsc-poster/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/nsc-poster/</guid>
+      <description>&lt;p&gt;The annual College of Natural Sciences Poster Session is an established event where students, faculty and clubs have the opportunity to present their original research or student activities to the College, University and Chico Community. See more about the College Poser Session Event at the 
+&lt;a href=&#34;https://www.csuchico.edu/nsci/event/poster.shtml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;College of Natural Sciences Poster Session event page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This project streamlined the submitted abstract processing, and provided the authors with a website to view their submission. Another result from this project was the creation of a judging app that reduced the burden of vote tallying for multiple categories, provided real-time score graphs, and an instant display of winner titles and authors.&lt;/p&gt;
+&lt;h3 id=&#34;abstract-submission-processing&#34;&gt;Abstract Submission processing&lt;/h3&gt;
+&lt;p&gt;Abstracts are submitted using Google Forms. They are then processed using R (&lt;code&gt;googlesheets&lt;/code&gt;, &lt;code&gt;stringr&lt;/code&gt;, &lt;code&gt;dplyr&lt;/code&gt;), turned into a webpage using &lt;code&gt;rmarkdown&lt;/code&gt; with a few fancy visual aids using &lt;code&gt;ggplot2&lt;/code&gt; and &lt;code&gt;kable&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The webpage is re-built nightly during the open abstract submission period and can be seen here: &lt;a href=&#34;https://norcalbiostat.github.io/CNS-Poster-Session/&#34;&gt;https://norcalbiostat.github.io/CNS-Poster-Session/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After the abstract submission period closes, the poster ID&amp;rsquo;s are finalied and abstracts reviewed by members of the poster session committee. The &lt;code&gt;rmarkdown&lt;/code&gt; file gets compiled to PDF format and turned into a 
+&lt;a href=&#34;https://www.csuchico.edu/nsci/_assets/documents/NSC-poster-session-2018-abstract-booklet.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;program booklet&lt;/a&gt; with only minimal manual processing of latex symbols.&lt;/p&gt;
+&lt;h3 id=&#34;judging-shiny-app&#34;&gt;Judging Shiny App&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://norcalbiostat.shinyapps.io/CNSPosterJudgingApp/&#34;&gt;https://norcalbiostat.shinyapps.io/CNSPosterJudgingApp/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The app was originally created for the 2017 session by Aaron Shaffer 
+&lt;a href=&#34;https://github.com/ClassicSours&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@ClassicSours&lt;/a&gt;, and updated by me for 2018. Feel free to play around, the data is not stored on app shutdown. The poster ID&amp;rsquo;s are listed on the abstract website.&lt;/p&gt;
+&lt;p&gt;This judging app&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;reduced the burden of vote tallying for multiple categories (judge votes, peoples choice)&lt;/li&gt;
+&lt;li&gt;showed real-time vote scoring results as bar charts that could be viewed by anyone with the link (committee members only) during the session (an unexpected but amusing side-result)&lt;/li&gt;
+&lt;li&gt;provided an instant display of winning poster titles with authors to be read off by the Dean during the awards ceremony (a mere 30 minutes after the voting period closes)&lt;/li&gt;
+&lt;li&gt;allowed for the download of merged voting data so
+&lt;ul&gt;
+&lt;li&gt;certificates could be made via mail merge by the next day&lt;/li&gt;
+&lt;li&gt;The 
+&lt;a href=&#34;http://www.csuchico.edu/gateway/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gateway Scinece Museum&lt;/a&gt; has the contact information for authors for whom their posters have been chosen to be displayed in the Museum over summer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Science Initative</title>
       <link>/project/dsi/</link>
       <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
       <guid>/project/dsi/</guid>

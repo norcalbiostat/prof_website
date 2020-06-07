@@ -1,12 +1,12 @@
 ---
-title: Passion Driven Stats
+title: Passion Driven Statistics
 author: Robin Donatello
 date: '2020-01-18'
 slug: chem-ss
 categories: []
 tags:
-  - Student Success
-  - Statistics
+  - ss
+  - stat
 summary: 'Passion-Driven Statistics (PDS) is an introductory, project-based model that gets students hooked on the excitement and power of quantitative research. I am a site partner for the PDS grant, and have been using this pedagogy in Math 315 since Spring 2018.'
 authors: []
 external_link: 'https://passiondrivenstatistics.com/'
