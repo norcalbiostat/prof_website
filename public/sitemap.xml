@@ -4,42 +4,72 @@
   
   <url>
     <loc>/courses/math_315/example1/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <lastmod>2020-06-04T15:08:42-07:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/math_456/example1/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <lastmod>2020-06-04T15:08:42-07:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/math_315/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-04T15:08:42-07:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/math_456/</loc>
-    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-04T15:08:42-07:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/math_315/example2/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <lastmod>2020-06-04T15:08:42-07:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/math_456/example2/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+    <lastmod>2020-06-04T15:08:42-07:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-05-29T20:26:05-07:00</lastmod>
+    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/talk/example/</loc>
     <lastmod>2020-05-29T19:10:27-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/student-success/</loc>
+    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/chem-ss/</loc>
+    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/chem-ss/</loc>
+    <lastmod>2020-01-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/statistics/</loc>
+    <lastmod>2020-01-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -59,7 +89,7 @@
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-05-29T20:26:05-07:00</lastmod>
+    <lastmod>2020-06-04T15:08:42-07:00</lastmod>
   </url>
   
   <url>
@@ -69,11 +99,6 @@
   
   <url>
     <loc>/tag/source-themes/</loc>
-    <lastmod>2020-05-29T19:10:27-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-05-29T19:10:27-07:00</lastmod>
   </url>
   
@@ -103,28 +128,18 @@
   </url>
   
   <url>
-    <loc>/tag/deep-learning/</loc>
-    <lastmod>2020-05-29T19:10:27-07:00</lastmod>
+    <loc>/project/dsi/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/demo/</loc>
-    <lastmod>2020-05-29T19:10:27-07:00</lastmod>
+    <loc>/project/nsc-poster/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/external-project/</loc>
-    <lastmod>2020-05-29T19:10:27-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/internal-project/</loc>
-    <lastmod>2020-05-29T19:10:27-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2020-05-29T19:10:27-07:00</lastmod>
+    <loc>/tag/ds/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -214,7 +229,7 @@
   
   <url>
     <loc>/courses/</loc>
-    <lastmod>2020-05-29T19:10:27-07:00</lastmod>
+    <lastmod>2020-06-04T15:08:42-07:00</lastmod>
   </url>
   
   <url>
@@ -234,7 +249,7 @@
   
   <url>
     <loc>/author/robin-donatello/</loc>
-    <lastmod>2020-05-29T20:26:05-07:00</lastmod>
+    <lastmod>2020-06-04T15:08:42-07:00</lastmod>
   </url>
   
 </urlset>
