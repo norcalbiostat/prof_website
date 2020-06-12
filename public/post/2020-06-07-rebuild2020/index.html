@@ -244,7 +244,7 @@
     
       <meta property="article:published_time" content="2020-06-07T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-07T09:17:03-07:00">
+    <meta property="article:modified_time" content="2020-06-07T12:02:32-07:00">
   
 
   
@@ -273,7 +273,7 @@
   "headline": "Rebuilding this Site, Again, from Near Scratch",
   
   "datePublished": "2020-06-07T00:00:00Z",
-  "dateModified": "2020-06-07T09:17:03-07:00",
+  "dateModified": "2020-06-07T12:02:32-07:00",
   
   "author": {
     "@type": "Person",
@@ -584,6 +584,8 @@
   <h1>Rebuilding this Site, Again, from Near Scratch</h1>
 
   
+  <p class="page-subtitle">An annual adventure</p>
+  
 
   
     
@@ -611,7 +613,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    6 min read
   </span>
   
 
@@ -648,12 +650,14 @@
 
     <div class="article-style">
       <p>The last time I updated this website was in 2017 [link to other post]. I&rsquo;m taking a full year sabbatical, and so I wanted to start by doing some updates to this site first. This post is a chronicle of my journey, mostly for my reference but also hopefully can help others. Technically I started tinkering about a week ago, but for the most part this post will be my &lsquo;real time&rsquo; thoughts and experiments.</p>
-<h2 id="list-of-tutorials">List of tutorials</h2>
+<h2 id="list-of-tutorials-that-helped-me">List of tutorials that helped me</h2>
 <ul>
 <li>
 <a href="https://sourcethemes.com/academic/docs/get-started/" target="_blank" rel="noopener">Academic theme documentation</a></li>
 <li>Allison hill - 
 <a href="https://summer-of-blogdown.netlify.app/" target="_blank" rel="noopener">Summer of blogdown</a></li>
+<li>A 
+<a href="https://spectrum.chat/academic/help?tab=posts" target="_blank" rel="noopener">community of users</a></li>
 </ul>
 <h2 id="start-updating-engines">Start: Updating engines</h2>
 <p>Update all the things!</p>
@@ -668,14 +672,20 @@
 <h3 id="top-level-root">Top level root</h3>
 <p>The only file to customize here is <code>config.toml</code>, and not much to do in here. Here&rsquo;s what I changed:</p>
 <ul>
-<li>title, copyright,</li>
+<li>title: this shows up in the top left of the navbar, and your browser tab.</li>
+<li>copyright: shows up at the bottom of every post &amp; project</li>
 <li>post url: I came across some post, i can&rsquo;t recall where it now, that suggested a change to the URL for posts. The default was something like <code>/post/:year-:month-:day-:slug/:slug</code> - where there was a separate folder for the slug. I don&rsquo;t recall exactly, but here&rsquo;s a note from 
 <a href="https://bookdown.org/yihui/blogdown/configuration.html" target="_blank" rel="noopener">the blogdown book</a></li>
 </ul>
 <h3 id="more-top-level-configuration-config_default">More top level configuration <code>config/_default/</code></h3>
 <ul>
 <li><code>languages.toml</code> didn&rsquo;t need to change as i&rsquo;m boring old plain english</li>
-<li><code>menus.toml</code> Navbar! Comment out everything I don&rsquo;t need, change the order that it appears using weights.</li>
+<li><code>menus.toml</code> Navbar! Comment out everything I don&rsquo;t need, change the order that it appears using weights.
+<ul>
+<li>See here for 
+<a href="https://sourcethemes.com/academic/docs/get-started/#menu" target="_blank" rel="noopener">dropdown menu items</a></li>
+</ul>
+</li>
 </ul>
 <blockquote>
 <p>❓ How to right justify?</p>
@@ -686,22 +696,96 @@
 <li>Theme: Green of course. Don&rsquo;t care about font face, but I went with the slightly smaller text (&lsquo;M&rsquo;)</li>
 <li>Basic info: Left most of this alone, but specified <code>site_type = &quot;Person&quot;</code></li>
 <li>Site features: didn&rsquo;t change these. May do so later. Probably for the <code>edit pages</code> part. It depends on if I end up pulling my course materials over.</li>
+<li>Contact details: updated all of this</li>
+<li>Social: Just added Twitter name</li>
+<li>Regional: changed to 24 hour time - personal preference.</li>
+<li>Advanced: Updated <code>copyright_license</code> to add a creative commons license since I post course materials and code.</li>
+<li>Comments: disabled for now.</li>
+<li>Search: defaults are fine</li>
+<li>Maps: defaults are fine</li>
+<li>Marketing: default</li>
+<li>CMS: default</li>
 </ul>
 </li>
 </ul>
 <blockquote>
-<p>❓ What&rsquo;s the privacy pack? This site sets cookies? Need to look more into what this does.
-- Contact details: updated all of this
-- Social: Just added Twitter name
-- Regional: changed to 24 hour time - personal preference.
-- Advanced: Updated <code>copyright_license</code> to add a creative commons license since I post course materials and code.
-- Comments: disabled for now.
-- Search: defaults are fine
-- Maps: defaults are fine
-- Marketing: default
-- CMS: default</p>
+<p>❓ What&rsquo;s the privacy pack? This site sets cookies? Need to look more into what this does.</p>
 </blockquote>
-<h2 id="individual-widget-level-configuration">Individual widget level configuration</h2>
+<h2 id="introduce-yourselfhttpssourcethemescomacademicdocsget-startedintroduce-yourself">
+<a href="https://sourcethemes.com/academic/docs/get-started/#introduce-yourself" target="_blank" rel="noopener">Introduce yourself</a></h2>
+<p>The <code>content/authors/admin/_index.md</code> file controls the &lsquo;About me&rsquo; section of the page. It has your avatar on the left, social icons underneath and a spot to the right for a paragraph of info.</p>
+<ul>
+<li>You can&rsquo;t do markdown style links, but you can display URLs.</li>
+<li>As you add more social icons to the space below your mugshot, the sizes automatically get smaller. Would be nice to have the option to wrap onto a second line.</li>
+<li>The <code>avatar.jpg</code> goes in the same folder.</li>
+<li>If you want an icon to show on your browser tab, put <code>icon.png</code> in <code>assets\images</code>.</li>
+</ul>
+<h2 id="host-on-netlify">Host on Netlify</h2>
+<p>I don&rsquo;t recall where along this process I pushed to git and deployed on Netlify. It was for sure before i got too far down the customization rabbit hole. Don&rsquo;t forget to 
+<a href="https://bookdown.org/yihui/blogdown/netlify.html" target="_blank" rel="noopener">specify your hugo build</a> - mine was 0.70.0 (need that last decimal).</p>
+<h2 id="remove-widgets">Remove widgets</h2>
+<p>Unlike the &lsquo;delete all the things&rsquo; approach that 
+<a href="https://djnavarro.net/post/starting-blogdown/" target="_blank" rel="noopener">Danielle Navarro</a> takes, i&rsquo;d rather just turn them off.</p>
+<p>Inside the <code>content/home</code> directory, there&rsquo;s all these <code>.md</code> files. Each one is a widget, and by default most of these are set to <code>active=true</code>. I turned most of them off, but I may turn some back on later. Supposedly you can have 
+<a href="https://sourcethemes.com/academic/docs/managing-content/#create-a-widget-page" target="_blank" rel="noopener">widgets enabled on other pages</a>, not just this landing/home page. I&rsquo;ll look into that later. Baby steps, start small then add incrementally. Like a <code>ggplot</code>, layer it on.</p>
+<h2 id="adding-content">Adding content</h2>
+<h3 id="projects">Projects</h3>
+<p>I already had a blogdown site that included projects. Migrating those over to this new format wasn&rsquo;t terrible.</p>
+<ul>
+<li>Under <code>/content/project</code>, each project has it&rsquo;s own folder.
+<ul>
+<li>Within each folder there is an <code>index.md</code> file.
+<ul>
+<li>Each <code>index.md</code> file has a large YAML header section,</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Modify the <code>content/home/projects.md</code> file to
+<ul>
+<li>set the <code>[[content.filter_button]]</code></li>
+<li>set the display of projects (cards vs lists)</li>
+</ul>
+</li>
+</ul>
+<h3 id="courses">Courses</h3>
+<p>Previously, I simply had separate &lsquo;simple&rsquo; RMarkdown websites for my class pages 
+<a href="https://norcalbiostat.github.io/MATH130/" target="_blank" rel="noopener">[ex Math 130]</a>, and I linked to them from my main page. However, Academic has a whole different page layout called <em>docs</em> for 
+<a href="https://sourcethemes.com/academic/docs/managing-content/#create-a-course-or-documentation" target="_blank" rel="noopener">writing and sharing documentation</a>, such as course materials.</p>
+<ul>
+<li>
+<p>In <code>content/courses</code>, there&rsquo;s an overall <code>_index.md</code> which is pretty plain, has the <code>docs</code> layout (which i gather is the important part) but this is where you can add some introductory text. that would apply to all courses.</p>
+</li>
+<li>
+<p>Each course has it&rsquo;s own folder, which of course has their own <code>_index.md</code> files. These will automatically show up on the courses page, with a short summary that you specify in the course specific index md file.</p>
+</li>
+</ul>
+<p>❓ Can i add direct links to these courses as a drop down in the navbar?</p>
+<p>The only thing i&rsquo;ve done here so far is setup placeholder entries for 2 of my classes.</p>
+<h3 id="blog-posts">Blog posts</h3>
+<p>This is about when I decided I needed to document what I was doing, and started this blog post. I did so by using the RStudio Addin, <em>New Post</em>. While most of the writing is just text, I opted for a <code>.Rmarkdown</code> file.</p>
+<p>❓ What&rsquo;s the difference between <code>.Rmd</code> and <code>.Rmarkdown</code></p>
+<p>R code still works right?</p>
+<pre><code class="language-r">2+2
+</code></pre>
+<pre><code>## [1] 4
+</code></pre>
+<p>Okay, i&rsquo;m tossing the blog posts that came along with the example/template files. Before I migrate my old posts over, time to re-read the 
+<a href="https://alison.rbind.io/post/2019-02-21-hugo-page-bundles/" target="_blank" rel="noopener">&lsquo;Spoonful of Hugo&rsquo; post by Allison Hill on page bundles</a>. Because there was something about the way posts are handled that is different from &lsquo;old&rsquo; Hugo.</p>
+<p>Ah! This is where I got the info about the slug from!</p>
+<p><strong>Attempt 1.</strong></p>
+<ul>
+<li>Make a new folder using the <code>YYYY-MM-DD-slug</code> format, and put my old <code>.Rmd</code> file into this folder, renaming it as <code>index.Rmd</code>.</li>
+<li>Copy the YAML material from this page into that one.</li>
+<li>Won&rsquo;t render &ndash; because i was doing things with data and that data was stored under <code>../../static/data/</code>.. which is what the page bundles are designed to deal with.
+<ul>
+<li>Move data into folder where the rmd file is at, and update path.</li>
+<li>This would be a HUGE PAIN if I had a lot of these&hellip;</li>
+</ul>
+</li>
+<li>Worked! okay.. not bad at all.</li>
+</ul>
+<p>:note: You -can- Knit your <code>.Rmd</code> file to see what it looks like while working on it, just delete it before you save. It&rsquo;ll get re-rendered when you build site, in the &lsquo;proper&rsquo; format that&rsquo;s needed for display on a Hugo based website.</p>
 
     </div>
 
@@ -713,11 +797,13 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/ds/">ds</a>
+  <a class="badge badge-light" href="/tag/blogdown/">blogdown</a>
+  
+  <a class="badge badge-light" href="/tag/ds/">DS</a>
+  
+  <a class="badge badge-light" href="/tag/hugo/">hugo</a>
   
   <a class="badge badge-light" href="/tag/r-markdown/">R Markdown</a>
-  
-  <a class="badge badge-light" href="/tag/website/">website</a>
   
 </div>
 
@@ -1001,8 +1087,6 @@
       <li><a href="/project/nsc-poster/">College of Natural Sciences Poster Session Abstract Webpage</a></li>
       
       <li><a href="/project/dsi/">Data Science Initative</a></li>
-      
-      <li><a href="/post/2015-07-23-hello-r-markdown/">Hello R Markdown</a></li>
       
     </ul>
   </div>

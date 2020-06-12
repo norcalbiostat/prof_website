@@ -1,0 +1,127 @@
+---
+title: Using dplyr and foreach to read in multiple data sets from disk
+author: Robin Donatello
+date: '2018-09-13'
+slug: using-dplyr-and-foreach
+categories: [programming, efficiency]
+tags:
+  - Rmarkdown
+  - R
+  - dplyr
+  - foreach
+  - ggplot
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-06-07T09:17:03-07:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>I had a student (Jack Fogliasso) bring me a problem from a Microbiology lab where they are trying to identify bacteria using lasers. One of the items they wanted to understand was the absorption rates of different wavelengths. So they have a machine to do the lasering and it reads out a text file that of course has a ton of meta data in it, is semi-colon delimited, and there’s one file per trial. So not the standard situation that one might encounter in a basic applied statistics class.</p>
+<p>Jack and I talked about automation and reproducibility and how R is great for tasks like this, and he got to work. What is shown below is an effective use of <code>dplyr</code> and to read in a data set from disk, do some processing, and create a visualization. This process can be expanded to any number of files thanks to the efficient looping of <code>foreach</code>, and the combination of <code>dplyr</code> and <code>ggplot2</code> can accommodate different file names, such as for different new bacteria.</p>
+<hr />
+<div id="system-setup" class="section level1">
+<h1>System setup</h1>
+<p>This example uses the <code>ggplot2</code>, <code>dplyr</code> and <code>foreach</code> packages.</p>
+<pre class="r"><code>knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+library(ggplot2)
+library(dplyr)
+library(foreach)</code></pre>
+</div>
+<div id="data-import" class="section level1">
+<h1>Data import</h1>
+<p>Read in the data for the three experimental trials.</p>
+<ol style="list-style-type: decimal">
+<li>get all .txt files in the working directory and put into a list.</li>
+</ol>
+<pre class="r"><code>list_files &lt;- list.files(pattern = &quot;.txt&quot;, full.names = TRUE) 
+list_files</code></pre>
+<pre><code>## [1] &quot;./Ec1.txt&quot; &quot;./Ec2.txt&quot; &quot;./Ec3.txt&quot;</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Use the <code>%do%</code> function in the <code>foreach</code> package to efficiently loop over all items in the list.
+This read in the data using <code>read.delim</code>, turns it into a data frame, so that we can add the file name to the data set before combining each data set using <code>rbind</code> (stacking or concatonating).</li>
+</ol>
+<pre class="r"><code>eColi &lt;- foreach(i=1:length(list_files), .combine=rbind) %do% {
+            read.delim(list_files[[i]], skip=66, sep=&quot;;&quot;) %&gt;%
+            data.frame() %&gt;%
+            mutate(file=gsub(&quot;.txt&quot;, &quot;&quot;, list_files[[i]]))# add an identifier to index each trial
+}
+head(eColi)</code></pre>
+<pre><code>##   Pixel Wavelength    Dark Reference Raw.data..1 Dark.Subtracted..1 X.TR..1
+## 1     0     349.84 1161.60   1266.60     1257.96              96.36 91.7714
+## 2     1     350.27 1160.72   1263.56     1258.04              97.32 94.6324
+## 3     2     350.71 1161.20   1262.84     1259.56              98.36 96.7729
+## 4     3     351.14 1158.96   1264.04     1256.76              97.80 93.0719
+## 5     4     351.58 1150.24   1259.64     1252.12             101.88 93.1261
+## 6     5     352.01 1144.08   1256.92     1243.72              99.64 88.3020
+##   Absorbance..1 Raw.data..2 Dark.Subtracted..2 X.TR..2 Absorbance..2
+## 1        0.0373           0                  0       0             0
+## 2        0.0240           0                  0       0             0
+## 3        0.0142           0                  0       0             0
+## 4        0.0312           0                  0       0             0
+## 5        0.0309           0                  0       0             0
+## 6        0.0540           0                  0       0             0
+##   Raw.data..3 Dark.Subtracted..3 X.TR..3 Absorbance..3 Lamp.FitCurve
+## 1           0                  0       0             0             0
+## 2           0                  0       0             0             0
+## 3           0                  0       0             0             0
+## 4           0                  0       0             0             0
+## 5           0                  0       0             0             0
+## 6           0                  0       0             0             0
+##   Irradiance.Ratio Irradiance_1.W.cm.2.nm. Irradiance_2.W.cm.2.nm.
+## 1                0                      NA                       0
+## 2                0                      NA                       0
+## 3                0                      NA                       0
+## 4                0                      NA                       0
+## 5                0                      NA                       0
+## 6                0                      NA                       0
+##   Irradiance_3.W.cm.2.nm.  file
+## 1                       0 ./Ec1
+## 2                       0 ./Ec1
+## 3                       0 ./Ec1
+## 4                       0 ./Ec1
+## 5                       0 ./Ec1
+## 6                       0 ./Ec1</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Shorten the names to something reasonable.</li>
+</ol>
+<pre class="r"><code>names(eColi)[c(5:16,19:21)] &lt;- paste0(rep(c(&quot;raw&quot;, &quot;dark&quot;, &quot;X&quot;, &quot;abs&quot;, &quot;irr&quot;),3), 1:3)
+names(eColi)</code></pre>
+<pre><code>##  [1] &quot;Pixel&quot;            &quot;Wavelength&quot;       &quot;Dark&quot;             &quot;Reference&quot;       
+##  [5] &quot;raw1&quot;             &quot;dark2&quot;            &quot;X3&quot;               &quot;abs1&quot;            
+##  [9] &quot;irr2&quot;             &quot;raw3&quot;             &quot;dark1&quot;            &quot;X2&quot;              
+## [13] &quot;abs3&quot;             &quot;irr1&quot;             &quot;raw2&quot;             &quot;dark3&quot;           
+## [17] &quot;Lamp.FitCurve&quot;    &quot;Irradiance.Ratio&quot; &quot;X1&quot;               &quot;abs2&quot;            
+## [21] &quot;irr3&quot;             &quot;file&quot;</code></pre>
+</div>
+<div id="data-processing" class="section level1">
+<h1>Data Processing</h1>
+<p>Create the average absorbance of the 3 trials per wave length.</p>
+<pre class="r"><code>eColi_abs &lt;- eColi %&gt;% group_by(Wavelength) %&gt;% summarise(avgRelAbs = mean(abs1))
+head(eColi_abs)</code></pre>
+<pre><code>## # A tibble: 6 x 2
+##   Wavelength avgRelAbs
+##        &lt;dbl&gt;     &lt;dbl&gt;
+## 1       350.    0.0453
+## 2       350.    0.0353
+## 3       351.    0.0382
+## 4       351.    0.0562
+## 5       352.    0.0621
+## 6       352.    0.0713</code></pre>
+</div>
+<div id="analyzing" class="section level1">
+<h1>Analyzing</h1>
+<p>Plot the average relative absorbance for the E. coli.</p>
+<pre class="r"><code>ggplot(eColi_abs, aes(x=Wavelength, y=avgRelAbs)) + 
+              geom_point(color=&quot;#CC0000&quot;) + geom_smooth(color=&quot;black&quot;) + 
+              labs(title=&quot;Average Relative Absorbance of E. Coli&quot;, 
+                   x=&quot;Wavelength (nm)&quot;, y=&quot;Absorbance&quot;)</code></pre>
+<p><img src="/post/2018-09-13-using-dplyr-and-foreach/index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+</div>

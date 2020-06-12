@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ggplot | Dr. D.</title>
+    <link>/tag/ggplot/</link>
+      <atom:link href="/tag/ggplot/index.xml" rel="self" type="application/rss+xml" />
+    <description>ggplot</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Thu, 13 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
+      <title>ggplot</title>
+      <link>/tag/ggplot/</link>
+    </image>
+    
+    <item>
+      <title>Using dplyr and foreach to read in multiple data sets from disk</title>
+      <link>/post/2018-09-13-using-dplyr-and-foreach/</link>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>/post/2018-09-13-using-dplyr-and-foreach/</guid>
+      <description>
+
+
+&lt;p&gt;I had a student (Jack Fogliasso) bring me a problem from a Microbiology lab where they are trying to identify bacteria using lasers. One of the items they wanted to understand was the absorption rates of different wavelengths. So they have a machine to do the lasering and it reads out a text file that of course has a ton of meta data in it, is semi-colon delimited, and there’s one file per trial. So not the standard situation that one might encounter in a basic applied statistics class.&lt;/p&gt;
+&lt;p&gt;Jack and I talked about automation and reproducibility and how R is great for tasks like this, and he got to work. What is shown below is an effective use of &lt;code&gt;dplyr&lt;/code&gt; and to read in a data set from disk, do some processing, and create a visualization. This process can be expanded to any number of files thanks to the efficient looping of &lt;code&gt;foreach&lt;/code&gt;, and the combination of &lt;code&gt;dplyr&lt;/code&gt; and &lt;code&gt;ggplot2&lt;/code&gt; can accommodate different file names, such as for different new bacteria.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;system-setup&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;System setup&lt;/h1&gt;
+&lt;p&gt;This example uses the &lt;code&gt;ggplot2&lt;/code&gt;, &lt;code&gt;dplyr&lt;/code&gt; and &lt;code&gt;foreach&lt;/code&gt; packages.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+library(ggplot2)
+library(dplyr)
+library(foreach)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data-import&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Data import&lt;/h1&gt;
+&lt;p&gt;Read in the data for the three experimental trials.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;get all .txt files in the working directory and put into a list.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;list_files &amp;lt;- list.files(pattern = &amp;quot;.txt&amp;quot;, full.names = TRUE) 
+list_files&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;./Ec1.txt&amp;quot; &amp;quot;./Ec2.txt&amp;quot; &amp;quot;./Ec3.txt&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Use the &lt;code&gt;%do%&lt;/code&gt; function in the &lt;code&gt;foreach&lt;/code&gt; package to efficiently loop over all items in the list.
+This read in the data using &lt;code&gt;read.delim&lt;/code&gt;, turns it into a data frame, so that we can add the file name to the data set before combining each data set using &lt;code&gt;rbind&lt;/code&gt; (stacking or concatonating).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;eColi &amp;lt;- foreach(i=1:length(list_files), .combine=rbind) %do% {
+            read.delim(list_files[[i]], skip=66, sep=&amp;quot;;&amp;quot;) %&amp;gt;%
+            data.frame() %&amp;gt;%
+            mutate(file=gsub(&amp;quot;.txt&amp;quot;, &amp;quot;&amp;quot;, list_files[[i]]))# add an identifier to index each trial
+}
+head(eColi)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Pixel Wavelength    Dark Reference Raw.data..1 Dark.Subtracted..1 X.TR..1
+## 1     0     349.84 1161.60   1266.60     1257.96              96.36 91.7714
+## 2     1     350.27 1160.72   1263.56     1258.04              97.32 94.6324
+## 3     2     350.71 1161.20   1262.84     1259.56              98.36 96.7729
+## 4     3     351.14 1158.96   1264.04     1256.76              97.80 93.0719
+## 5     4     351.58 1150.24   1259.64     1252.12             101.88 93.1261
+## 6     5     352.01 1144.08   1256.92     1243.72              99.64 88.3020
+##   Absorbance..1 Raw.data..2 Dark.Subtracted..2 X.TR..2 Absorbance..2
+## 1        0.0373           0                  0       0             0
+## 2        0.0240           0                  0       0             0
+## 3        0.0142           0                  0       0             0
+## 4        0.0312           0                  0       0             0
+## 5        0.0309           0                  0       0             0
+## 6        0.0540           0                  0       0             0
+##   Raw.data..3 Dark.Subtracted..3 X.TR..3 Absorbance..3 Lamp.FitCurve
+## 1           0                  0       0             0             0
+## 2           0                  0       0             0             0
+## 3           0                  0       0             0             0
+## 4           0                  0       0             0             0
+## 5           0                  0       0             0             0
+## 6           0                  0       0             0             0
+##   Irradiance.Ratio Irradiance_1.W.cm.2.nm. Irradiance_2.W.cm.2.nm.
+## 1                0                      NA                       0
+## 2                0                      NA                       0
+## 3                0                      NA                       0
+## 4                0                      NA                       0
+## 5                0                      NA                       0
+## 6                0                      NA                       0
+##   Irradiance_3.W.cm.2.nm.  file
+## 1                       0 ./Ec1
+## 2                       0 ./Ec1
+## 3                       0 ./Ec1
+## 4                       0 ./Ec1
+## 5                       0 ./Ec1
+## 6                       0 ./Ec1&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Shorten the names to something reasonable.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;names(eColi)[c(5:16,19:21)] &amp;lt;- paste0(rep(c(&amp;quot;raw&amp;quot;, &amp;quot;dark&amp;quot;, &amp;quot;X&amp;quot;, &amp;quot;abs&amp;quot;, &amp;quot;irr&amp;quot;),3), 1:3)
+names(eColi)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;Pixel&amp;quot;            &amp;quot;Wavelength&amp;quot;       &amp;quot;Dark&amp;quot;             &amp;quot;Reference&amp;quot;       
+##  [5] &amp;quot;raw1&amp;quot;             &amp;quot;dark2&amp;quot;            &amp;quot;X3&amp;quot;               &amp;quot;abs1&amp;quot;            
+##  [9] &amp;quot;irr2&amp;quot;             &amp;quot;raw3&amp;quot;             &amp;quot;dark1&amp;quot;            &amp;quot;X2&amp;quot;              
+## [13] &amp;quot;abs3&amp;quot;             &amp;quot;irr1&amp;quot;             &amp;quot;raw2&amp;quot;             &amp;quot;dark3&amp;quot;           
+## [17] &amp;quot;Lamp.FitCurve&amp;quot;    &amp;quot;Irradiance.Ratio&amp;quot; &amp;quot;X1&amp;quot;               &amp;quot;abs2&amp;quot;            
+## [21] &amp;quot;irr3&amp;quot;             &amp;quot;file&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data-processing&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Data Processing&lt;/h1&gt;
+&lt;p&gt;Create the average absorbance of the 3 trials per wave length.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;eColi_abs &amp;lt;- eColi %&amp;gt;% group_by(Wavelength) %&amp;gt;% summarise(avgRelAbs = mean(abs1))
+head(eColi_abs)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 6 x 2
+##   Wavelength avgRelAbs
+##        &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+## 1       350.    0.0453
+## 2       350.    0.0353
+## 3       351.    0.0382
+## 4       351.    0.0562
+## 5       352.    0.0621
+## 6       352.    0.0713&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;analyzing&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Analyzing&lt;/h1&gt;
+&lt;p&gt;Plot the average relative absorbance for the E. coli.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(eColi_abs, aes(x=Wavelength, y=avgRelAbs)) + 
+              geom_point(color=&amp;quot;#CC0000&amp;quot;) + geom_smooth(color=&amp;quot;black&amp;quot;) + 
+              labs(title=&amp;quot;Average Relative Absorbance of E. Coli&amp;quot;, 
+                   x=&amp;quot;Wavelength (nm)&amp;quot;, y=&amp;quot;Absorbance&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-09-13-using-dplyr-and-foreach/index_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

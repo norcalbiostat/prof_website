@@ -18,12 +18,14 @@
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       <guid>/post/2020-06-07-rebuild2020/</guid>
       <description>&lt;p&gt;The last time I updated this website was in 2017 [link to other post]. I&amp;rsquo;m taking a full year sabbatical, and so I wanted to start by doing some updates to this site first. This post is a chronicle of my journey, mostly for my reference but also hopefully can help others. Technically I started tinkering about a week ago, but for the most part this post will be my &amp;lsquo;real time&amp;rsquo; thoughts and experiments.&lt;/p&gt;
-&lt;h2 id=&#34;list-of-tutorials&#34;&gt;List of tutorials&lt;/h2&gt;
+&lt;h2 id=&#34;list-of-tutorials-that-helped-me&#34;&gt;List of tutorials that helped me&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic theme documentation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Allison hill - 
 &lt;a href=&#34;https://summer-of-blogdown.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Summer of blogdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A 
+&lt;a href=&#34;https://spectrum.chat/academic/help?tab=posts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;community of users&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;start-updating-engines&#34;&gt;Start: Updating engines&lt;/h2&gt;
 &lt;p&gt;Update all the things!&lt;/p&gt;
@@ -38,14 +40,20 @@
 &lt;h3 id=&#34;top-level-root&#34;&gt;Top level root&lt;/h3&gt;
 &lt;p&gt;The only file to customize here is &lt;code&gt;config.toml&lt;/code&gt;, and not much to do in here. Here&amp;rsquo;s what I changed:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;title, copyright,&lt;/li&gt;
+&lt;li&gt;title: this shows up in the top left of the navbar, and your browser tab.&lt;/li&gt;
+&lt;li&gt;copyright: shows up at the bottom of every post &amp;amp; project&lt;/li&gt;
 &lt;li&gt;post url: I came across some post, i can&amp;rsquo;t recall where it now, that suggested a change to the URL for posts. The default was something like &lt;code&gt;/post/:year-:month-:day-:slug/:slug&lt;/code&gt; - where there was a separate folder for the slug. I don&amp;rsquo;t recall exactly, but here&amp;rsquo;s a note from 
 &lt;a href=&#34;https://bookdown.org/yihui/blogdown/configuration.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the blogdown book&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;more-top-level-configuration-config_default&#34;&gt;More top level configuration &lt;code&gt;config/_default/&lt;/code&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;languages.toml&lt;/code&gt; didn&amp;rsquo;t need to change as i&amp;rsquo;m boring old plain english&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;menus.toml&lt;/code&gt; Navbar! Comment out everything I don&amp;rsquo;t need, change the order that it appears using weights.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;menus.toml&lt;/code&gt; Navbar! Comment out everything I don&amp;rsquo;t need, change the order that it appears using weights.
+&lt;ul&gt;
+&lt;li&gt;See here for 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/#menu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dropdown menu items&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;❓ How to right justify?&lt;/p&gt;
@@ -56,518 +64,207 @@
 &lt;li&gt;Theme: Green of course. Don&amp;rsquo;t care about font face, but I went with the slightly smaller text (&amp;lsquo;M&amp;rsquo;)&lt;/li&gt;
 &lt;li&gt;Basic info: Left most of this alone, but specified &lt;code&gt;site_type = &amp;quot;Person&amp;quot;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Site features: didn&amp;rsquo;t change these. May do so later. Probably for the &lt;code&gt;edit pages&lt;/code&gt; part. It depends on if I end up pulling my course materials over.&lt;/li&gt;
+&lt;li&gt;Contact details: updated all of this&lt;/li&gt;
+&lt;li&gt;Social: Just added Twitter name&lt;/li&gt;
+&lt;li&gt;Regional: changed to 24 hour time - personal preference.&lt;/li&gt;
+&lt;li&gt;Advanced: Updated &lt;code&gt;copyright_license&lt;/code&gt; to add a creative commons license since I post course materials and code.&lt;/li&gt;
+&lt;li&gt;Comments: disabled for now.&lt;/li&gt;
+&lt;li&gt;Search: defaults are fine&lt;/li&gt;
+&lt;li&gt;Maps: defaults are fine&lt;/li&gt;
+&lt;li&gt;Marketing: default&lt;/li&gt;
+&lt;li&gt;CMS: default&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;❓ What&amp;rsquo;s the privacy pack? This site sets cookies? Need to look more into what this does.
-- Contact details: updated all of this
-- Social: Just added Twitter name
-- Regional: changed to 24 hour time - personal preference.
-- Advanced: Updated &lt;code&gt;copyright_license&lt;/code&gt; to add a creative commons license since I post course materials and code.
-- Comments: disabled for now.
-- Search: defaults are fine
-- Maps: defaults are fine
-- Marketing: default
-- CMS: default&lt;/p&gt;
+&lt;p&gt;❓ What&amp;rsquo;s the privacy pack? This site sets cookies? Need to look more into what this does.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;individual-widget-level-configuration&#34;&gt;Individual widget level configuration&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Writing technical content in Academic</title>
-      <link>/post/2019-07-12-writing-technical-content-in-academic/</link>
-      <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/post/2019-07-12-writing-technical-content-in-academic/</guid>
-      <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
-&lt;p&gt;Academic supports a Markdown extension for highlighting code syntax. You can enable this feature by toggling the &lt;code&gt;highlight&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```python
-import pandas as pd
-data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
-data.head()
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import pandas as pd
-data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
-data.head()
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;math&#34;&gt;Math&lt;/h3&gt;
-&lt;p&gt;Academic supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code&gt;math&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file.&lt;/p&gt;
-&lt;p&gt;To render &lt;em&gt;inline&lt;/em&gt; or &lt;em&gt;block&lt;/em&gt; math, wrap your LaTeX math with &lt;code&gt;$...$&lt;/code&gt; or &lt;code&gt;$$...$$&lt;/code&gt;, respectively.&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;math block&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$\gamma_{n} = \frac{ 
-\left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T 
-\left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}
-{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;p&gt;$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left |\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right |^2}$$&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;inline math&lt;/strong&gt; &lt;code&gt;$\nabla F(\mathbf{x}_{n})$&lt;/code&gt; renders as $\nabla F(\mathbf{x}_{n})$.&lt;/p&gt;
-&lt;p&gt;Example &lt;strong&gt;multi-line math&lt;/strong&gt; using the &lt;code&gt;\\\\&lt;/code&gt; math linebreak:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-tex&#34;&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \\\\
-1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;p&gt;$$f(k;p_0^*) = \begin{cases} p_0^* &amp;amp; \text{if }k=1, \\&lt;br&gt;
-1-p_0^* &amp;amp; \text {if }k=0.\end{cases}$$&lt;/p&gt;
-&lt;h3 id=&#34;diagrams&#34;&gt;Diagrams&lt;/h3&gt;
-&lt;p&gt;Academic supports a Markdown extension for diagrams. You can enable this feature by toggling the &lt;code&gt;diagram&lt;/code&gt; option in your &lt;code&gt;config/_default/params.toml&lt;/code&gt; file or by adding &lt;code&gt;diagram: true&lt;/code&gt; to your page front matter.&lt;/p&gt;
-&lt;p&gt;An example &lt;strong&gt;flowchart&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-graph TD
-A[Hard] --&amp;gt;|Text| B(Round)
-B --&amp;gt; C{Decision}
-C --&amp;gt;|One| D[Result 1]
-C --&amp;gt;|Two| E[Result 2]
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;graph TD
-A[Hard] --&amp;gt;|Text| B(Round)
-B --&amp;gt; C{Decision}
-C --&amp;gt;|One| D[Result 1]
-C --&amp;gt;|Two| E[Result 2]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;sequence diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-sequenceDiagram
-Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&amp;gt;&amp;gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&amp;gt;&amp;gt;Alice: Great!
-John-&amp;gt;&amp;gt;Bob: How about you?
-Bob--&amp;gt;&amp;gt;John: Jolly good!
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;sequenceDiagram
-Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
-loop Healthcheck
-    John-&amp;gt;&amp;gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&amp;gt;&amp;gt;Alice: Great!
-John-&amp;gt;&amp;gt;Bob: How about you?
-Bob--&amp;gt;&amp;gt;John: Jolly good!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;Gantt diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;gantt
-section Section
-Completed :done,    des1, 2014-01-06,2014-01-08
-Active        :active,  des2, 2014-01-07, 3d
-Parallel 1   :         des3, after des1, 1d
-Parallel 2   :         des4, after des1, 1d
-Parallel 3   :         des5, after des3, 1d
-Parallel 4   :         des6, after des4, 1d
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;class diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-classDiagram
-Class01 &amp;lt;|-- AveryLongClass : Cool
-&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Class01
-Class09 --&amp;gt; C2 : Where am i?
-Class09 --* C3
-Class09 --|&amp;gt; Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-class Class10 {
-  &amp;lt;&amp;lt;service&amp;gt;&amp;gt;
-  int id
-  size()
-}
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;classDiagram
-Class01 &amp;lt;|-- AveryLongClass : Cool
-&amp;lt;&amp;lt;interface&amp;gt;&amp;gt; Class01
-Class09 --&amp;gt; C2 : Where am i?
-Class09 --* C3
-Class09 --|&amp;gt; Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-class Class10 {
-  &amp;lt;&amp;lt;service&amp;gt;&amp;gt;
-  int id
-  size()
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;An example &lt;strong&gt;state diagram&lt;/strong&gt;:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```mermaid
-stateDiagram
-[*] --&amp;gt; Still
-Still --&amp;gt; [*]
-Still --&amp;gt; Moving
-Moving --&amp;gt; Still
-Moving --&amp;gt; Crash
-Crash --&amp;gt; [*]
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-mermaid&#34;&gt;stateDiagram
-[*] --&amp;gt; Still
-Still --&amp;gt; [*]
-Still --&amp;gt; Moving
-Moving --&amp;gt; Still
-Moving --&amp;gt; Crash
-Crash --&amp;gt; [*]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;todo-lists&#34;&gt;Todo lists&lt;/h3&gt;
-&lt;p&gt;You can even write your todo lists in Academic too:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;- [x] Write math example
-- [x] Write diagram example
-- [ ] Do something else
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
+&lt;h2 id=&#34;introduce-yourselfhttpssourcethemescomacademicdocsget-startedintroduce-yourself&#34;&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/#introduce-yourself&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduce yourself&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;content/authors/admin/_index.md&lt;/code&gt; file controls the &amp;lsquo;About me&amp;rsquo; section of the page. It has your avatar on the left, social icons underneath and a spot to the right for a paragraph of info.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write math example&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write diagram example&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Do something else&lt;/li&gt;
+&lt;li&gt;You can&amp;rsquo;t do markdown style links, but you can display URLs.&lt;/li&gt;
+&lt;li&gt;As you add more social icons to the space below your mugshot, the sizes automatically get smaller. Would be nice to have the option to wrap onto a second line.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;avatar.jpg&lt;/code&gt; goes in the same folder.&lt;/li&gt;
+&lt;li&gt;If you want an icon to show on your browser tab, put &lt;code&gt;icon.png&lt;/code&gt; in &lt;code&gt;assets\images&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;tables&#34;&gt;Tables&lt;/h3&gt;
-&lt;p&gt;Represent your data in tables:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;First Header&lt;/th&gt;
-&lt;th&gt;Second Header&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;td&gt;Content Cell&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&#34;asides&#34;&gt;Asides&lt;/h3&gt;
-&lt;p&gt;Academic supports a 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#alerts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcode for asides&lt;/a&gt;, also referred to as &lt;em&gt;notices&lt;/em&gt;, &lt;em&gt;hints&lt;/em&gt;, or &lt;em&gt;alerts&lt;/em&gt;. By wrapping a paragraph in &lt;code&gt;{{% alert note %}} ... {{% /alert %}}&lt;/code&gt;, it will render as an aside.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% alert note %}}
-A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-{{% /alert %}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;spoilers&#34;&gt;Spoilers&lt;/h3&gt;
-&lt;p&gt;Add a spoiler to a page to reveal text, such as an answer to a question, after a button is clicked.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; spoiler text=&amp;quot;Click to view the spoiler&amp;quot; &amp;gt;}}
-You found me!
-{{&amp;lt; /spoiler &amp;gt;}}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;div class=&#34;spoiler &#34; &gt;
-&lt;p&gt;
-  &lt;a class=&#34;btn btn-primary&#34; data-toggle=&#34;collapse&#34; href=&#34;#spoiler-click-to-view-the-spoiler&#34; role=&#34;button&#34; aria-expanded=&#34;false&#34; aria-controls=&#34;spoiler-click-to-view-the-spoiler&#34;&gt;
-    Click to view the spoiler
-  &lt;/a&gt;
-&lt;/p&gt;
-&lt;div class=&#34;collapse &#34; id=&#34;spoiler-click-to-view-the-spoiler&#34;&gt;
-  &lt;div class=&#34;card&#34;&gt;
-    &lt;div class=&#34;card-body&#34;&gt;
-    You found me!
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;h3 id=&#34;icons&#34;&gt;Icons&lt;/h3&gt;
-&lt;p&gt;Academic enables you to use a wide range of 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/#icons&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;icons from &lt;em&gt;Font Awesome&lt;/em&gt; and &lt;em&gt;Academicons&lt;/em&gt;&lt;/a&gt; in addition to 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/#emojis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;emojis&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Here are some examples using the &lt;code&gt;icon&lt;/code&gt; shortcode to render icons:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; icon name=&amp;quot;terminal&amp;quot; pack=&amp;quot;fas&amp;quot; &amp;gt;}} Terminal  
-{{&amp;lt; icon name=&amp;quot;python&amp;quot; pack=&amp;quot;fab&amp;quot; &amp;gt;}} Python  
-{{&amp;lt; icon name=&amp;quot;r-project&amp;quot; pack=&amp;quot;fab&amp;quot; &amp;gt;}} R
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;renders as&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-terminal  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Terminal&lt;br&gt;
-
-  &lt;i class=&#34;fab fa-python  pr-1 fa-fw&#34;&gt;&lt;/i&gt; Python&lt;br&gt;
-
-  &lt;i class=&#34;fab fa-r-project  pr-1 fa-fw&#34;&gt;&lt;/i&gt; R&lt;/p&gt;
-&lt;h3 id=&#34;did-you-find-this-page-helpful-consider-sharing-it-&#34;&gt;Did you find this page helpful? Consider sharing it 🙌&lt;/h3&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>/post/2019-02-05-display-jupyter-notebooks-with-academic/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/post/2019-02-05-display-jupyter-notebooks-with-academic/</guid>
-      <description>&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
-Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;./index_1_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;Welcome to Academic!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;install-python-and-jupyterlab&#34;&gt;Install Python and JupyterLab&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and JupyterLab.&lt;/p&gt;
-&lt;p&gt;Alternatively, install JupyterLab with &lt;code&gt;pip3 install jupyterlab&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
-&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code&gt; with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-cd &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-jupyter lab index.ipynb
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The &lt;code&gt;jupyter&lt;/code&gt; command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p&gt;
-&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
-&lt;p&gt;The first cell of your Jupter notebook will contain your post metadata (
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;front matter&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;In Jupter, choose &lt;em&gt;Markdown&lt;/em&gt; as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: My post&#39;s title
-date: 2019-09-01
-
-# Put any other Academic metadata here...
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Edit the metadata of your post, using the 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation&lt;/a&gt; as a guide to the available options.&lt;/p&gt;
-&lt;p&gt;To set a 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
-&lt;p&gt;For other tips, such as using math, see the guide on 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
-&lt;p&gt;This post was created with Jupyter. The orginal files can be found at &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&#34;&gt;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Academic: the website builder for Hugo</title>
-      <link>/post/2016-04-20-academic-the-website-builder-for-hugo/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/post/2016-04-20-academic-the-website-builder-for-hugo/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or 
-&lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
+&lt;h2 id=&#34;host-on-netlify&#34;&gt;Host on Netlify&lt;/h2&gt;
+&lt;p&gt;I don&amp;rsquo;t recall where along this process I pushed to git and deployed on Netlify. It was for sure before i got too far down the customization rabbit hole. Don&amp;rsquo;t forget to 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/netlify.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;specify your hugo build&lt;/a&gt; - mine was 0.70.0 (need that last decimal).&lt;/p&gt;
+&lt;h2 id=&#34;remove-widgets&#34;&gt;Remove widgets&lt;/h2&gt;
+&lt;p&gt;Unlike the &amp;lsquo;delete all the things&amp;rsquo; approach that 
+&lt;a href=&#34;https://djnavarro.net/post/starting-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Danielle Navarro&lt;/a&gt; takes, i&amp;rsquo;d rather just turn them off.&lt;/p&gt;
+&lt;p&gt;Inside the &lt;code&gt;content/home&lt;/code&gt; directory, there&amp;rsquo;s all these &lt;code&gt;.md&lt;/code&gt; files. Each one is a widget, and by default most of these are set to &lt;code&gt;active=true&lt;/code&gt;. I turned most of them off, but I may turn some back on later. Supposedly you can have 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-widget-page&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;widgets enabled on other pages&lt;/a&gt;, not just this landing/home page. I&amp;rsquo;ll look into that later. Baby steps, start small then add incrementally. Like a &lt;code&gt;ggplot&lt;/code&gt;, layer it on.&lt;/p&gt;
+&lt;h2 id=&#34;adding-content&#34;&gt;Adding content&lt;/h2&gt;
+&lt;h3 id=&#34;projects&#34;&gt;Projects&lt;/h3&gt;
+&lt;p&gt;I already had a blogdown site that included projects. Migrating those over to this new format wasn&amp;rsquo;t terrible.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;👉 
-&lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;📚 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View the &lt;strong&gt;documentation&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💬 
-&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Ask a question&lt;/strong&gt; on the forum&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👥 
-&lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chat with the &lt;strong&gt;community&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🐦 Twitter: 
-&lt;a href=&#34;https://twitter.com/source_themes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@source_themes&lt;/a&gt; 
-&lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@GeorgeCushen&lt;/a&gt; 
-&lt;a href=&#34;https://twitter.com/search?q=%23MadeWithAcademic&amp;amp;src=typd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#MadeWithAcademic&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💡 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;⬆️ &lt;strong&gt;Updating?&lt;/strong&gt; View the 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Guide&lt;/a&gt; and 
-&lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;❤️ &lt;strong&gt;Support development&lt;/strong&gt; of Academic:
+&lt;li&gt;Under &lt;code&gt;/content/project&lt;/code&gt;, each project has it&amp;rsquo;s own folder.
 &lt;ul&gt;
-&lt;li&gt;☕️ 
-&lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Donate a coffee&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;💵 
-&lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Become a backer on &lt;strong&gt;Patreon&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;🖼️ 
-&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Decorate your laptop or journal with an Academic &lt;strong&gt;sticker&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👕 
-&lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wear the &lt;strong&gt;T-shirt&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;👩‍💻 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/contribute/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Contribute&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Within each folder there is an &lt;code&gt;index.md&lt;/code&gt; file.
+&lt;ul&gt;
+&lt;li&gt;Each &lt;code&gt;index.md&lt;/code&gt; file has a large YAML header section,&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure id=&#34;figure-academic-is-mobile-first-with-a-responsive-design-to-ensure-that-your-site-looks-stunning-on-every-device&#34;&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; data-caption=&#34;Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34;&gt;
-
-
-  &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;Modify the &lt;code&gt;content/home/projects.md&lt;/code&gt; file to
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable 
-&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and 
-&lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - 
-&lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;, 
-&lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
+&lt;li&gt;set the &lt;code&gt;[[content.filter_button]]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;set the display of projects (cards vs lists)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;p&gt;Academic comes with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can  choose their preferred mode - click the sun/moon icon in the top right of the 
-&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demo&lt;/a&gt; to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt; for your site. Themes are fully 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/customization/#custom-theme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;customizable&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
+&lt;h3 id=&#34;courses&#34;&gt;Courses&lt;/h3&gt;
+&lt;p&gt;Previously, I simply had separate &amp;lsquo;simple&amp;rsquo; RMarkdown websites for my class pages 
+&lt;a href=&#34;https://norcalbiostat.github.io/MATH130/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[ex Math 130]&lt;/a&gt;, and I linked to them from my main page. However, Academic has a whole different page layout called &lt;em&gt;docs&lt;/em&gt; for 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-course-or-documentation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;writing and sharing documentation&lt;/a&gt;, such as course materials.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;In &lt;code&gt;content/courses&lt;/code&gt;, there&amp;rsquo;s an overall &lt;code&gt;_index.md&lt;/code&gt; which is pretty plain, has the &lt;code&gt;docs&lt;/code&gt; layout (which i gather is the important part) but this is where you can add some introductory text. that would apply to all courses.&lt;/p&gt;
+&lt;/li&gt;
 &lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;Each course has it&amp;rsquo;s own folder, which of course has their own &lt;code&gt;_index.md&lt;/code&gt; files. These will automatically show up on the courses page, with a short summary that you specify in the course specific index md file.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Then 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt; to help keep track of 
-&lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-&lt;p&gt;Copyright 2016-present 
-&lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Released under the 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+&lt;p&gt;❓ Can i add direct links to these courses as a drop down in the navbar?&lt;/p&gt;
+&lt;p&gt;The only thing i&amp;rsquo;ve done here so far is setup placeholder entries for 2 of my classes.&lt;/p&gt;
+&lt;h3 id=&#34;blog-posts&#34;&gt;Blog posts&lt;/h3&gt;
+&lt;p&gt;This is about when I decided I needed to document what I was doing, and started this blog post. I did so by using the RStudio Addin, &lt;em&gt;New Post&lt;/em&gt;. While most of the writing is just text, I opted for a &lt;code&gt;.Rmarkdown&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;❓ What&amp;rsquo;s the difference between &lt;code&gt;.Rmd&lt;/code&gt; and &lt;code&gt;.Rmarkdown&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;R code still works right?&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;2+2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 4
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Okay, i&amp;rsquo;m tossing the blog posts that came along with the example/template files. Before I migrate my old posts over, time to re-read the 
+&lt;a href=&#34;https://alison.rbind.io/post/2019-02-21-hugo-page-bundles/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;lsquo;Spoonful of Hugo&amp;rsquo; post by Allison Hill on page bundles&lt;/a&gt;. Because there was something about the way posts are handled that is different from &amp;lsquo;old&amp;rsquo; Hugo.&lt;/p&gt;
+&lt;p&gt;Ah! This is where I got the info about the slug from!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Attempt 1.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make a new folder using the &lt;code&gt;YYYY-MM-DD-slug&lt;/code&gt; format, and put my old &lt;code&gt;.Rmd&lt;/code&gt; file into this folder, renaming it as &lt;code&gt;index.Rmd&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Copy the YAML material from this page into that one.&lt;/li&gt;
+&lt;li&gt;Won&amp;rsquo;t render &amp;ndash; because i was doing things with data and that data was stored under &lt;code&gt;../../static/data/&lt;/code&gt;.. which is what the page bundles are designed to deal with.
+&lt;ul&gt;
+&lt;li&gt;Move data into folder where the rmd file is at, and update path.&lt;/li&gt;
+&lt;li&gt;This would be a HUGE PAIN if I had a lot of these&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Worked! okay.. not bad at all.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;:note: You -can- Knit your &lt;code&gt;.Rmd&lt;/code&gt; file to see what it looks like while working on it, just delete it before you save. It&amp;rsquo;ll get re-rendered when you build site, in the &amp;lsquo;proper&amp;rsquo; format that&amp;rsquo;s needed for display on a Hugo based website.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-hello-r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/post/2015-07-23-hello-r-markdown/</guid>
+      <title>Using dplyr and foreach to read in multiple data sets from disk</title>
+      <link>/post/2018-09-13-using-dplyr-and-foreach/</link>
+      <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>/post/2018-09-13-using-dplyr-and-foreach/</guid>
       <description>
 
 
-&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;R Markdown&lt;/h1&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &amp;lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I had a student (Jack Fogliasso) bring me a problem from a Microbiology lab where they are trying to identify bacteria using lasers. One of the items they wanted to understand was the absorption rates of different wavelengths. So they have a machine to do the lasering and it reads out a text file that of course has a ton of meta data in it, is semi-colon delimited, and there’s one file per trial. So not the standard situation that one might encounter in a basic applied statistics class.&lt;/p&gt;
+&lt;p&gt;Jack and I talked about automation and reproducibility and how R is great for tasks like this, and he got to work. What is shown below is an effective use of &lt;code&gt;dplyr&lt;/code&gt; and to read in a data set from disk, do some processing, and create a visualization. This process can be expanded to any number of files thanks to the efficient looping of &lt;code&gt;foreach&lt;/code&gt;, and the combination of &lt;code&gt;dplyr&lt;/code&gt; and &lt;code&gt;ggplot2&lt;/code&gt; can accommodate different file names, such as for different new bacteria.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;system-setup&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;System setup&lt;/h1&gt;
+&lt;p&gt;This example uses the &lt;code&gt;ggplot2&lt;/code&gt;, &lt;code&gt;dplyr&lt;/code&gt; and &lt;code&gt;foreach&lt;/code&gt; packages.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+library(ggplot2)
+library(dplyr)
+library(foreach)&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
-&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Including Plots&lt;/h1&gt;
-&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
-  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
-  init.angle = -50, border = NA
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: A fancy pie chart.
-&lt;/p&gt;
+&lt;div id=&#34;data-import&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Data import&lt;/h1&gt;
+&lt;p&gt;Read in the data for the three experimental trials.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;get all .txt files in the working directory and put into a list.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;list_files &amp;lt;- list.files(pattern = &amp;quot;.txt&amp;quot;, full.names = TRUE) 
+list_files&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;./Ec1.txt&amp;quot; &amp;quot;./Ec2.txt&amp;quot; &amp;quot;./Ec3.txt&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Use the &lt;code&gt;%do%&lt;/code&gt; function in the &lt;code&gt;foreach&lt;/code&gt; package to efficiently loop over all items in the list.
+This read in the data using &lt;code&gt;read.delim&lt;/code&gt;, turns it into a data frame, so that we can add the file name to the data set before combining each data set using &lt;code&gt;rbind&lt;/code&gt; (stacking or concatonating).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;eColi &amp;lt;- foreach(i=1:length(list_files), .combine=rbind) %do% {
+            read.delim(list_files[[i]], skip=66, sep=&amp;quot;;&amp;quot;) %&amp;gt;%
+            data.frame() %&amp;gt;%
+            mutate(file=gsub(&amp;quot;.txt&amp;quot;, &amp;quot;&amp;quot;, list_files[[i]]))# add an identifier to index each trial
+}
+head(eColi)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Pixel Wavelength    Dark Reference Raw.data..1 Dark.Subtracted..1 X.TR..1
+## 1     0     349.84 1161.60   1266.60     1257.96              96.36 91.7714
+## 2     1     350.27 1160.72   1263.56     1258.04              97.32 94.6324
+## 3     2     350.71 1161.20   1262.84     1259.56              98.36 96.7729
+## 4     3     351.14 1158.96   1264.04     1256.76              97.80 93.0719
+## 5     4     351.58 1150.24   1259.64     1252.12             101.88 93.1261
+## 6     5     352.01 1144.08   1256.92     1243.72              99.64 88.3020
+##   Absorbance..1 Raw.data..2 Dark.Subtracted..2 X.TR..2 Absorbance..2
+## 1        0.0373           0                  0       0             0
+## 2        0.0240           0                  0       0             0
+## 3        0.0142           0                  0       0             0
+## 4        0.0312           0                  0       0             0
+## 5        0.0309           0                  0       0             0
+## 6        0.0540           0                  0       0             0
+##   Raw.data..3 Dark.Subtracted..3 X.TR..3 Absorbance..3 Lamp.FitCurve
+## 1           0                  0       0             0             0
+## 2           0                  0       0             0             0
+## 3           0                  0       0             0             0
+## 4           0                  0       0             0             0
+## 5           0                  0       0             0             0
+## 6           0                  0       0             0             0
+##   Irradiance.Ratio Irradiance_1.W.cm.2.nm. Irradiance_2.W.cm.2.nm.
+## 1                0                      NA                       0
+## 2                0                      NA                       0
+## 3                0                      NA                       0
+## 4                0                      NA                       0
+## 5                0                      NA                       0
+## 6                0                      NA                       0
+##   Irradiance_3.W.cm.2.nm.  file
+## 1                       0 ./Ec1
+## 2                       0 ./Ec1
+## 3                       0 ./Ec1
+## 4                       0 ./Ec1
+## 5                       0 ./Ec1
+## 6                       0 ./Ec1&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Shorten the names to something reasonable.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;names(eColi)[c(5:16,19:21)] &amp;lt;- paste0(rep(c(&amp;quot;raw&amp;quot;, &amp;quot;dark&amp;quot;, &amp;quot;X&amp;quot;, &amp;quot;abs&amp;quot;, &amp;quot;irr&amp;quot;),3), 1:3)
+names(eColi)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##  [1] &amp;quot;Pixel&amp;quot;            &amp;quot;Wavelength&amp;quot;       &amp;quot;Dark&amp;quot;             &amp;quot;Reference&amp;quot;       
+##  [5] &amp;quot;raw1&amp;quot;             &amp;quot;dark2&amp;quot;            &amp;quot;X3&amp;quot;               &amp;quot;abs1&amp;quot;            
+##  [9] &amp;quot;irr2&amp;quot;             &amp;quot;raw3&amp;quot;             &amp;quot;dark1&amp;quot;            &amp;quot;X2&amp;quot;              
+## [13] &amp;quot;abs3&amp;quot;             &amp;quot;irr1&amp;quot;             &amp;quot;raw2&amp;quot;             &amp;quot;dark3&amp;quot;           
+## [17] &amp;quot;Lamp.FitCurve&amp;quot;    &amp;quot;Irradiance.Ratio&amp;quot; &amp;quot;X1&amp;quot;               &amp;quot;abs2&amp;quot;            
+## [21] &amp;quot;irr3&amp;quot;             &amp;quot;file&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+&lt;div id=&#34;data-processing&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Data Processing&lt;/h1&gt;
+&lt;p&gt;Create the average absorbance of the 3 trials per wave length.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;eColi_abs &amp;lt;- eColi %&amp;gt;% group_by(Wavelength) %&amp;gt;% summarise(avgRelAbs = mean(abs1))
+head(eColi_abs)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 6 x 2
+##   Wavelength avgRelAbs
+##        &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+## 1       350.    0.0453
+## 2       350.    0.0353
+## 3       351.    0.0382
+## 4       351.    0.0562
+## 5       352.    0.0621
+## 6       352.    0.0713&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;analyzing&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Analyzing&lt;/h1&gt;
+&lt;p&gt;Plot the average relative absorbance for the E. coli.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(eColi_abs, aes(x=Wavelength, y=avgRelAbs)) + 
+              geom_point(color=&amp;quot;#CC0000&amp;quot;) + geom_smooth(color=&amp;quot;black&amp;quot;) + 
+              labs(title=&amp;quot;Average Relative Absorbance of E. Coli&amp;quot;, 
+                   x=&amp;quot;Wavelength (nm)&amp;quot;, y=&amp;quot;Absorbance&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-09-13-using-dplyr-and-foreach/index_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>

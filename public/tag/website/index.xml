@@ -38,7 +38,8 @@
 &lt;h3 id=&#34;top-level-root&#34;&gt;Top level root&lt;/h3&gt;
 &lt;p&gt;The only file to customize here is &lt;code&gt;config.toml&lt;/code&gt;, and not much to do in here. Here&amp;rsquo;s what I changed:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;title, copyright,&lt;/li&gt;
+&lt;li&gt;title: this shows up in the top left of the navbar, and your browser tab.&lt;/li&gt;
+&lt;li&gt;copyright: shows up at the bottom of every post &amp;amp; project&lt;/li&gt;
 &lt;li&gt;post url: I came across some post, i can&amp;rsquo;t recall where it now, that suggested a change to the URL for posts. The default was something like &lt;code&gt;/post/:year-:month-:day-:slug/:slug&lt;/code&gt; - where there was a separate folder for the slug. I don&amp;rsquo;t recall exactly, but here&amp;rsquo;s a note from 
 &lt;a href=&#34;https://bookdown.org/yihui/blogdown/configuration.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the blogdown book&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -56,22 +57,33 @@
 &lt;li&gt;Theme: Green of course. Don&amp;rsquo;t care about font face, but I went with the slightly smaller text (&amp;lsquo;M&amp;rsquo;)&lt;/li&gt;
 &lt;li&gt;Basic info: Left most of this alone, but specified &lt;code&gt;site_type = &amp;quot;Person&amp;quot;&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Site features: didn&amp;rsquo;t change these. May do so later. Probably for the &lt;code&gt;edit pages&lt;/code&gt; part. It depends on if I end up pulling my course materials over.&lt;/li&gt;
+&lt;li&gt;Contact details: updated all of this&lt;/li&gt;
+&lt;li&gt;Social: Just added Twitter name&lt;/li&gt;
+&lt;li&gt;Regional: changed to 24 hour time - personal preference.&lt;/li&gt;
+&lt;li&gt;Advanced: Updated &lt;code&gt;copyright_license&lt;/code&gt; to add a creative commons license since I post course materials and code.&lt;/li&gt;
+&lt;li&gt;Comments: disabled for now.&lt;/li&gt;
+&lt;li&gt;Search: defaults are fine&lt;/li&gt;
+&lt;li&gt;Maps: defaults are fine&lt;/li&gt;
+&lt;li&gt;Marketing: default&lt;/li&gt;
+&lt;li&gt;CMS: default&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;❓ What&amp;rsquo;s the privacy pack? This site sets cookies? Need to look more into what this does.
-- Contact details: updated all of this
-- Social: Just added Twitter name
-- Regional: changed to 24 hour time - personal preference.
-- Advanced: Updated &lt;code&gt;copyright_license&lt;/code&gt; to add a creative commons license since I post course materials and code.
-- Comments: disabled for now.
-- Search: defaults are fine
-- Maps: defaults are fine
-- Marketing: default
-- CMS: default&lt;/p&gt;
+&lt;p&gt;❓ What&amp;rsquo;s the privacy pack? This site sets cookies? Need to look more into what this does.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;individual-widget-level-configuration&#34;&gt;Individual widget level configuration&lt;/h2&gt;
+&lt;h2 id=&#34;introduce-yourselfhttpssourcethemescomacademicdocsget-startedintroduce-yourself&#34;&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/#introduce-yourself&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduce yourself&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;content/authors/admin/_index.md&lt;/code&gt; file controls the &amp;lsquo;About me&amp;rsquo; section of the page. It has your avatar on the left, social icons underneath and a spot to the right for a paragraph of info.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can&amp;rsquo;t do markdown style links, but you can display URLs.&lt;/li&gt;
+&lt;li&gt;As you add more social icons to the space below your mugshot, the sizes automatically get smaller. Would be nice to have the option to wrap onto a second line.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;avatar.jpg&lt;/code&gt; goes in the same folder.&lt;/li&gt;
+&lt;li&gt;If you want an icon to show on your browser tab, put &lt;code&gt;icon.png&lt;/code&gt; in &lt;code&gt;assets\images&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;host-on-netlify&#34;&gt;Host on Netlify&lt;/h2&gt;
+&lt;p&gt;I don&amp;rsquo;t recall where along this process I pushed to git and deployed on Netlify. It was for sure before i got too far down the customization rabbit hole. Don&amp;rsquo;t forget to 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/netlify.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;specify your hugo build&lt;/a&gt; - mine was 0.70.0 (need that last decimal).&lt;/p&gt;
 </description>
     </item>
     

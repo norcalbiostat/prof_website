@@ -1,0 +1,86 @@
+---
+title: Using dplyr and foreach to read in multiple data sets from disk
+author: Robin Donatello
+date: '2018-09-13'
+slug: using-dplyr-and-foreach
+categories: [programming, efficiency]
+tags:
+  - Rmarkdown
+  - R
+  - dplyr
+  - foreach
+  - ggplot
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-06-07T09:17:03-07:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+I had a student (Jack Fogliasso) bring me a problem from a Microbiology lab where they are trying to identify bacteria using lasers. One of the items they wanted to understand was the absorption rates of different wavelengths. So they have a machine to do the lasering and it reads out a text file that of course has a ton of meta data in it, is semi-colon delimited, and there's one file per trial. So not the standard situation that one might encounter in a basic applied statistics class. 
+
+Jack and I talked about automation and reproducibility and how R is great for tasks like this, and he got to work. What is shown below is an effective use of `dplyr` and to read in a data set from disk, do some processing, and create a visualization. This process can be expanded to any number of files thanks to the efficient looping of `foreach`, and the combination of `dplyr` and `ggplot2` can accommodate different file names, such as for different new bacteria. 
+
+
+----
+
+# System setup
+This example uses the `ggplot2`, `dplyr` and `foreach` packages. 
+
+```{r, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+library(ggplot2)
+library(dplyr)
+library(foreach)
+```
+
+# Data import
+
+Read in the data for the three experimental trials.
+
+1. get all .txt files in the working directory and put into a list. 
+```{r}
+list_files <- list.files(pattern = ".txt", full.names = TRUE) 
+list_files
+```
+
+2. Use the `%do%` function in the `foreach` package to efficiently loop over all items in the list. 
+This read in the data using `read.delim`, turns it into a data frame, so that we can add the file name to the data set before combining each data set using `rbind` (stacking or concatonating). 
+```{r}
+eColi <- foreach(i=1:length(list_files), .combine=rbind) %do% {
+            read.delim(list_files[[i]], skip=66, sep=";") %>%
+            data.frame() %>%
+            mutate(file=gsub(".txt", "", list_files[[i]]))# add an identifier to index each trial
+}
+head(eColi)
+```
+
+3. Shorten the names to something reasonable. 
+```{r}
+names(eColi)[c(5:16,19:21)] <- paste0(rep(c("raw", "dark", "X", "abs", "irr"),3), 1:3)
+names(eColi)
+```
+
+# Data Processing
+
+Create the average absorbance of the 3 trials per wave length.
+```{r}
+eColi_abs <- eColi %>% group_by(Wavelength) %>% summarise(avgRelAbs = mean(abs1))
+head(eColi_abs)
+```
+
+# Analyzing 
+
+Plot the average relative absorbance for the E. coli. 
+```{r}
+ggplot(eColi_abs, aes(x=Wavelength, y=avgRelAbs)) + 
+              geom_point(color="#CC0000") + geom_smooth(color="black") + 
+              labs(title="Average Relative Absorbance of E. Coli", 
+                   x="Wavelength (nm)", y="Absorbance")
+```
