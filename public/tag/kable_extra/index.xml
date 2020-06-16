@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kable_extra | Dr. D.</title>
+    <link>/tag/kable_extra/</link>
+      <atom:link href="/tag/kable_extra/index.xml" rel="self" type="application/rss+xml" />
+    <description>kable_extra</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Thu, 20 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
+      <title>kable_extra</title>
+      <link>/tag/kable_extra/</link>
+    </image>
+    
+    <item>
+      <title>Fancifying Excel tables in R Markdown with kable_extra</title>
+      <link>/post/2017-07-20-fancifying-excel-tables-in-r-markdown-with-kable-extra/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/post/2017-07-20-fancifying-excel-tables-in-r-markdown-with-kable-extra/</guid>
+      <description>
+
+
+&lt;p&gt;I’m a big fan of automating all the things. Especially when it comes to teaching materials.
+I build my own course websites for each class I teach, where I post lecture materials, due
+dates and links to external resources. Posting it online instead of my campus’s LMS makes
+the materials accessible to not only my current students, but past and future students as well.&lt;/p&gt;
+&lt;p&gt;I need a schedule, so do my students. I’m not good at winging things. I want to know what’s
+coming up this week, and next so I can plan my time accordingly. Again, so do my students.
+The easiest way for me to manage a schedule of topics, assignments, exams, projects for an
+entire 16 week class (or more) is in Excel, but that’s far from web-ready.&lt;/p&gt;
+&lt;p&gt;This is a record of how I turned an Excel sheet into a nicely formatted web-ready schedule
+using &lt;code&gt;RMarkdown&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here is the structure of my excel file. Week number, date, day of the week, the topics
+we’re covering, what the students can do to prep for class, what i’m going to evaluate them
+on (HW, exams), and notes about the assignment. Things in green are for my eyes only.
+Note the asterisk between items in the cells. The line breaks are for easy visual separation of
+items in a list, the asterisk will be used in code to create a formal html list.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/excel_schedule.PNG&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;So first let’s load the necessary libraries and set options for &lt;code&gt;kable&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr);library(readxl); library(kableExtra); library(stringr)
+options(knitr.table.format = &amp;quot;html&amp;quot;, knitr.kable.NA = &amp;#39;&amp;#39;) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Read the data into &lt;code&gt;rawdat&lt;/code&gt;, reformat the date, make copies of the columns that need list
+processing: &lt;code&gt;topic, prep, eval&lt;/code&gt;. The filter is leftover from the Spring semester, after each
+exam I hide the weeks prior to that exam so that the most current and upcoming weeks are
+presented at the top of the table.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rawdat &amp;lt;- read_excel(&amp;quot;schedule_615.xlsx&amp;quot;)
+cdat   &amp;lt;- rawdat %&amp;gt;% mutate(Date = format(date, &amp;quot;%m/%d&amp;quot;), 
+                            Topics = topic, Preparation = prep, Evaluation = eval) %&amp;gt;% 
+              filter(as.Date(date) &amp;gt; &amp;quot;2017-04-01&amp;quot;) %&amp;gt;%
+              select(Wk, Date, Topics, Preparation, Evaluation, topic, prep, eval)&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;First I find the rows that have some content in them, store this as &lt;code&gt;topiclist&lt;/code&gt;. This
+ensures that I don’t get a list of &lt;code&gt;*NA&lt;/code&gt;’s.&lt;/li&gt;
+&lt;li&gt;Then I turn those three columns into formal html lists. I &lt;code&gt;paste0&lt;/code&gt; the content of &lt;code&gt;topic&lt;/code&gt; between
+starting &lt;code&gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&lt;/code&gt; and ending &lt;code&gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&lt;/code&gt; tags.&lt;/li&gt;
+&lt;li&gt;Lastly I use &lt;code&gt;str_replace&lt;/code&gt; from the &lt;code&gt;stringr&lt;/code&gt; package to replace the asterisk between list items
+with `
+&lt;/li&gt;
+&lt;li&gt;
+to end the first list item and start a second. Notice that there is no asterisk
+in the excel file in front of the first list item.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# parse topics - same code for all three vars. Yes I could have applied a function. 
+topiclist &amp;lt;- which(!is.na(cdat$topic))
+cdat$Topics[topiclist] &amp;lt;- paste0(&amp;quot;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;quot;, cdat$topic[topiclist], &amp;quot;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;quot;)
+cdat$Topics[topiclist] &amp;lt;- str_replace(cdat$Topics[topiclist], &amp;quot;\\*&amp;quot;, &amp;#39;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now I clean up the data frame using &lt;code&gt;select&lt;/code&gt; from &lt;code&gt;dplyr&lt;/code&gt; to only the variables I want to show,
+in the order I want to show. Then wrap &lt;code&gt;kable&lt;/code&gt; on the entire table.
+* &lt;code&gt;escape=FALSE&lt;/code&gt; is needed to process the html tags
+* &lt;code&gt;kable_styling&lt;/code&gt; adds some very nice customizations to the table, including a non-custom css
+method to adjust column spacing and row shading behavior using &lt;code&gt;hover, striped&lt;/code&gt; and &lt;code&gt;responsive&lt;/code&gt;
+so that the table maintains it’s width on a cell phone, but lets you scroll to the side to
+see the whole table.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;out &amp;lt;- select(cdat, Wk, Date, Topics, Preparation, Evaluation)
+
+knitr::kable(out, align=&amp;quot;l&amp;quot;, escape=FALSE) %&amp;gt;% 
+  kable_styling(bootstrap_options = c(&amp;quot;hover&amp;quot;, &amp;quot;striped&amp;quot;, &amp;quot;responsive&amp;quot;)) %&amp;gt;% 
+  column_spec(1, width=&amp;quot;1%&amp;quot;) %&amp;gt;% column_spec(2, width=&amp;quot;1%&amp;quot;) %&amp;gt;%
+  column_spec(3, width=&amp;quot;20%&amp;quot;) %&amp;gt;% column_spec(4, width=&amp;quot;30%&amp;quot;) %&amp;gt;%
+  column_spec(5, width=&amp;quot;30%&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The results can be seen on my &lt;a href=&#34;https://norcalbiostat.github.io/MATH615/schedule.html&#34;&gt;MATH 615 course website&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;kable_extra&lt;/code&gt; can apply a lot of neat table customization features that make creating professional tables in
+R markdown an actual possibility (without switching to &lt;span class=&#34;math inline&#34;&gt;\(\LaTeX\)&lt;/span&gt;\Sweave)
+I highly recommend you checking it out &lt;a href=&#34;http://haozhu233.github.io/kableExtra/&#34; class=&#34;uri&#34;&gt;http://haozhu233.github.io/kableExtra/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Having a nice automated framework like this makes my day-to-day life during the semester much easier.
+I just copy the &lt;code&gt;schedule.Rmd&lt;/code&gt; file into another class’s repo and just change the excel file that
+is read in. Make adjustments to the excel file as needed, rebuild and git push.
+(Typically 5 min before class to fix a typo)&lt;/p&gt;
+&lt;div id=&#34;session-info&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Session Info&lt;/h1&gt;
+&lt;p&gt;Note that since i’m using blogdown to write this post, many more packages are loaded than what is necessary
+for the topic of this post.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## R version 4.0.0 (2020-04-24)
+## Platform: x86_64-apple-darwin17.0 (64-bit)
+## Running under: macOS Mojave 10.14.6
+## 
+## Matrix products: default
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRblas.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] stringr_1.4.0    kableExtra_1.1.0 readxl_1.3.1     dplyr_0.8.5     
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_1.0.4.6      pillar_1.4.4      compiler_4.0.0    cellranger_1.1.0 
+##  [5] tools_4.0.0       digest_0.6.25     evaluate_0.14     lifecycle_0.2.0  
+##  [9] tibble_3.0.1      viridisLite_0.3.0 pkgconfig_2.0.3   rlang_0.4.6      
+## [13] rstudioapi_0.11   yaml_2.2.1        blogdown_0.19     xfun_0.14        
+## [17] httr_1.4.1        knitr_1.28        xml2_1.3.2        vctrs_0.3.0      
+## [21] hms_0.5.3         webshot_0.5.2     tidyselect_1.1.0  glue_1.4.1       
+## [25] R6_2.4.1          rmarkdown_2.1     bookdown_0.19     purrr_0.3.4      
+## [29] readr_1.3.1       magrittr_1.5      scales_1.1.1      ellipsis_0.3.1   
+## [33] htmltools_0.4.0   assertthat_0.2.1  rvest_0.3.5       colorspace_1.4-1 
+## [37] stringi_1.4.6     munsell_0.5.0     crayon_1.3.4&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

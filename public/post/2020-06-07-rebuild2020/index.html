@@ -244,7 +244,7 @@
     
       <meta property="article:published_time" content="2020-06-07T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-07T12:02:32-07:00">
+    <meta property="article:modified_time" content="2020-06-11T22:22:49-07:00">
   
 
   
@@ -273,7 +273,7 @@
   "headline": "Rebuilding this Site, Again, from Near Scratch",
   
   "datePublished": "2020-06-07T00:00:00Z",
-  "dateModified": "2020-06-07T12:02:32-07:00",
+  "dateModified": "2020-06-11T22:22:49-07:00",
   
   "author": {
     "@type": "Person",
@@ -604,7 +604,7 @@
           Last updated on
       
     
-    Jun 7, 2020
+    Jun 11, 2020
   </span>
   
 
@@ -613,7 +613,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    6 min read
+    7 min read
   </span>
   
 
@@ -785,7 +785,26 @@
 </li>
 <li>Worked! okay.. not bad at all.</li>
 </ul>
-<p>:note: You -can- Knit your <code>.Rmd</code> file to see what it looks like while working on it, just delete it before you save. It&rsquo;ll get re-rendered when you build site, in the &lsquo;proper&rsquo; format that&rsquo;s needed for display on a Hugo based website.</p>
+<p><strong>Attempt 2.</strong> Too many manual steps above.</p>
+<ul>
+<li>Copy <code>.md</code>/<code>.Rmd</code> into <code>content/post</code>.</li>
+<li>Make a new folder</li>
+<li>Use copy/paste magic to rename folder the same as the prior post</li>
+<li>Rename content file <code>index</code></li>
+<li>Use Rstudio Addin to <em>Update Metadata</em></li>
+</ul>
+<p>Serve site and&hellip; well turns out you don&rsquo;t even need that last step. Okay better. Posts are done.</p>
+<blockquote>
+<p>✏ You -can- Knit your <code>.Rmd</code> file to see what it looks like while working on it, just delete it before you save. It&rsquo;ll get re-rendered when you build site, in the &lsquo;proper&rsquo; format that&rsquo;s needed for display on a Hugo based website.</p>
+</blockquote>
+<blockquote>
+<p>❓ At the bottom of each post is info about the author (me), with a bio that&rsquo;s part of the default text. I need to find where this is at to remove it. Not necessary/desired for a single author page.</p>
+</blockquote>
+<h3 id="publications">Publications</h3>
+<p>Interesting change. Before, this was just a folder containing one <code>.md</code> file per pub. The Academic theme now has three subfolders, <code>conference-paper</code>, <code>journal-article</code> and <code>preprint</code>. The examples for each are really good to keep, so I &ldquo;commented out&rdquo; each pub by renaming <code>index.md</code> to <code>_index.md</code> and changed the folder name to <code>example-</code></p>
+<p>Lots of features here. If you&rsquo;re a python user, you can create a pub list based on a <code>.bib</code> file. For each pub you can also add a <code>cite.bib</code> file that ppl can use to easly get your citation. See the 
+<a href="https://sourcethemes.com/academic/docs/managing-content/#create-a-publication" target="_blank" rel="noopener">docs page</a> for details.</p>
+<p>Now this is a ton of work to update :(</p>
 
     </div>
 
@@ -1087,6 +1106,8 @@
       <li><a href="/project/nsc-poster/">College of Natural Sciences Poster Session Abstract Webpage</a></li>
       
       <li><a href="/project/dsi/">Data Science Initative</a></li>
+      
+      <li><a href="/post/2017-07-08-new-website-using-blogdown/">New website using Blogdown</a></li>
       
     </ul>
   </div>

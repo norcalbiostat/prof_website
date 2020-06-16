@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rstudio | Dr. D.</title>
+    <link>/tag/rstudio/</link>
+      <atom:link href="/tag/rstudio/index.xml" rel="self" type="application/rss+xml" />
+    <description>Rstudio</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Sun, 06 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
+      <title>Rstudio</title>
+      <link>/tag/rstudio/</link>
+    </image>
+    
+    <item>
+      <title>Getting Started with R and R Studio</title>
+      <link>/post/2017-08-06-software-overview/</link>
+      <pubDate>Sun, 06 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/post/2017-08-06-software-overview/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;Instructions and links for downloading and installing the R Studio suite of awesomeness. Includes a brief walkthrough of R Studio&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;R&lt;/strong&gt;  &amp;ndash; The programming language.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R Studio&lt;/strong&gt; &amp;ndash; A fantastic interface for coding in R.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LaTeX&lt;/strong&gt; &amp;ndash; Required to create PDF reports.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R Commander&lt;/strong&gt; &amp;ndash; A true to form GUI (point and click) for using R. (Optional)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;program-installation&#34;&gt;Program Installation&lt;/h1&gt;
+&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Download R from &lt;a href=&#34;https://cran.r-project.org/bin/windows/base/&#34;&gt;https://cran.r-project.org/bin/windows/base/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download &lt;strong&gt;R Studio Desktop (Free License)&lt;/strong&gt; from &lt;a href=&#34;http://www.rstudio.com/products/rstudio/download2/&#34;&gt;http://www.rstudio.com/products/rstudio/download2/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Double clicking on these will start the standard installation process.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.youtube.com/watch?v=Ohnk9hcxf9M&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video walkthrough&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;macintosh&#34;&gt;Macintosh&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Download R from &lt;a href=&#34;https://cran.r-project.org/bin/macosx/&#34;&gt;https://cran.r-project.org/bin/macosx/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download &lt;strong&gt;R Studio Desktop (Free License)&lt;/strong&gt; from &lt;a href=&#34;http://www.rstudio.com/products/rstudio/download2/&#34;&gt;http://www.rstudio.com/products/rstudio/download2/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.youtube.com/watch?v=uxuuWXU-7UQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video walkthrough&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Optional: Install via 
+&lt;a href=&#34;http://datascience.csuchico.edu/materials/install_r_with_homebrew.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homebrew&lt;/a&gt;. Guide courtesy of Justin Bankes (2017).&lt;/p&gt;
+&lt;h1 id=&#34;r-studio---a-tour&#34;&gt;R Studio - A tour&lt;/h1&gt;
+&lt;h3 id=&#34;initial-start&#34;&gt;Initial Start&lt;/h3&gt;
+&lt;p&gt;When you first (like very first time) open R studio you will see three panels.
+&lt;img src=&#34;/img/rstudio/rstudio-start.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;console&#34;&gt;Console&lt;/h3&gt;
+&lt;p&gt;The &lt;em&gt;console&lt;/em&gt; is the full panel on the left
+&lt;img src=&#34;/img/rstudio/rstudio-console.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Everytime you launch RStudio, it will have the same text at the top of the
+console telling you the version of R that you&amp;rsquo;re running.&lt;/li&gt;
+&lt;li&gt;Below that information is the &lt;em&gt;prompt&lt;/em&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt; . As its name suggests, this prompt is really a request, a request for a command.&lt;/li&gt;
+&lt;li&gt;Initially, interacting with R is all about typing commands and interpreting the output.&lt;/li&gt;
+&lt;li&gt;These commands and their syntax have evolved over decades (literally) and now provide what many users feel is a fairly natural way to access data and organize, describe, and invoke statistical computations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The console is where you type commands and have them immediately performed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-console-add.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;environment&#34;&gt;Environment&lt;/h3&gt;
+&lt;p&gt;The panel in the upper right contains your &lt;em&gt;workspace&lt;/em&gt; (aka Environment)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-env.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This shows you a list of objects/variables that R has saved.&lt;/li&gt;
+&lt;li&gt;For example here a value of 3 has been &lt;em&gt;assigned&lt;/em&gt; to the object &lt;code&gt;a&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-env-items.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;history&#34;&gt;History&lt;/h3&gt;
+&lt;p&gt;Up here there is an additional tab to see the &lt;em&gt;history&lt;/em&gt; of the commands that you&amp;rsquo;ve previously entered.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-history.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;files&#34;&gt;Files&lt;/h3&gt;
+&lt;p&gt;The files tab allows you to open code/script files within R studio.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-files.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;plots&#34;&gt;Plots&lt;/h3&gt;
+&lt;p&gt;Any plots that you generate will show up in the panel in the lower right corner.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-plot.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;getting-help&#34;&gt;Getting Help&lt;/h3&gt;
+&lt;p&gt;To check the syntax of any function in &lt;code&gt;R&lt;/code&gt;, type &lt;code&gt;?&lt;/code&gt; in front of the function name to pull up the help file.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-help.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For example here I typed &lt;code&gt;?mean&lt;/code&gt; to get the help file for the &lt;code&gt;mean&lt;/code&gt; function. Admittedly these aren&amp;rsquo;t the most helpful of files at times. This is where Google / stack overflow / R help list serves and 
+&lt;a href=&#34;https://groups.google.com/forum/#!forum/chico-rug&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R user groups&lt;/a&gt; can be your friend.&lt;/p&gt;
+&lt;h3 id=&#34;script-file-aka-code-file&#34;&gt;Script file (a.k.a code file)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Most often your R studio window will have 4 panels.&lt;/li&gt;
+&lt;li&gt;The top left is your editor window, where you write code or script, the console is now at the bottom. Sometimes it&amp;rsquo;s minimized, you can use the boxes in the top right corner of the console window to bring up the console.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-working.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When we type R code in a specific way up here, the results show up both
+right below the code you just typed, and in the console itself.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;2+2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-working-command.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;setting-preferences-to-retain-sanity&#34;&gt;Setting Preferences to retain sanity&lt;/h2&gt;
+&lt;h3 id=&#34;r-studio-preferences&#34;&gt;R Studio Preferences&lt;/h3&gt;
+&lt;p&gt;To avoid some of the most common errors when learning R let&amp;rsquo;s set some preferences in RStudio.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;On your computer, create a folder for your specific course in an easy to locate place.
+&lt;ul&gt;
+&lt;li&gt;Recommended paths are short, such as &lt;code&gt;C:/School/R&lt;/code&gt; or &lt;code&gt;~/rdonatello/School/MATH315&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;You will store all files associated with this class here.&lt;/li&gt;
+&lt;li&gt;Do not use any spaces in the folder name, and keep it simple.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;finding-your-path-on-a-mac&#34;&gt;Finding your path on a Mac&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Select the file or folder in the OS X Finder, then hit Command+i to summon Get Info&lt;/li&gt;
+&lt;li&gt;Get Info can also be accessed by the control-click and right-click menus.&lt;/li&gt;
+&lt;li&gt;Click and drag alongside &amp;ldquo;Where&amp;rdquo; to select the path, then hit Command+C to copy the full path to the clipboard&lt;/li&gt;
+&lt;li&gt;Paste this into &lt;code&gt;R&lt;/code&gt; for your path.&lt;/li&gt;
+&lt;li&gt;Make sure all slashes are forward slashes &lt;code&gt;/&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Mac Reference link: &lt;a href=&#34;http://bit.ly/1NxF9eu&#34;&gt;http://bit.ly/1NxF9eu&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;finding-your-path-on-windows&#34;&gt;Finding your path on Windows&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Windows Explorer and browse to the folder or file of your choice.&lt;/li&gt;
+&lt;li&gt;The path to the folder/file will be indicated in the Address bar of Windows Explorer.&lt;/li&gt;
+&lt;li&gt;To copy it, simply right-click on the Address bar and select &lt;em&gt;Copy address as text&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Paste this into &lt;code&gt;R&lt;/code&gt; for your path.&lt;/li&gt;
+&lt;li&gt;Make sure all slashes are forward slashes &lt;code&gt;/&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Windows Reference link: &lt;a href=&#34;http://bit.ly/1NxFeir&#34;&gt;http://bit.ly/1NxFeir&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;r-studio-preferences-1&#34;&gt;R Studio Preferences&lt;/h3&gt;
+&lt;p&gt;Continuing with the R Studio preferences,&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;In RStudio the file menu go to &lt;em&gt;Tools&lt;/em&gt; then &lt;em&gt;Global Options&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Uncheck &amp;ldquo;Restore .RData into workspace at startup&amp;rdquo; and &amp;ldquo;Always save history&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Where it says &amp;lsquo;Save workspace to .RData on exit:&amp;rdquo; Select &amp;lsquo;Never&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;apply&lt;/em&gt; then &lt;em&gt;ok&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;r-packages-how-things-get-done&#34;&gt;R packages: How things get done.&lt;/h2&gt;
+&lt;h4 id=&#34;installing-r-packages&#34;&gt;Installing R Packages&lt;/h4&gt;
+&lt;p&gt;Packages are sets of predefined code, functions and data sets. They provide additional functionality and goodies beyond what is included when you download Base R.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Packages are only installed once per computer (until you update R).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To install the &lt;code&gt;knitr&lt;/code&gt; package type the following command at the prompt &lt;code&gt;&amp;gt;&lt;/code&gt; and hit enter to submit the command.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&amp;quot;knitr&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Repeat the above to install the following packages, remembering &lt;code&gt;R&lt;/code&gt; is case sensitive: &lt;code&gt;rmarkdown&lt;/code&gt;, &lt;code&gt;kableExtra&lt;/code&gt;, &lt;code&gt;gridExtra&lt;/code&gt;, &lt;code&gt;tidyverse&lt;/code&gt;, &lt;code&gt;knitr&lt;/code&gt;, &lt;code&gt;nycflights13&lt;/code&gt; and &lt;code&gt;hflights&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;installing-r-packages---shortcut&#34;&gt;Installing R Packages - Shortcut&lt;/h4&gt;
+&lt;p&gt;You can install multiple packages at once by combining the list of package
+names using the collection operator &lt;code&gt;c()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(c(&amp;quot;rmarkdown&amp;quot;, &amp;quot;tidyverse&amp;quot;, &amp;quot;gridExtra&amp;quot;, &amp;quot;kableExtra&amp;quot;,
+      &amp;quot;knitr&amp;quot;, &amp;quot;nycflights13&amp;quot;,&amp;quot;hflights&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;latex---professional-reporting&#34;&gt;LaTeX - professional reporting&lt;/h1&gt;
+&lt;h3 id=&#34;make-nice-pdf-reports-and-presentations&#34;&gt;Make nice PDF reports and presentations.&lt;/h3&gt;
+&lt;p&gt;LaTeX allows you to turn your reports into a nicely formatted PDF document.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install once and forget about it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Download from: &lt;a href=&#34;https://www.latex-project.org/get/&#34;&gt;https://www.latex-project.org/get/&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows: I have had best luck with proTeXt&lt;/li&gt;
+&lt;li&gt;Suck it up and get the 2G download for less headache later. (Don&amp;rsquo;t do this on the campus wifi during class time.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can edit *tex files directly in R Studio, a separate tex editor is not necessary.&lt;/p&gt;
+&lt;h1 id=&#34;r-commander-pointing-and-clicking-your-way-along&#34;&gt;R Commander: Pointing and clicking your way along&lt;/h1&gt;
+&lt;h4 id=&#34;a-basic-statistics-gui-for-r&#34;&gt;A Basic Statistics GUI for R&lt;/h4&gt;
+&lt;center&gt;
+&lt;img src=&#34;http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/Rcmdr-screenshot.jpg&#34; style=&#34;width: 500px;&#34;/&gt;
+&lt;/center&gt;
+&lt;h4 id=&#34;additional-setup-for-r-commander&#34;&gt;Additional setup for R Commander&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Install via the &lt;code&gt;Rcmdr&lt;/code&gt; package.&lt;/li&gt;
+&lt;li&gt;Website: &lt;a href=&#34;http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/&#34;&gt;http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;You will need to install Pandoc converter engine if you want to create PDF
+output as Rcmdr uses the old markdown package which only can create HTML output.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;more-help&#34;&gt;More help&lt;/h1&gt;
+&lt;p&gt;For more help and/or places to start learning, I would recommend starting with the resources R Studio already has curated for you.
+&lt;a href=&#34;https://www.rstudio.com/online-learning/&#34;&gt;https://www.rstudio.com/online-learning/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

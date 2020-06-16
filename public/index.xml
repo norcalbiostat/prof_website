@@ -259,7 +259,26 @@
 &lt;/li&gt;
 &lt;li&gt;Worked! okay.. not bad at all.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;:note: You -can- Knit your &lt;code&gt;.Rmd&lt;/code&gt; file to see what it looks like while working on it, just delete it before you save. It&amp;rsquo;ll get re-rendered when you build site, in the &amp;lsquo;proper&amp;rsquo; format that&amp;rsquo;s needed for display on a Hugo based website.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Attempt 2.&lt;/strong&gt; Too many manual steps above.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Copy &lt;code&gt;.md&lt;/code&gt;/&lt;code&gt;.Rmd&lt;/code&gt; into &lt;code&gt;content/post&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Make a new folder&lt;/li&gt;
+&lt;li&gt;Use copy/paste magic to rename folder the same as the prior post&lt;/li&gt;
+&lt;li&gt;Rename content file &lt;code&gt;index&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Use Rstudio Addin to &lt;em&gt;Update Metadata&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Serve site and&amp;hellip; well turns out you don&amp;rsquo;t even need that last step. Okay better. Posts are done.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;✏ You -can- Knit your &lt;code&gt;.Rmd&lt;/code&gt; file to see what it looks like while working on it, just delete it before you save. It&amp;rsquo;ll get re-rendered when you build site, in the &amp;lsquo;proper&amp;rsquo; format that&amp;rsquo;s needed for display on a Hugo based website.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❓ At the bottom of each post is info about the author (me), with a bio that&amp;rsquo;s part of the default text. I need to find where this is at to remove it. Not necessary/desired for a single author page.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;publications&#34;&gt;Publications&lt;/h3&gt;
+&lt;p&gt;Interesting change. Before, this was just a folder containing one &lt;code&gt;.md&lt;/code&gt; file per pub. The Academic theme now has three subfolders, &lt;code&gt;conference-paper&lt;/code&gt;, &lt;code&gt;journal-article&lt;/code&gt; and &lt;code&gt;preprint&lt;/code&gt;. The examples for each are really good to keep, so I &amp;ldquo;commented out&amp;rdquo; each pub by renaming &lt;code&gt;index.md&lt;/code&gt; to &lt;code&gt;_index.md&lt;/code&gt; and changed the folder name to &lt;code&gt;example-&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Lots of features here. If you&amp;rsquo;re a python user, you can create a pub list based on a &lt;code&gt;.bib&lt;/code&gt; file. For each pub you can also add a &lt;code&gt;cite.bib&lt;/code&gt; file that ppl can use to easly get your citation. See the 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-publication&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;docs page&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;Now this is a ton of work to update :(&lt;/p&gt;
 </description>
     </item>
     
@@ -277,21 +296,6 @@
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/project/chem-ss/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>An example preprint / working paper</title>
-      <link>/publication/preprint/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/preprint/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
-</description>
     </item>
     
     <item>
@@ -425,6 +429,19 @@ Three
 &lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Missing data and bias in physics education research- A case for using multiple imputation</title>
+      <link>/publication/mi_per/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/mi_per/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -600,42 +617,342 @@ head(eColi_abs)&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
-      <title>An example journal article</title>
-      <link>/publication/journal-article/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/journal-article/</guid>
+      <title>Insights into the fundamental physiology of the uncultured FE-oxidizing bacterium Leptothrix ochracea</title>
+      <link>/publication/leptothrix/</link>
+      <pubDate>Fri, 16 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/leptothrix/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>An example conference paper</title>
-      <link>/publication/conference-paper/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/conference-paper/</guid>
+      <title>Insights into the fundamental physiology of the uncultured FE-oxidizing bacterium Leptothrix ochracea</title>
+      <link>/publication/patterns/</link>
+      <pubDate>Fri, 16 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/patterns/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&#34;alert alert-note&#34;&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Insights into the fundamental physiology of the uncultured FE-oxidizing bacterium Leptothrix ochracea</title>
+      <link>/publication/pc_nurses/</link>
+      <pubDate>Fri, 16 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/pc_nurses/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with R and R Studio</title>
+      <link>/post/2017-08-06-software-overview/</link>
+      <pubDate>Sun, 06 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>/post/2017-08-06-software-overview/</guid>
+      <description>&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;Instructions and links for downloading and installing the R Studio suite of awesomeness. Includes a brief walkthrough of R Studio&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;R&lt;/strong&gt;  &amp;ndash; The programming language.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R Studio&lt;/strong&gt; &amp;ndash; A fantastic interface for coding in R.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LaTeX&lt;/strong&gt; &amp;ndash; Required to create PDF reports.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R Commander&lt;/strong&gt; &amp;ndash; A true to form GUI (point and click) for using R. (Optional)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;program-installation&#34;&gt;Program Installation&lt;/h1&gt;
+&lt;h2 id=&#34;windows&#34;&gt;Windows&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Download R from &lt;a href=&#34;https://cran.r-project.org/bin/windows/base/&#34;&gt;https://cran.r-project.org/bin/windows/base/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download &lt;strong&gt;R Studio Desktop (Free License)&lt;/strong&gt; from &lt;a href=&#34;http://www.rstudio.com/products/rstudio/download2/&#34;&gt;http://www.rstudio.com/products/rstudio/download2/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Double clicking on these will start the standard installation process.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.youtube.com/watch?v=Ohnk9hcxf9M&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video walkthrough&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;macintosh&#34;&gt;Macintosh&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Download R from &lt;a href=&#34;https://cran.r-project.org/bin/macosx/&#34;&gt;https://cran.r-project.org/bin/macosx/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download &lt;strong&gt;R Studio Desktop (Free License)&lt;/strong&gt; from &lt;a href=&#34;http://www.rstudio.com/products/rstudio/download2/&#34;&gt;http://www.rstudio.com/products/rstudio/download2/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.youtube.com/watch?v=uxuuWXU-7UQ&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Video walkthrough&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Optional: Install via 
+&lt;a href=&#34;http://datascience.csuchico.edu/materials/install_r_with_homebrew.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Homebrew&lt;/a&gt;. Guide courtesy of Justin Bankes (2017).&lt;/p&gt;
+&lt;h1 id=&#34;r-studio---a-tour&#34;&gt;R Studio - A tour&lt;/h1&gt;
+&lt;h3 id=&#34;initial-start&#34;&gt;Initial Start&lt;/h3&gt;
+&lt;p&gt;When you first (like very first time) open R studio you will see three panels.
+&lt;img src=&#34;/img/rstudio/rstudio-start.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;console&#34;&gt;Console&lt;/h3&gt;
+&lt;p&gt;The &lt;em&gt;console&lt;/em&gt; is the full panel on the left
+&lt;img src=&#34;/img/rstudio/rstudio-console.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Everytime you launch RStudio, it will have the same text at the top of the
+console telling you the version of R that you&amp;rsquo;re running.&lt;/li&gt;
+&lt;li&gt;Below that information is the &lt;em&gt;prompt&lt;/em&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt; . As its name suggests, this prompt is really a request, a request for a command.&lt;/li&gt;
+&lt;li&gt;Initially, interacting with R is all about typing commands and interpreting the output.&lt;/li&gt;
+&lt;li&gt;These commands and their syntax have evolved over decades (literally) and now provide what many users feel is a fairly natural way to access data and organize, describe, and invoke statistical computations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The console is where you type commands and have them immediately performed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-console-add.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;environment&#34;&gt;Environment&lt;/h3&gt;
+&lt;p&gt;The panel in the upper right contains your &lt;em&gt;workspace&lt;/em&gt; (aka Environment)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-env.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This shows you a list of objects/variables that R has saved.&lt;/li&gt;
+&lt;li&gt;For example here a value of 3 has been &lt;em&gt;assigned&lt;/em&gt; to the object &lt;code&gt;a&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-env-items.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;history&#34;&gt;History&lt;/h3&gt;
+&lt;p&gt;Up here there is an additional tab to see the &lt;em&gt;history&lt;/em&gt; of the commands that you&amp;rsquo;ve previously entered.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-history.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;files&#34;&gt;Files&lt;/h3&gt;
+&lt;p&gt;The files tab allows you to open code/script files within R studio.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-files.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;plots&#34;&gt;Plots&lt;/h3&gt;
+&lt;p&gt;Any plots that you generate will show up in the panel in the lower right corner.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-plot.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;getting-help&#34;&gt;Getting Help&lt;/h3&gt;
+&lt;p&gt;To check the syntax of any function in &lt;code&gt;R&lt;/code&gt;, type &lt;code&gt;?&lt;/code&gt; in front of the function name to pull up the help file.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-help.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For example here I typed &lt;code&gt;?mean&lt;/code&gt; to get the help file for the &lt;code&gt;mean&lt;/code&gt; function. Admittedly these aren&amp;rsquo;t the most helpful of files at times. This is where Google / stack overflow / R help list serves and 
+&lt;a href=&#34;https://groups.google.com/forum/#!forum/chico-rug&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R user groups&lt;/a&gt; can be your friend.&lt;/p&gt;
+&lt;h3 id=&#34;script-file-aka-code-file&#34;&gt;Script file (a.k.a code file)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Most often your R studio window will have 4 panels.&lt;/li&gt;
+&lt;li&gt;The top left is your editor window, where you write code or script, the console is now at the bottom. Sometimes it&amp;rsquo;s minimized, you can use the boxes in the top right corner of the console window to bring up the console.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-working.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When we type R code in a specific way up here, the results show up both
+right below the code you just typed, and in the console itself.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;2+2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-working-command.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;setting-preferences-to-retain-sanity&#34;&gt;Setting Preferences to retain sanity&lt;/h2&gt;
+&lt;h3 id=&#34;r-studio-preferences&#34;&gt;R Studio Preferences&lt;/h3&gt;
+&lt;p&gt;To avoid some of the most common errors when learning R let&amp;rsquo;s set some preferences in RStudio.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;On your computer, create a folder for your specific course in an easy to locate place.
+&lt;ul&gt;
+&lt;li&gt;Recommended paths are short, such as &lt;code&gt;C:/School/R&lt;/code&gt; or &lt;code&gt;~/rdonatello/School/MATH315&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;You will store all files associated with this class here.&lt;/li&gt;
+&lt;li&gt;Do not use any spaces in the folder name, and keep it simple.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;finding-your-path-on-a-mac&#34;&gt;Finding your path on a Mac&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Select the file or folder in the OS X Finder, then hit Command+i to summon Get Info&lt;/li&gt;
+&lt;li&gt;Get Info can also be accessed by the control-click and right-click menus.&lt;/li&gt;
+&lt;li&gt;Click and drag alongside &amp;ldquo;Where&amp;rdquo; to select the path, then hit Command+C to copy the full path to the clipboard&lt;/li&gt;
+&lt;li&gt;Paste this into &lt;code&gt;R&lt;/code&gt; for your path.&lt;/li&gt;
+&lt;li&gt;Make sure all slashes are forward slashes &lt;code&gt;/&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Mac Reference link: &lt;a href=&#34;http://bit.ly/1NxF9eu&#34;&gt;http://bit.ly/1NxF9eu&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;finding-your-path-on-windows&#34;&gt;Finding your path on Windows&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Open Windows Explorer and browse to the folder or file of your choice.&lt;/li&gt;
+&lt;li&gt;The path to the folder/file will be indicated in the Address bar of Windows Explorer.&lt;/li&gt;
+&lt;li&gt;To copy it, simply right-click on the Address bar and select &lt;em&gt;Copy address as text&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Paste this into &lt;code&gt;R&lt;/code&gt; for your path.&lt;/li&gt;
+&lt;li&gt;Make sure all slashes are forward slashes &lt;code&gt;/&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Windows Reference link: &lt;a href=&#34;http://bit.ly/1NxFeir&#34;&gt;http://bit.ly/1NxFeir&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;r-studio-preferences-1&#34;&gt;R Studio Preferences&lt;/h3&gt;
+&lt;p&gt;Continuing with the R Studio preferences,&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;In RStudio the file menu go to &lt;em&gt;Tools&lt;/em&gt; then &lt;em&gt;Global Options&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Uncheck &amp;ldquo;Restore .RData into workspace at startup&amp;rdquo; and &amp;ldquo;Always save history&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Where it says &amp;lsquo;Save workspace to .RData on exit:&amp;rdquo; Select &amp;lsquo;Never&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;apply&lt;/em&gt; then &lt;em&gt;ok&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;r-packages-how-things-get-done&#34;&gt;R packages: How things get done.&lt;/h2&gt;
+&lt;h4 id=&#34;installing-r-packages&#34;&gt;Installing R Packages&lt;/h4&gt;
+&lt;p&gt;Packages are sets of predefined code, functions and data sets. They provide additional functionality and goodies beyond what is included when you download Base R.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Packages are only installed once per computer (until you update R).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To install the &lt;code&gt;knitr&lt;/code&gt; package type the following command at the prompt &lt;code&gt;&amp;gt;&lt;/code&gt; and hit enter to submit the command.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&amp;quot;knitr&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Repeat the above to install the following packages, remembering &lt;code&gt;R&lt;/code&gt; is case sensitive: &lt;code&gt;rmarkdown&lt;/code&gt;, &lt;code&gt;kableExtra&lt;/code&gt;, &lt;code&gt;gridExtra&lt;/code&gt;, &lt;code&gt;tidyverse&lt;/code&gt;, &lt;code&gt;knitr&lt;/code&gt;, &lt;code&gt;nycflights13&lt;/code&gt; and &lt;code&gt;hflights&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;installing-r-packages---shortcut&#34;&gt;Installing R Packages - Shortcut&lt;/h4&gt;
+&lt;p&gt;You can install multiple packages at once by combining the list of package
+names using the collection operator &lt;code&gt;c()&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(c(&amp;quot;rmarkdown&amp;quot;, &amp;quot;tidyverse&amp;quot;, &amp;quot;gridExtra&amp;quot;, &amp;quot;kableExtra&amp;quot;,
+      &amp;quot;knitr&amp;quot;, &amp;quot;nycflights13&amp;quot;,&amp;quot;hflights&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;latex---professional-reporting&#34;&gt;LaTeX - professional reporting&lt;/h1&gt;
+&lt;h3 id=&#34;make-nice-pdf-reports-and-presentations&#34;&gt;Make nice PDF reports and presentations.&lt;/h3&gt;
+&lt;p&gt;LaTeX allows you to turn your reports into a nicely formatted PDF document.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install once and forget about it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Download from: &lt;a href=&#34;https://www.latex-project.org/get/&#34;&gt;https://www.latex-project.org/get/&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows: I have had best luck with proTeXt&lt;/li&gt;
+&lt;li&gt;Suck it up and get the 2G download for less headache later. (Don&amp;rsquo;t do this on the campus wifi during class time.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can edit *tex files directly in R Studio, a separate tex editor is not necessary.&lt;/p&gt;
+&lt;h1 id=&#34;r-commander-pointing-and-clicking-your-way-along&#34;&gt;R Commander: Pointing and clicking your way along&lt;/h1&gt;
+&lt;h4 id=&#34;a-basic-statistics-gui-for-r&#34;&gt;A Basic Statistics GUI for R&lt;/h4&gt;
+&lt;center&gt;
+&lt;img src=&#34;http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/Rcmdr-screenshot.jpg&#34; style=&#34;width: 500px;&#34;/&gt;
+&lt;/center&gt;
+&lt;h4 id=&#34;additional-setup-for-r-commander&#34;&gt;Additional setup for R Commander&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Install via the &lt;code&gt;Rcmdr&lt;/code&gt; package.&lt;/li&gt;
+&lt;li&gt;Website: &lt;a href=&#34;http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/&#34;&gt;http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;You will need to install Pandoc converter engine if you want to create PDF
+output as Rcmdr uses the old markdown package which only can create HTML output.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;more-help&#34;&gt;More help&lt;/h1&gt;
+&lt;p&gt;For more help and/or places to start learning, I would recommend starting with the resources R Studio already has curated for you.
+&lt;a href=&#34;https://www.rstudio.com/online-learning/&#34;&gt;https://www.rstudio.com/online-learning/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fancifying Excel tables in R Markdown with kable_extra</title>
+      <link>/post/2017-07-20-fancifying-excel-tables-in-r-markdown-with-kable-extra/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/post/2017-07-20-fancifying-excel-tables-in-r-markdown-with-kable-extra/</guid>
+      <description>
+
+
+&lt;p&gt;I’m a big fan of automating all the things. Especially when it comes to teaching materials.
+I build my own course websites for each class I teach, where I post lecture materials, due
+dates and links to external resources. Posting it online instead of my campus’s LMS makes
+the materials accessible to not only my current students, but past and future students as well.&lt;/p&gt;
+&lt;p&gt;I need a schedule, so do my students. I’m not good at winging things. I want to know what’s
+coming up this week, and next so I can plan my time accordingly. Again, so do my students.
+The easiest way for me to manage a schedule of topics, assignments, exams, projects for an
+entire 16 week class (or more) is in Excel, but that’s far from web-ready.&lt;/p&gt;
+&lt;p&gt;This is a record of how I turned an Excel sheet into a nicely formatted web-ready schedule
+using &lt;code&gt;RMarkdown&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Here is the structure of my excel file. Week number, date, day of the week, the topics
+we’re covering, what the students can do to prep for class, what i’m going to evaluate them
+on (HW, exams), and notes about the assignment. Things in green are for my eyes only.
+Note the asterisk between items in the cells. The line breaks are for easy visual separation of
+items in a list, the asterisk will be used in code to create a formal html list.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../img/excel_schedule.PNG&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;So first let’s load the necessary libraries and set options for &lt;code&gt;kable&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dplyr);library(readxl); library(kableExtra); library(stringr)
+options(knitr.table.format = &amp;quot;html&amp;quot;, knitr.kable.NA = &amp;#39;&amp;#39;) &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Read the data into &lt;code&gt;rawdat&lt;/code&gt;, reformat the date, make copies of the columns that need list
+processing: &lt;code&gt;topic, prep, eval&lt;/code&gt;. The filter is leftover from the Spring semester, after each
+exam I hide the weeks prior to that exam so that the most current and upcoming weeks are
+presented at the top of the table.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rawdat &amp;lt;- read_excel(&amp;quot;schedule_615.xlsx&amp;quot;)
+cdat   &amp;lt;- rawdat %&amp;gt;% mutate(Date = format(date, &amp;quot;%m/%d&amp;quot;), 
+                            Topics = topic, Preparation = prep, Evaluation = eval) %&amp;gt;% 
+              filter(as.Date(date) &amp;gt; &amp;quot;2017-04-01&amp;quot;) %&amp;gt;%
+              select(Wk, Date, Topics, Preparation, Evaluation, topic, prep, eval)&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;First I find the rows that have some content in them, store this as &lt;code&gt;topiclist&lt;/code&gt;. This
+ensures that I don’t get a list of &lt;code&gt;*NA&lt;/code&gt;’s.&lt;/li&gt;
+&lt;li&gt;Then I turn those three columns into formal html lists. I &lt;code&gt;paste0&lt;/code&gt; the content of &lt;code&gt;topic&lt;/code&gt; between
+starting &lt;code&gt;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&lt;/code&gt; and ending &lt;code&gt;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&lt;/code&gt; tags.&lt;/li&gt;
+&lt;li&gt;Lastly I use &lt;code&gt;str_replace&lt;/code&gt; from the &lt;code&gt;stringr&lt;/code&gt; package to replace the asterisk between list items
+with `
+&lt;/li&gt;
+&lt;li&gt;
+to end the first list item and start a second. Notice that there is no asterisk
+in the excel file in front of the first list item.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# parse topics - same code for all three vars. Yes I could have applied a function. 
+topiclist &amp;lt;- which(!is.na(cdat$topic))
+cdat$Topics[topiclist] &amp;lt;- paste0(&amp;quot;&amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;&amp;quot;, cdat$topic[topiclist], &amp;quot;&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;quot;)
+cdat$Topics[topiclist] &amp;lt;- str_replace(cdat$Topics[topiclist], &amp;quot;\\*&amp;quot;, &amp;#39;&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now I clean up the data frame using &lt;code&gt;select&lt;/code&gt; from &lt;code&gt;dplyr&lt;/code&gt; to only the variables I want to show,
+in the order I want to show. Then wrap &lt;code&gt;kable&lt;/code&gt; on the entire table.
+* &lt;code&gt;escape=FALSE&lt;/code&gt; is needed to process the html tags
+* &lt;code&gt;kable_styling&lt;/code&gt; adds some very nice customizations to the table, including a non-custom css
+method to adjust column spacing and row shading behavior using &lt;code&gt;hover, striped&lt;/code&gt; and &lt;code&gt;responsive&lt;/code&gt;
+so that the table maintains it’s width on a cell phone, but lets you scroll to the side to
+see the whole table.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;out &amp;lt;- select(cdat, Wk, Date, Topics, Preparation, Evaluation)
+
+knitr::kable(out, align=&amp;quot;l&amp;quot;, escape=FALSE) %&amp;gt;% 
+  kable_styling(bootstrap_options = c(&amp;quot;hover&amp;quot;, &amp;quot;striped&amp;quot;, &amp;quot;responsive&amp;quot;)) %&amp;gt;% 
+  column_spec(1, width=&amp;quot;1%&amp;quot;) %&amp;gt;% column_spec(2, width=&amp;quot;1%&amp;quot;) %&amp;gt;%
+  column_spec(3, width=&amp;quot;20%&amp;quot;) %&amp;gt;% column_spec(4, width=&amp;quot;30%&amp;quot;) %&amp;gt;%
+  column_spec(5, width=&amp;quot;30%&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The results can be seen on my &lt;a href=&#34;https://norcalbiostat.github.io/MATH615/schedule.html&#34;&gt;MATH 615 course website&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;kable_extra&lt;/code&gt; can apply a lot of neat table customization features that make creating professional tables in
+R markdown an actual possibility (without switching to &lt;span class=&#34;math inline&#34;&gt;\(\LaTeX\)&lt;/span&gt;\Sweave)
+I highly recommend you checking it out &lt;a href=&#34;http://haozhu233.github.io/kableExtra/&#34; class=&#34;uri&#34;&gt;http://haozhu233.github.io/kableExtra/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Having a nice automated framework like this makes my day-to-day life during the semester much easier.
+I just copy the &lt;code&gt;schedule.Rmd&lt;/code&gt; file into another class’s repo and just change the excel file that
+is read in. Make adjustments to the excel file as needed, rebuild and git push.
+(Typically 5 min before class to fix a typo)&lt;/p&gt;
+&lt;div id=&#34;session-info&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Session Info&lt;/h1&gt;
+&lt;p&gt;Note that since i’m using blogdown to write this post, many more packages are loaded than what is necessary
+for the topic of this post.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## R version 4.0.0 (2020-04-24)
+## Platform: x86_64-apple-darwin17.0 (64-bit)
+## Running under: macOS Mojave 10.14.6
+## 
+## Matrix products: default
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRblas.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] stringr_1.4.0    kableExtra_1.1.0 readxl_1.3.1     dplyr_0.8.5     
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_1.0.4.6      pillar_1.4.4      compiler_4.0.0    cellranger_1.1.0 
+##  [5] tools_4.0.0       digest_0.6.25     evaluate_0.14     lifecycle_0.2.0  
+##  [9] tibble_3.0.1      viridisLite_0.3.0 pkgconfig_2.0.3   rlang_0.4.6      
+## [13] rstudioapi_0.11   yaml_2.2.1        blogdown_0.19     xfun_0.14        
+## [17] httr_1.4.1        knitr_1.28        xml2_1.3.2        vctrs_0.3.0      
+## [21] hms_0.5.3         webshot_0.5.2     tidyselect_1.1.0  glue_1.4.1       
+## [25] R6_2.4.1          rmarkdown_2.1     bookdown_0.19     purrr_0.3.4      
+## [29] readr_1.3.1       magrittr_1.5      scales_1.1.1      ellipsis_0.3.1   
+## [33] htmltools_0.4.0   assertthat_0.2.1  rvest_0.3.5       colorspace_1.4-1 
+## [37] stringi_1.4.6     munsell_0.5.0     crayon_1.3.4&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New website using Blogdown</title>
+      <link>/post/2017-07-08-new-website-using-blogdown/</link>
+      <pubDate>Sat, 08 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/post/2017-07-08-new-website-using-blogdown/</guid>
+      <description>&lt;p&gt;As a teacher, i&amp;rsquo;m on a 9 month contract. That means technically I don&amp;rsquo;t &amp;ldquo;work&amp;rdquo; over summer. However as &lt;em&gt;any&lt;/em&gt; academic can tell you, that&amp;rsquo;s not how it goes. Everyone works over summer, it&amp;rsquo;s just what they work on (and when they work on it) is more of a personal preference. Some get grants and work with students, some are busy working in the labs to advance their own research. Some even decide to teach summer school (I&amp;rsquo;m not quite that crazy yet). All of us eventually have to start to get their lesson plans going for the fall. It creeps up on you faster than you realize!&lt;/p&gt;
+&lt;p&gt;For me, my summer schedule consists of morning gardening, little time on video games, responding to the easy emails, assessing any mandatory chores my nephews may have to do for the day and then hard coding what i&amp;rsquo;m going to spend my energy on today. I always have a plethora of projects going on. This summer I have three consulting projects, writing a book chapter, editing a manuscript, two websites to redesign and eventually update lecture notes and course webpages for Fall. My pokemon for today was to work on the website(s).&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been playing with building personal and project websites for a while. Years ago I started with WordPress, but was disenchanted with it pretty fast (Years and years ago I wrote html directly, but that was like baby coding 1.0). Then I moved to using Rmarkdown (&lt;code&gt;rmd&lt;/code&gt;) files with manual links between pages to build my course website - hosting them in Git Hub. Worked well but very limited, always forgetting to push updates before class, broken links (damn case sensitivity).&lt;/p&gt;
+&lt;p&gt;Recently I used R Studio to build an entire website to display an e-portfolio for a Sustaining Success project for a Course Redesign in a first semester Chemistry class. I&amp;rsquo;m pretty damned happy with it. You can see this work 
+&lt;a href=&#34;https://norcalbiostat.github.io/chem_ss/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Still not good enough for a fully academic website. I&amp;rsquo;ve been eyeballing varying themes and sites using Jekyll for over a year, never fully getting one implemented. Something either just wasn&amp;rsquo;t quite right or didn&amp;rsquo;t work well with my workflow.&lt;/p&gt;
+&lt;p&gt;Then along comes 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;. Extremely happy with what Yihui Xie has been doing with Rmarkdown in general I watched a webinar and was sold on trying it.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been pretty much following 
+&lt;a href=&#34;https://apreshill.rbind.io/post/up-and-running-with-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alison Presmanes Hill&amp;rsquo;s walk through&lt;/a&gt;.
+Needless to say i&amp;rsquo;m currently on section 6.5.2: New markdown posts ;) So far this has been &lt;strong&gt;really&lt;/strong&gt; easy and straight forward to implement.&lt;/p&gt;
+&lt;p&gt;So, post #1 done. Moving on to section 7: Deploy in Netlify. Yet another new program/site/thing to learn but i&amp;rsquo;m excited and I think it&amp;rsquo;ll be easy. Can&amp;rsquo;t wait to see this new site live!&lt;/p&gt;
 </description>
     </item>
     

@@ -138,7 +138,28 @@ Ah! This is where I got the info about the slug from!
     - This would be a HUGE PAIN if I had a lot of these... 
 * Worked! okay.. not bad at all. 
 
-:note: You -can- Knit your `.Rmd` file to see what it looks like while working on it, just delete it before you save. It'll get re-rendered when you build site, in the 'proper' format that's needed for display on a Hugo based website. 
+**Attempt 2.** Too many manual steps above.
+* Copy `.md`/`.Rmd` into `content/post`.
+* Make a new folder
+* Use copy/paste magic to rename folder the same as the prior post
+* Rename content file `index`
+* Use Rstudio Addin to _Update Metadata_
+
+Serve site and... well turns out you don't even need that last step. Okay better. Posts are done. 
+
+
+> :pencil: You -can- Knit your `.Rmd` file to see what it looks like while working on it, just delete it before you save. It'll get re-rendered when you build site, in the 'proper' format that's needed for display on a Hugo based website. 
+
+> :question: At the bottom of each post is info about the author (me), with a bio that's part of the default text. I need to find where this is at to remove it. Not necessary/desired for a single author page. 
+
+
+### Publications
+
+Interesting change. Before, this was just a folder containing one `.md` file per pub. The Academic theme now has three subfolders, `conference-paper`, `journal-article` and `preprint`. The examples for each are really good to keep, so I "commented out" each pub by renaming `index.md` to `_index.md` and changed the folder name to `example-`
+
+Lots of features here. If you're a python user, you can create a pub list based on a `.bib` file. For each pub you can also add a `cite.bib` file that ppl can use to easly get your citation. See the [docs page](https://sourcethemes.com/academic/docs/managing-content/#create-a-publication) for details. 
+
+Now this is a ton of work to update :(
 
 
 

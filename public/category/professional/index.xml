@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>professional | Dr. D.</title>
+    <link>/category/professional/</link>
+      <atom:link href="/category/professional/index.xml" rel="self" type="application/rss+xml" />
+    <description>professional</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Sat, 08 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
+      <title>professional</title>
+      <link>/category/professional/</link>
+    </image>
+    
+    <item>
+      <title>New website using Blogdown</title>
+      <link>/post/2017-07-08-new-website-using-blogdown/</link>
+      <pubDate>Sat, 08 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/post/2017-07-08-new-website-using-blogdown/</guid>
+      <description>&lt;p&gt;As a teacher, i&amp;rsquo;m on a 9 month contract. That means technically I don&amp;rsquo;t &amp;ldquo;work&amp;rdquo; over summer. However as &lt;em&gt;any&lt;/em&gt; academic can tell you, that&amp;rsquo;s not how it goes. Everyone works over summer, it&amp;rsquo;s just what they work on (and when they work on it) is more of a personal preference. Some get grants and work with students, some are busy working in the labs to advance their own research. Some even decide to teach summer school (I&amp;rsquo;m not quite that crazy yet). All of us eventually have to start to get their lesson plans going for the fall. It creeps up on you faster than you realize!&lt;/p&gt;
+&lt;p&gt;For me, my summer schedule consists of morning gardening, little time on video games, responding to the easy emails, assessing any mandatory chores my nephews may have to do for the day and then hard coding what i&amp;rsquo;m going to spend my energy on today. I always have a plethora of projects going on. This summer I have three consulting projects, writing a book chapter, editing a manuscript, two websites to redesign and eventually update lecture notes and course webpages for Fall. My pokemon for today was to work on the website(s).&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been playing with building personal and project websites for a while. Years ago I started with WordPress, but was disenchanted with it pretty fast (Years and years ago I wrote html directly, but that was like baby coding 1.0). Then I moved to using Rmarkdown (&lt;code&gt;rmd&lt;/code&gt;) files with manual links between pages to build my course website - hosting them in Git Hub. Worked well but very limited, always forgetting to push updates before class, broken links (damn case sensitivity).&lt;/p&gt;
+&lt;p&gt;Recently I used R Studio to build an entire website to display an e-portfolio for a Sustaining Success project for a Course Redesign in a first semester Chemistry class. I&amp;rsquo;m pretty damned happy with it. You can see this work 
+&lt;a href=&#34;https://norcalbiostat.github.io/chem_ss/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Still not good enough for a fully academic website. I&amp;rsquo;ve been eyeballing varying themes and sites using Jekyll for over a year, never fully getting one implemented. Something either just wasn&amp;rsquo;t quite right or didn&amp;rsquo;t work well with my workflow.&lt;/p&gt;
+&lt;p&gt;Then along comes 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;. Extremely happy with what Yihui Xie has been doing with Rmarkdown in general I watched a webinar and was sold on trying it.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been pretty much following 
+&lt;a href=&#34;https://apreshill.rbind.io/post/up-and-running-with-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alison Presmanes Hill&amp;rsquo;s walk through&lt;/a&gt;.
+Needless to say i&amp;rsquo;m currently on section 6.5.2: New markdown posts ;) So far this has been &lt;strong&gt;really&lt;/strong&gt; easy and straight forward to implement.&lt;/p&gt;
+&lt;p&gt;So, post #1 done. Moving on to section 7: Deploy in Netlify. Yet another new program/site/thing to learn but i&amp;rsquo;m excited and I think it&amp;rsquo;ll be easy. Can&amp;rsquo;t wait to see this new site live!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

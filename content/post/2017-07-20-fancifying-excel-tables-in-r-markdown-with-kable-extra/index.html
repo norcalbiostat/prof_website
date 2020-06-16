@@ -1,0 +1,117 @@
+---
+title: Fancifying Excel tables in R Markdown with kable_extra
+author: Robin Donatello
+date: '2017-07-20'
+categories:
+  - programming
+  - pretty
+tags:
+  - R
+  - kable
+  - kable_extra
+  - stringr
+slug: fancifying-excel-tables-in-r-markdown-with-kable-extra
+---
+
+
+
+<p>I’m a big fan of automating all the things. Especially when it comes to teaching materials.
+I build my own course websites for each class I teach, where I post lecture materials, due
+dates and links to external resources. Posting it online instead of my campus’s LMS makes
+the materials accessible to not only my current students, but past and future students as well.</p>
+<p>I need a schedule, so do my students. I’m not good at winging things. I want to know what’s
+coming up this week, and next so I can plan my time accordingly. Again, so do my students.
+The easiest way for me to manage a schedule of topics, assignments, exams, projects for an
+entire 16 week class (or more) is in Excel, but that’s far from web-ready.</p>
+<p>This is a record of how I turned an Excel sheet into a nicely formatted web-ready schedule
+using <code>RMarkdown</code>.</p>
+<p>Here is the structure of my excel file. Week number, date, day of the week, the topics
+we’re covering, what the students can do to prep for class, what i’m going to evaluate them
+on (HW, exams), and notes about the assignment. Things in green are for my eyes only.
+Note the asterisk between items in the cells. The line breaks are for easy visual separation of
+items in a list, the asterisk will be used in code to create a formal html list.</p>
+<p><img src="../../img/excel_schedule.PNG" /></p>
+<p>So first let’s load the necessary libraries and set options for <code>kable</code></p>
+<pre class="r"><code>library(dplyr);library(readxl); library(kableExtra); library(stringr)
+options(knitr.table.format = &quot;html&quot;, knitr.kable.NA = &#39;&#39;) </code></pre>
+<p>Read the data into <code>rawdat</code>, reformat the date, make copies of the columns that need list
+processing: <code>topic, prep, eval</code>. The filter is leftover from the Spring semester, after each
+exam I hide the weeks prior to that exam so that the most current and upcoming weeks are
+presented at the top of the table.</p>
+<pre class="r"><code>rawdat &lt;- read_excel(&quot;schedule_615.xlsx&quot;)
+cdat   &lt;- rawdat %&gt;% mutate(Date = format(date, &quot;%m/%d&quot;), 
+                            Topics = topic, Preparation = prep, Evaluation = eval) %&gt;% 
+              filter(as.Date(date) &gt; &quot;2017-04-01&quot;) %&gt;%
+              select(Wk, Date, Topics, Preparation, Evaluation, topic, prep, eval)</code></pre>
+<ul>
+<li>First I find the rows that have some content in them, store this as <code>topiclist</code>. This
+ensures that I don’t get a list of <code>*NA</code>’s.</li>
+<li>Then I turn those three columns into formal html lists. I <code>paste0</code> the content of <code>topic</code> between
+starting <code>&lt;ul&gt;&lt;li&gt;</code> and ending <code>&lt;/li&gt;&lt;/ul&gt;</code> tags.</li>
+<li>Lastly I use <code>str_replace</code> from the <code>stringr</code> package to replace the asterisk between list items
+with `
+</li>
+<li>
+to end the first list item and start a second. Notice that there is no asterisk
+in the excel file in front of the first list item.</li>
+</ul>
+<pre class="r"><code># parse topics - same code for all three vars. Yes I could have applied a function. 
+topiclist &lt;- which(!is.na(cdat$topic))
+cdat$Topics[topiclist] &lt;- paste0(&quot;&lt;ul&gt;&lt;li&gt;&quot;, cdat$topic[topiclist], &quot;&lt;/li&gt;&lt;/ul&gt;&quot;)
+cdat$Topics[topiclist] &lt;- str_replace(cdat$Topics[topiclist], &quot;\\*&quot;, &#39;&lt;/li&gt;&lt;li&gt;&#39;)</code></pre>
+<p>Now I clean up the data frame using <code>select</code> from <code>dplyr</code> to only the variables I want to show,
+in the order I want to show. Then wrap <code>kable</code> on the entire table.
+* <code>escape=FALSE</code> is needed to process the html tags
+* <code>kable_styling</code> adds some very nice customizations to the table, including a non-custom css
+method to adjust column spacing and row shading behavior using <code>hover, striped</code> and <code>responsive</code>
+so that the table maintains it’s width on a cell phone, but lets you scroll to the side to
+see the whole table.</p>
+<pre class="r"><code>out &lt;- select(cdat, Wk, Date, Topics, Preparation, Evaluation)
+
+knitr::kable(out, align=&quot;l&quot;, escape=FALSE) %&gt;% 
+  kable_styling(bootstrap_options = c(&quot;hover&quot;, &quot;striped&quot;, &quot;responsive&quot;)) %&gt;% 
+  column_spec(1, width=&quot;1%&quot;) %&gt;% column_spec(2, width=&quot;1%&quot;) %&gt;%
+  column_spec(3, width=&quot;20%&quot;) %&gt;% column_spec(4, width=&quot;30%&quot;) %&gt;%
+  column_spec(5, width=&quot;30%&quot;)</code></pre>
+<p>The results can be seen on my <a href="https://norcalbiostat.github.io/MATH615/schedule.html">MATH 615 course website</a></p>
+<p><code>kable_extra</code> can apply a lot of neat table customization features that make creating professional tables in
+R markdown an actual possibility (without switching to <span class="math inline">\(\LaTeX\)</span>\Sweave)
+I highly recommend you checking it out <a href="http://haozhu233.github.io/kableExtra/" class="uri">http://haozhu233.github.io/kableExtra/</a></p>
+<p>Having a nice automated framework like this makes my day-to-day life during the semester much easier.
+I just copy the <code>schedule.Rmd</code> file into another class’s repo and just change the excel file that
+is read in. Make adjustments to the excel file as needed, rebuild and git push.
+(Typically 5 min before class to fix a typo)</p>
+<div id="session-info" class="section level1">
+<h1>Session Info</h1>
+<p>Note that since i’m using blogdown to write this post, many more packages are loaded than what is necessary
+for the topic of this post.</p>
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>## R version 4.0.0 (2020-04-24)
+## Platform: x86_64-apple-darwin17.0 (64-bit)
+## Running under: macOS Mojave 10.14.6
+## 
+## Matrix products: default
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRblas.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+## [1] stringr_1.4.0    kableExtra_1.1.0 readxl_1.3.1     dplyr_0.8.5     
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_1.0.4.6      pillar_1.4.4      compiler_4.0.0    cellranger_1.1.0 
+##  [5] tools_4.0.0       digest_0.6.25     evaluate_0.14     lifecycle_0.2.0  
+##  [9] tibble_3.0.1      viridisLite_0.3.0 pkgconfig_2.0.3   rlang_0.4.6      
+## [13] rstudioapi_0.11   yaml_2.2.1        blogdown_0.19     xfun_0.14        
+## [17] httr_1.4.1        knitr_1.28        xml2_1.3.2        vctrs_0.3.0      
+## [21] hms_0.5.3         webshot_0.5.2     tidyselect_1.1.0  glue_1.4.1       
+## [25] R6_2.4.1          rmarkdown_2.1     bookdown_0.19     purrr_0.3.4      
+## [29] readr_1.3.1       magrittr_1.5      scales_1.1.1      ellipsis_0.3.1   
+## [33] htmltools_0.4.0   assertthat_0.2.1  rvest_0.3.5       colorspace_1.4-1 
+## [37] stringi_1.4.6     munsell_0.5.0     crayon_1.3.4</code></pre>
+</div>

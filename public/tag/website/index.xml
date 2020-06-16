@@ -5,7 +5,7 @@
     <link>/tag/website/</link>
       <atom:link href="/tag/website/index.xml" rel="self" type="application/rss+xml" />
     <description>website</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Sat, 08 Jul 2017 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
       <title>website</title>
@@ -13,77 +13,22 @@
     </image>
     
     <item>
-      <title>Rebuilding this Site, Again, from Near Scratch</title>
-      <link>/post/2020-06-07-rebuild2020/</link>
-      <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>/post/2020-06-07-rebuild2020/</guid>
-      <description>&lt;p&gt;The last time I updated this website was in 2017 [link to other post]. I&amp;rsquo;m taking a full year sabbatical, and so I wanted to start by doing some updates to this site first. This post is a chronicle of my journey, mostly for my reference but also hopefully can help others. Technically I started tinkering about a week ago, but for the most part this post will be my &amp;lsquo;real time&amp;rsquo; thoughts and experiments.&lt;/p&gt;
-&lt;h2 id=&#34;list-of-tutorials&#34;&gt;List of tutorials&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic theme documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Allison hill - 
-&lt;a href=&#34;https://summer-of-blogdown.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Summer of blogdown&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;start-updating-engines&#34;&gt;Start: Updating engines&lt;/h2&gt;
-&lt;p&gt;Update all the things!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Hugo: That&amp;rsquo;s easy, &lt;code&gt;blogdown::update_hugo&lt;/code&gt; gets me the latest and greatest, version 0.71.1&lt;/li&gt;
-&lt;li&gt;Updating the academic theme &amp;ndash; not so easy. Had to start from scratch, but that 
-&lt;a href=&#34;https://community.rstudio.com/t/updating-academic-theme-woes/68224&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;seems to be typical&lt;/a&gt;. Hard lesson learned, don&amp;rsquo;t wait 3 years to update.&lt;/li&gt;
-&lt;li&gt;R Studio just came out with 1.3, AND R released 4.0.0 in April. Get those also.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;start-customization-slowly&#34;&gt;Start customization (slowly)&lt;/h2&gt;
-&lt;p&gt;The documentation has been the best starting resource &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34;&gt;https://sourcethemes.com/academic/docs/get-started/&lt;/a&gt;. I want through it slowly, to make sure i&amp;rsquo;m learning how this new theme fits together. Because FOR SURE the Academic theme is at least twice as complicated as it was 3 years ago.&lt;/p&gt;
-&lt;h3 id=&#34;top-level-root&#34;&gt;Top level root&lt;/h3&gt;
-&lt;p&gt;The only file to customize here is &lt;code&gt;config.toml&lt;/code&gt;, and not much to do in here. Here&amp;rsquo;s what I changed:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;title: this shows up in the top left of the navbar, and your browser tab.&lt;/li&gt;
-&lt;li&gt;copyright: shows up at the bottom of every post &amp;amp; project&lt;/li&gt;
-&lt;li&gt;post url: I came across some post, i can&amp;rsquo;t recall where it now, that suggested a change to the URL for posts. The default was something like &lt;code&gt;/post/:year-:month-:day-:slug/:slug&lt;/code&gt; - where there was a separate folder for the slug. I don&amp;rsquo;t recall exactly, but here&amp;rsquo;s a note from 
-&lt;a href=&#34;https://bookdown.org/yihui/blogdown/configuration.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the blogdown book&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;more-top-level-configuration-config_default&#34;&gt;More top level configuration &lt;code&gt;config/_default/&lt;/code&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;languages.toml&lt;/code&gt; didn&amp;rsquo;t need to change as i&amp;rsquo;m boring old plain english&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;menus.toml&lt;/code&gt; Navbar! Comment out everything I don&amp;rsquo;t need, change the order that it appears using weights.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;❓ How to right justify?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;params.toml&lt;/code&gt; More to do here.
-&lt;ul&gt;
-&lt;li&gt;Theme: Green of course. Don&amp;rsquo;t care about font face, but I went with the slightly smaller text (&amp;lsquo;M&amp;rsquo;)&lt;/li&gt;
-&lt;li&gt;Basic info: Left most of this alone, but specified &lt;code&gt;site_type = &amp;quot;Person&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Site features: didn&amp;rsquo;t change these. May do so later. Probably for the &lt;code&gt;edit pages&lt;/code&gt; part. It depends on if I end up pulling my course materials over.&lt;/li&gt;
-&lt;li&gt;Contact details: updated all of this&lt;/li&gt;
-&lt;li&gt;Social: Just added Twitter name&lt;/li&gt;
-&lt;li&gt;Regional: changed to 24 hour time - personal preference.&lt;/li&gt;
-&lt;li&gt;Advanced: Updated &lt;code&gt;copyright_license&lt;/code&gt; to add a creative commons license since I post course materials and code.&lt;/li&gt;
-&lt;li&gt;Comments: disabled for now.&lt;/li&gt;
-&lt;li&gt;Search: defaults are fine&lt;/li&gt;
-&lt;li&gt;Maps: defaults are fine&lt;/li&gt;
-&lt;li&gt;Marketing: default&lt;/li&gt;
-&lt;li&gt;CMS: default&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;❓ What&amp;rsquo;s the privacy pack? This site sets cookies? Need to look more into what this does.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;introduce-yourselfhttpssourcethemescomacademicdocsget-startedintroduce-yourself&#34;&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/#introduce-yourself&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduce yourself&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The &lt;code&gt;content/authors/admin/_index.md&lt;/code&gt; file controls the &amp;lsquo;About me&amp;rsquo; section of the page. It has your avatar on the left, social icons underneath and a spot to the right for a paragraph of info.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You can&amp;rsquo;t do markdown style links, but you can display URLs.&lt;/li&gt;
-&lt;li&gt;As you add more social icons to the space below your mugshot, the sizes automatically get smaller. Would be nice to have the option to wrap onto a second line.&lt;/li&gt;
-&lt;li&gt;The &lt;code&gt;avatar.jpg&lt;/code&gt; goes in the same folder.&lt;/li&gt;
-&lt;li&gt;If you want an icon to show on your browser tab, put &lt;code&gt;icon.png&lt;/code&gt; in &lt;code&gt;assets\images&lt;/code&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;host-on-netlify&#34;&gt;Host on Netlify&lt;/h2&gt;
-&lt;p&gt;I don&amp;rsquo;t recall where along this process I pushed to git and deployed on Netlify. It was for sure before i got too far down the customization rabbit hole. Don&amp;rsquo;t forget to 
-&lt;a href=&#34;https://bookdown.org/yihui/blogdown/netlify.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;specify your hugo build&lt;/a&gt; - mine was 0.70.0 (need that last decimal).&lt;/p&gt;
+      <title>New website using Blogdown</title>
+      <link>/post/2017-07-08-new-website-using-blogdown/</link>
+      <pubDate>Sat, 08 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/post/2017-07-08-new-website-using-blogdown/</guid>
+      <description>&lt;p&gt;As a teacher, i&amp;rsquo;m on a 9 month contract. That means technically I don&amp;rsquo;t &amp;ldquo;work&amp;rdquo; over summer. However as &lt;em&gt;any&lt;/em&gt; academic can tell you, that&amp;rsquo;s not how it goes. Everyone works over summer, it&amp;rsquo;s just what they work on (and when they work on it) is more of a personal preference. Some get grants and work with students, some are busy working in the labs to advance their own research. Some even decide to teach summer school (I&amp;rsquo;m not quite that crazy yet). All of us eventually have to start to get their lesson plans going for the fall. It creeps up on you faster than you realize!&lt;/p&gt;
+&lt;p&gt;For me, my summer schedule consists of morning gardening, little time on video games, responding to the easy emails, assessing any mandatory chores my nephews may have to do for the day and then hard coding what i&amp;rsquo;m going to spend my energy on today. I always have a plethora of projects going on. This summer I have three consulting projects, writing a book chapter, editing a manuscript, two websites to redesign and eventually update lecture notes and course webpages for Fall. My pokemon for today was to work on the website(s).&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been playing with building personal and project websites for a while. Years ago I started with WordPress, but was disenchanted with it pretty fast (Years and years ago I wrote html directly, but that was like baby coding 1.0). Then I moved to using Rmarkdown (&lt;code&gt;rmd&lt;/code&gt;) files with manual links between pages to build my course website - hosting them in Git Hub. Worked well but very limited, always forgetting to push updates before class, broken links (damn case sensitivity).&lt;/p&gt;
+&lt;p&gt;Recently I used R Studio to build an entire website to display an e-portfolio for a Sustaining Success project for a Course Redesign in a first semester Chemistry class. I&amp;rsquo;m pretty damned happy with it. You can see this work 
+&lt;a href=&#34;https://norcalbiostat.github.io/chem_ss/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Still not good enough for a fully academic website. I&amp;rsquo;ve been eyeballing varying themes and sites using Jekyll for over a year, never fully getting one implemented. Something either just wasn&amp;rsquo;t quite right or didn&amp;rsquo;t work well with my workflow.&lt;/p&gt;
+&lt;p&gt;Then along comes 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;. Extremely happy with what Yihui Xie has been doing with Rmarkdown in general I watched a webinar and was sold on trying it.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve been pretty much following 
+&lt;a href=&#34;https://apreshill.rbind.io/post/up-and-running-with-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alison Presmanes Hill&amp;rsquo;s walk through&lt;/a&gt;.
+Needless to say i&amp;rsquo;m currently on section 6.5.2: New markdown posts ;) So far this has been &lt;strong&gt;really&lt;/strong&gt; easy and straight forward to implement.&lt;/p&gt;
+&lt;p&gt;So, post #1 done. Moving on to section 7: Deploy in Netlify. Yet another new program/site/thing to learn but i&amp;rsquo;m excited and I think it&amp;rsquo;ll be easy. Can&amp;rsquo;t wait to see this new site live!&lt;/p&gt;
 </description>
     </item>
     
