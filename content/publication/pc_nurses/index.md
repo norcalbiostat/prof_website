@@ -1,31 +1,31 @@
 ---
-abstract: Leptothrix ochracea is known for producing large volumes of iron oxyhydroxide sheaths that alter wetland biogeochemistry. For over a century, these delicate structures have fascinated microbiologists and geoscientists. Because L. ochracea still resists long-term in vitro culture, the debate regarding its metabolic classification dates back to 1885. We developed a novel culturing technique for L. ochracea using in situ natural waters and coupled this with single-cell genomics and nanoscale secondary-ion mass spectrophotometry (nanoSIMS) to probe L. ochracea’s physiology. In microslide cultures L. ochracea doubled every 5.7 h and had an absolute growth requirement for ferrous iron, the genomic capacity for iron oxidation, and a branched electron transport chain with cytochromes putatively involved in lithotrophic iron oxidation. Additionally, its genome encoded several electron transport chain proteins, including a molybdopterin alternative complex III (ACIII), a cytochrome bd oxidase reductase, and several terminal oxidase genes. L. ochracea contained two key autotrophic proteins in the Calvin-Benson-Bassham cycle, a form II ribulose bisphosphate carboxylase, and a phosphoribulose kinase. L. ochracea also assimilated bicarbonate, although calculations suggest that bicarbonate assimilation is a small fraction of its total carbon assimilation. Finally, L. ochracea’s fundamental physiology is a hybrid of those of the chemolithotrophic Gallionella-type ironoxidizing bacteria and the sheathed, heterotrophic filamentous metal-oxidizing bacteria of the Leptothrix-Sphaerotilus genera. This allows L. ochracea to inhabit a unique niche within the neutrophilic iron seeps. IMPORTANCE Leptothrix ochracea was one of three groups of organisms that Sergei Winogradsky used in the 1880s to develop the hypothesis on chemolithotrophy. L. ochracea continues to resist cultivation and appears to have an absolute requirement for organic rich waters, suggesting that its true physiology remains unknown. Further, L. ochracea is an ecological engineer; a few L. ochracea cells can generate prodigious volumes of iron oxyhydroxides, changing the ecosystem’s geochemistry and ecology. Therefore, to determine L. ochracea’s basic physiology, we employed new single-cell techniques to demonstrate that L. ochracea oxidizes iron to generate energy and, despite having predicted genes for autotrophic growth, assimilates a fraction of the total CO2 that autotrophs do. Although not a true chemolithoautotroph, L. ochracea’s physiological strategy allows it to be flexible and to extensively colonize iron-rich wetlands.
+abstract: Adolescent males are less likely to receive health care and have lower levels of sexual and reproductive health (SRH) knowledge than adolescent females. The purpose of this study was to determine if a school-based structural intervention focused on school nurses increases receipt of condoms and SRH information among male students. Methods. Interventions to improve student access to sexual and reproductive health care were implemented in six urban high schools with a matched set of comparison schools. Interventions included working with school nurses to improve access to sexual and reproductive health care, including the provision of condoms and information about pregnancy and sexually transmitted disease prevention and services. Intervention effects were assessed through five cross-sectional yearly surveys, and analyses include data from 13,740 male students. Results. Nurses in intervention schools changed their interactions with male students who visited them for services, such that, among those who reported they went to the school nurse for any reason in the previous year, those in intervention schools reported significant increases in receipt of sexual health services over the course of the study compared with students in comparison schools. Further, these results translated into population-level effects. Among all male students surveyed, those in intervention schools were more likely than those in comparison schools to report increases in receipt of sexual health services from school nurses. Conclusions. With a minimal investment of resources, school nurses can become important sources of SRH information and condoms for male high school students.
 authors:
-- E.J. Fleming
-- T. Woyke
-- R.A. Donatello
-- M.M.M. Kuypers
-- A. Sczybra
-- S. Littmann
-- D. Emerson
-date: "2018-02-16"
-doi: "10.1128/AEM.02239-17"
+- Patricia J. Dittus 
+- Christopher R. Harper
+- Jeffrey S. Becasen
+- Robin A. Donatello
+- Kathleen A. Ethier
+date: "2017-07-17"
+doi: "10.1016/j.jadohealth.2017.07.017"
 featured: false
 image:
   caption: ''
   focal_point: ""
   preview_only: false
 projects: []
-publication: '*Applied and Environmental Microbiology*'
+publication: '*Journal of Adolescenet Health*'
 publication_short: ""
 publication_types:
 - "2"
-publishDate: "2018-04-06"
+publishDate: "2017-07-17"
 slides: 
 summary: 
 tags:
-- biology
-title: Insights into the fundamental physiology of the uncultured FE-oxidizing bacterium Leptothrix ochracea
+- adolescent-health
+- public-health
+- sexual-health
+title: Structural Intervention With School Nurses Increases Receipt of Sexual Health Care Among Male High School Students
 url_code: ""
 url_dataset: ""
 url_pdf: ""
@@ -36,6 +36,3 @@ url_source: ""
 url_video: ""
 ---
 
-{{% alert note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /alert %}}

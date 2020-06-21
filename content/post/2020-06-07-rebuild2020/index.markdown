@@ -157,12 +157,17 @@ Serve site and... well turns out you don't even need that last step. Okay better
 
 Interesting change. Before, this was just a folder containing one `.md` file per pub. The Academic theme now has three subfolders, `conference-paper`, `journal-article` and `preprint`. The examples for each are really good to keep, so I "commented out" each pub by renaming `index.md` to `_index.md` and changed the folder name to `example-`
 
+> :question: - this doesn't remove it from the citation list. If you do the 'filter by pubs' they still show up. Hmm, how is this list built? 
+
+For now i'm going to edit the `content/home/publications.md` to remove the alert note. While i'm here, i'm also modifying the view to a 'card' view.. not list. This way shows the full abstract, and the pub year (compact does not)
+
 Lots of features here. If you're a python user, you can create a pub list based on a `.bib` file. For each pub you can also add a `cite.bib` file that ppl can use to easly get your citation. See the [docs page](https://sourcethemes.com/academic/docs/managing-content/#create-a-publication) for details. 
 
 Now this is a ton of work to update :(
 
+### Talks
 
-
+  q wedsxc
 
 
 
