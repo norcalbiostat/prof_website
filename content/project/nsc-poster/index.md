@@ -1,11 +1,11 @@
 ---
-title: College of Natural Sciences Poster Session Abstract Webpage
+title: College of Natural Sciences Poster Session
 author: Robin Donatello
 date: '2018-05-29'
 slug: nsc-poster
 categories: []
 tags:
-- ds
+- data-science
 summary: 'Streamlining abstract submission, processing, and judging for the annual College Poster Session at CSU, Chico. Pipeline uses Google Forms, R, Markdown, Sweave, LaTeX, GitHub, and Shiny. '
 authors: []
 external_link: ''

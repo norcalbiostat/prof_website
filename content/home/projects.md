@@ -27,15 +27,19 @@ subtitle = ""
   
   [[content.filter_button]]
     name = "Student Success"
-    tag = "ss"
+    tag = "student-success"
   
   [[content.filter_button]]
     name = "Data Science"
-    tag = "ds"
+    tag = "data-science"
     
   [[content.filter_button]]
     name = "Statistics"
-    tag = "stat"
+    tag = "statistics"
+    
+  [[content.filter_button]]
+    name = "Public Health"
+    tag = "public-health"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

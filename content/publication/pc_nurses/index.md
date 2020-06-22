@@ -22,9 +22,8 @@ publishDate: "2017-07-17"
 slides: 
 summary: 
 tags:
-- adolescent-health
 - public-health
-- sexual-health
+- teen-pregnancy-prevention
 title: Structural Intervention With School Nurses Increases Receipt of Sexual Health Care Among Male High School Students
 url_code: ""
 url_dataset: ""

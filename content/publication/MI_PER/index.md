@@ -23,17 +23,13 @@ tags:
 - physics education
 - missing data
 - MICE
-title: Missing data and bias in physics education research- A case for using multiple imputation
-url_code: ""
+title: Missing data and bias in physics education research; A case for using multiple imputation
+url_code: "https://github.com/jaysonnissen/missing-data"
 url_dataset: ""
-url_pdf: ""
+url_pdf: "/publication/MI_PER/Nissen (2019) MI in PERS"
 url_poster: ""
 url_project: ""
-url_slides: ""
+url_slides: "/publication/MI_PER/Missing Data Talk for math colloqium.pptx"
 url_source: ""
 url_video: ""
 ---
-
-{{% alert note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /alert %}}

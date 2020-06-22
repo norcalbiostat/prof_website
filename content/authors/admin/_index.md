@@ -19,9 +19,9 @@ education:
     year: 2005
 email: "rdonatello@csuchico.edu"
 interests:
-- Racial Equity in STEM 
+- Racial Equity in STEM
 - Data Science
-- The Carpentries https://carpentries.org/
+- Teaching people how to harness the power of their data
 - Data Editing and Imputation
 - Data Visualization
 - Bayesian Methods for Analysis

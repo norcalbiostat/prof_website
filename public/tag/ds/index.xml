@@ -17,7 +17,7 @@
       <link>/post/2020-06-07-rebuild2020/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       <guid>/post/2020-06-07-rebuild2020/</guid>
-      <description>&lt;p&gt;The last time I updated this website was in 2017 [link to other post]. I&amp;rsquo;m taking a full year sabbatical, and so I wanted to start by doing some updates to this site first. This post is a chronicle of my journey, mostly for my reference but also hopefully can help others. Technically I started tinkering about a week ago, but for the most part this post will be my &amp;lsquo;real time&amp;rsquo; thoughts and experiments.&lt;/p&gt;
+      <description>&lt;p&gt;The last time I updated this website was in 2017 [link to other post]. I&amp;rsquo;m taking a full year sabbatical, and so I wanted to start by doing some updates to this site first. This post is a chronicle of my journey, mostly for my reference but also hopefully can help others. Technically I started tinkering about a week ago, but for the most part this post will be my &amp;lsquo;real time&amp;rsquo; thoughts and experiments. &lt;em&gt;Edit: This is also serving as a self-reference &amp;ldquo;how did I do that?&amp;quot;&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;list-of-tutorials-that-helped-me&#34;&gt;List of tutorials that helped me&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -111,7 +111,7 @@
 &lt;/li&gt;
 &lt;li&gt;Modify the &lt;code&gt;content/home/projects.md&lt;/code&gt; file to
 &lt;ul&gt;
-&lt;li&gt;set the &lt;code&gt;[[content.filter_button]]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;set the &lt;code&gt;[[content.filter_button]]&lt;/code&gt; to add tag filters&lt;/li&gt;
 &lt;li&gt;set the display of projects (cards vs lists)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -178,49 +178,25 @@
 &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-publication&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;docs page&lt;/a&gt; for details.&lt;/p&gt;
 &lt;p&gt;Now this is a ton of work to update :(&lt;/p&gt;
 &lt;h3 id=&#34;talks&#34;&gt;Talks&lt;/h3&gt;
-&lt;p&gt;q wedsxc&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>College of Natural Sciences Poster Session Abstract Webpage</title>
-      <link>/project/nsc-poster/</link>
-      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
-      <guid>/project/nsc-poster/</guid>
-      <description>&lt;p&gt;The annual College of Natural Sciences Poster Session is an established event where students, faculty and clubs have the opportunity to present their original research or student activities to the College, University and Chico Community. See more about the College Poser Session Event at the 
-&lt;a href=&#34;https://www.csuchico.edu/nsci/event/poster.shtml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;College of Natural Sciences Poster Session event page&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;This project streamlined the submitted abstract processing, and provided the authors with a website to view their submission. Another result from this project was the creation of a judging app that reduced the burden of vote tallying for multiple categories, provided real-time score graphs, and an instant display of winner titles and authors.&lt;/p&gt;
-&lt;h3 id=&#34;abstract-submission-processing&#34;&gt;Abstract Submission processing&lt;/h3&gt;
-&lt;p&gt;Abstracts are submitted using Google Forms. They are then processed using R (&lt;code&gt;googlesheets&lt;/code&gt;, &lt;code&gt;stringr&lt;/code&gt;, &lt;code&gt;dplyr&lt;/code&gt;), turned into a webpage using &lt;code&gt;rmarkdown&lt;/code&gt; with a few fancy visual aids using &lt;code&gt;ggplot2&lt;/code&gt; and &lt;code&gt;kable&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The webpage is re-built nightly during the open abstract submission period and can be seen here: &lt;a href=&#34;https://norcalbiostat.github.io/CNS-Poster-Session/&#34;&gt;https://norcalbiostat.github.io/CNS-Poster-Session/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;After the abstract submission period closes, the poster ID&amp;rsquo;s are finalied and abstracts reviewed by members of the poster session committee. The &lt;code&gt;rmarkdown&lt;/code&gt; file gets compiled to PDF format and turned into a 
-&lt;a href=&#34;https://www.csuchico.edu/nsci/_assets/documents/NSC-poster-session-2018-abstract-booklet.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;program booklet&lt;/a&gt; with only minimal manual processing of latex symbols.&lt;/p&gt;
-&lt;h3 id=&#34;judging-shiny-app&#34;&gt;Judging Shiny App&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://norcalbiostat.shinyapps.io/CNSPosterJudgingApp/&#34;&gt;https://norcalbiostat.shinyapps.io/CNSPosterJudgingApp/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;The app was originally created for the 2017 session by Aaron Shaffer 
-&lt;a href=&#34;https://github.com/ClassicSours&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@ClassicSours&lt;/a&gt;, and updated by me for 2018. Feel free to play around, the data is not stored on app shutdown. The poster ID&amp;rsquo;s are listed on the abstract website.&lt;/p&gt;
-&lt;p&gt;This judging app&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;reduced the burden of vote tallying for multiple categories (judge votes, peoples choice)&lt;/li&gt;
-&lt;li&gt;showed real-time vote scoring results as bar charts that could be viewed by anyone with the link (committee members only) during the session (an unexpected but amusing side-result)&lt;/li&gt;
-&lt;li&gt;provided an instant display of winning poster titles with authors to be read off by the Dean during the awards ceremony (a mere 30 minutes after the voting period closes)&lt;/li&gt;
-&lt;li&gt;allowed for the download of merged voting data so
+&lt;li&gt;Same structure as publications.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;content/talk/&lt;/code&gt; - one folder per topic
 &lt;ul&gt;
-&lt;li&gt;certificates could be made via mail merge by the next day&lt;/li&gt;
-&lt;li&gt;The 
-&lt;a href=&#34;http://www.csuchico.edu/gateway/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Gateway Scinece Museum&lt;/a&gt; has the contact information for authors for whom their posters have been chosen to be displayed in the Museum over summer.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;index.md&lt;/code&gt; in each folder&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;Old content files seem to work seamless also!
+&lt;ul&gt;
+&lt;li&gt;Rename the old &lt;code&gt;YYYY-MM-DD-talk-title.md&lt;/code&gt; to &lt;code&gt;index.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;missing probably lots of customization pieces, but easy to do a simple migrate.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;files: &lt;code&gt;talk/folder/file&lt;/code&gt; - no relative paths.&lt;/li&gt;
+&lt;li&gt;TOML vs YAML Hell.  TOML uses +++ at the top, YAML uses &amp;mdash;. TOML uses &lt;code&gt;=&lt;/code&gt;, YAML uses &lt;code&gt;:&lt;/code&gt;. And none can the two comingle.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;❓ how to get rid of the timestamp?
+❓ how to get rid of author bio at the bottom of the talk. This was an earlier question also.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Data Science Initative</title>
-      <link>/project/dsi/</link>
-      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
-      <guid>/project/dsi/</guid>
-      <description></description>
     </item>
     
   </channel>

@@ -25,8 +25,7 @@ slides:
 summary: 
 tags:
 - public-health
-- sexual-behaviors
-- adolescent-health
+- teen-pregnancy-prevention
 title: Patterns of Sexual Experience Among Urban Latino and African American Ninth Grade Students
 url_code: ""
 url_dataset: ""

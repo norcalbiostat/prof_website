@@ -17,7 +17,7 @@
       <link>/post/2020-06-07-rebuild2020/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       <guid>/post/2020-06-07-rebuild2020/</guid>
-      <description>&lt;p&gt;The last time I updated this website was in 2017 [link to other post]. I&amp;rsquo;m taking a full year sabbatical, and so I wanted to start by doing some updates to this site first. This post is a chronicle of my journey, mostly for my reference but also hopefully can help others. Technically I started tinkering about a week ago, but for the most part this post will be my &amp;lsquo;real time&amp;rsquo; thoughts and experiments.&lt;/p&gt;
+      <description>&lt;p&gt;The last time I updated this website was in 2017 [link to other post]. I&amp;rsquo;m taking a full year sabbatical, and so I wanted to start by doing some updates to this site first. This post is a chronicle of my journey, mostly for my reference but also hopefully can help others. Technically I started tinkering about a week ago, but for the most part this post will be my &amp;lsquo;real time&amp;rsquo; thoughts and experiments. &lt;em&gt;Edit: This is also serving as a self-reference &amp;ldquo;how did I do that?&amp;quot;&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;list-of-tutorials-that-helped-me&#34;&gt;List of tutorials that helped me&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -111,7 +111,7 @@
 &lt;/li&gt;
 &lt;li&gt;Modify the &lt;code&gt;content/home/projects.md&lt;/code&gt; file to
 &lt;ul&gt;
-&lt;li&gt;set the &lt;code&gt;[[content.filter_button]]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;set the &lt;code&gt;[[content.filter_button]]&lt;/code&gt; to add tag filters&lt;/li&gt;
 &lt;li&gt;set the display of projects (cards vs lists)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -178,7 +178,24 @@
 &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-publication&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;docs page&lt;/a&gt; for details.&lt;/p&gt;
 &lt;p&gt;Now this is a ton of work to update :(&lt;/p&gt;
 &lt;h3 id=&#34;talks&#34;&gt;Talks&lt;/h3&gt;
-&lt;p&gt;q wedsxc&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Same structure as publications.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;content/talk/&lt;/code&gt; - one folder per topic
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;index.md&lt;/code&gt; in each folder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Old content files seem to work seamless also!
+&lt;ul&gt;
+&lt;li&gt;Rename the old &lt;code&gt;YYYY-MM-DD-talk-title.md&lt;/code&gt; to &lt;code&gt;index.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;missing probably lots of customization pieces, but easy to do a simple migrate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;files: &lt;code&gt;talk/folder/file&lt;/code&gt; - no relative paths.&lt;/li&gt;
+&lt;li&gt;TOML vs YAML Hell.  TOML uses +++ at the top, YAML uses &amp;mdash;. TOML uses &lt;code&gt;=&lt;/code&gt;, YAML uses &lt;code&gt;:&lt;/code&gt;. And none can the two comingle.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;❓ how to get rid of the timestamp?
+❓ how to get rid of author bio at the bottom of the talk. This was an earlier question also.&lt;/p&gt;
 </description>
     </item>
     

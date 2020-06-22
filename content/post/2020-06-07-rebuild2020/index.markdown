@@ -21,7 +21,7 @@ image:
 projects: []
 ---
 
-The last time I updated this website was in 2017 [link to other post]. I'm taking a full year sabbatical, and so I wanted to start by doing some updates to this site first. This post is a chronicle of my journey, mostly for my reference but also hopefully can help others. Technically I started tinkering about a week ago, but for the most part this post will be my 'real time' thoughts and experiments. 
+The last time I updated this website was in 2017 [link to other post]. I'm taking a full year sabbatical, and so I wanted to start by doing some updates to this site first. This post is a chronicle of my journey, mostly for my reference but also hopefully can help others. Technically I started tinkering about a week ago, but for the most part this post will be my 'real time' thoughts and experiments. _Edit: This is also serving as a self-reference "how did I do that?"_
 
 ## List of tutorials that helped me
 * [Academic theme documentation](https://sourcethemes.com/academic/docs/get-started/)
@@ -97,7 +97,7 @@ I already had a blogdown site that included projects. Migrating those over to th
     - Within each folder there is an `index.md` file. 
         - Each `index.md` file has a large YAML header section, 
 * Modify the `content/home/projects.md` file to 
-    - set the `[[content.filter_button]]`
+    - set the `[[content.filter_button]]` to add tag filters
     - set the display of projects (cards vs lists)
 
 ### Courses
@@ -167,7 +167,18 @@ Now this is a ton of work to update :(
 
 ### Talks
 
-  q wedsxc
+* Same structure as publications. 
+* `content/talk/` - one folder per topic
+    - `index.md` in each folder 
+* Old content files seem to work seamless also! 
+  - Rename the old `YYYY-MM-DD-talk-title.md` to `index.md`
+  - missing probably lots of customization pieces, but easy to do a simple migrate.
+* files: `talk/folder/file` - no relative paths. 
+* TOML vs YAML Hell.  TOML uses +++ at the top, YAML uses ---. TOML uses `=`, YAML uses `:`. And none can the two comingle. 
+
+:question: how to get rid of the timestamp? 
+:question: how to get rid of author bio at the bottom of the talk. This was an earlier question also. 
+
 
 
 

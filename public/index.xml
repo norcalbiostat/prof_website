@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Dr. D.</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Sun, 07 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
       <title>Dr. D.</title>
@@ -97,33 +97,11 @@
     </item>
     
     <item>
-      <title>Example Talk</title>
-      <link>/talk/example/</link>
-      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>/talk/example/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Academic&amp;rsquo;s 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Rebuilding this Site, Again, from Near Scratch</title>
       <link>/post/2020-06-07-rebuild2020/</link>
       <pubDate>Sun, 07 Jun 2020 00:00:00 +0000</pubDate>
       <guid>/post/2020-06-07-rebuild2020/</guid>
-      <description>&lt;p&gt;The last time I updated this website was in 2017 [link to other post]. I&amp;rsquo;m taking a full year sabbatical, and so I wanted to start by doing some updates to this site first. This post is a chronicle of my journey, mostly for my reference but also hopefully can help others. Technically I started tinkering about a week ago, but for the most part this post will be my &amp;lsquo;real time&amp;rsquo; thoughts and experiments.&lt;/p&gt;
+      <description>&lt;p&gt;The last time I updated this website was in 2017 [link to other post]. I&amp;rsquo;m taking a full year sabbatical, and so I wanted to start by doing some updates to this site first. This post is a chronicle of my journey, mostly for my reference but also hopefully can help others. Technically I started tinkering about a week ago, but for the most part this post will be my &amp;lsquo;real time&amp;rsquo; thoughts and experiments. &lt;em&gt;Edit: This is also serving as a self-reference &amp;ldquo;how did I do that?&amp;quot;&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;list-of-tutorials-that-helped-me&#34;&gt;List of tutorials that helped me&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -217,7 +195,7 @@
 &lt;/li&gt;
 &lt;li&gt;Modify the &lt;code&gt;content/home/projects.md&lt;/code&gt; file to
 &lt;ul&gt;
-&lt;li&gt;set the &lt;code&gt;[[content.filter_button]]&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;set the &lt;code&gt;[[content.filter_button]]&lt;/code&gt; to add tag filters&lt;/li&gt;
 &lt;li&gt;set the display of projects (cards vs lists)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -284,7 +262,24 @@
 &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-publication&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;docs page&lt;/a&gt; for details.&lt;/p&gt;
 &lt;p&gt;Now this is a ton of work to update :(&lt;/p&gt;
 &lt;h3 id=&#34;talks&#34;&gt;Talks&lt;/h3&gt;
-&lt;p&gt;q wedsxc&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Same structure as publications.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;content/talk/&lt;/code&gt; - one folder per topic
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;index.md&lt;/code&gt; in each folder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Old content files seem to work seamless also!
+&lt;ul&gt;
+&lt;li&gt;Rename the old &lt;code&gt;YYYY-MM-DD-talk-title.md&lt;/code&gt; to &lt;code&gt;index.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;missing probably lots of customization pieces, but easy to do a simple migrate.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;files: &lt;code&gt;talk/folder/file&lt;/code&gt; - no relative paths.&lt;/li&gt;
+&lt;li&gt;TOML vs YAML Hell.  TOML uses +++ at the top, YAML uses &amp;mdash;. TOML uses &lt;code&gt;=&lt;/code&gt;, YAML uses &lt;code&gt;:&lt;/code&gt;. And none can the two comingle.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;❓ how to get rid of the timestamp?
+❓ how to get rid of author bio at the bottom of the talk. This was an earlier question also.&lt;/p&gt;
 </description>
     </item>
     
@@ -297,11 +292,29 @@
     </item>
     
     <item>
-      <title>Passion Driven Statistics</title>
+      <title>Passion Driven Statistics - Statistics to support science</title>
       <link>/project/chem-ss/</link>
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/project/chem-ss/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Promote Yourself: Make Your Own Professional Website Without Knowing HTML.</title>
+      <link>/talk/2020_ichps/</link>
+      <pubDate>Wed, 08 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/talk/2020_ichps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Practical Multivariate Statistics 6th ed.</title>
+      <link>/publication/pma6/</link>
+      <pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/pma6/</guid>
+      <description>&lt;p&gt;This is the sixth edition of a popular textbook on multivariate analysis. Well-regarded for its practical and accessible approach, with excellent examples and good guidance on computing, the book is particularly popular for teaching outside statistics, i.e. in epidemiology, social science, business, etc. The sixth edition has been updated with a new chapter on data visualization, a distinction made between exploratory and confirmatory analyses and a new section on generalized estimating equations and many new updates throughout. This new edition will enable the book to continue as one of the leading textbooks in the area, particularly for non-statisticians.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;book_cover.png&#34; alt=&#34;book cover&#34;&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -439,16 +452,11 @@ Three
     </item>
     
     <item>
-      <title>Missing data and bias in physics education research- A case for using multiple imputation</title>
+      <title>Missing data and bias in physics education research; A case for using multiple imputation</title>
       <link>/publication/mi_per/</link>
       <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
       <guid>/publication/mi_per/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -582,7 +590,7 @@ head(eColi_abs)&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
-      <title>College of Natural Sciences Poster Session Abstract Webpage</title>
+      <title>College of Natural Sciences Poster Session</title>
       <link>/project/nsc-poster/</link>
       <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
       <guid>/project/nsc-poster/</guid>
@@ -623,16 +631,27 @@ head(eColi_abs)&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
+      <title>Effectiveness Evaluation of It’s Your Game; Keep It Real, a Middle School HIV/Sexually Transmitted Infection/Pregnancy Prevention Program</title>
+      <link>/publication/iyg_effectiveness/</link>
+      <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/iyg_effectiveness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Current State of Data Science at Chico State</title>
+      <link>/talk/2018_svccm/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/talk/2018_svccm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Insights into the fundamental physiology of the uncultured FE-oxidizing bacterium Leptothrix ochracea</title>
       <link>/publication/leptothrix/</link>
       <pubDate>Fri, 16 Feb 2018 00:00:00 +0000</pubDate>
       <guid>/publication/leptothrix/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -802,6 +821,16 @@ output as Rcmdr uses the old markdown package which only can create HTML output.
 &lt;h1 id=&#34;more-help&#34;&gt;More help&lt;/h1&gt;
 &lt;p&gt;For more help and/or places to start learning, I would recommend starting with the resources R Studio already has curated for you.
 &lt;a href=&#34;https://www.rstudio.com/online-learning/&#34;&gt;https://www.rstudio.com/online-learning/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Examining the Effect of a Pedagogical Change in a High Failure Rate College Science Course in the Face of a Shifting Demographic Student Body</title>
+      <link>/talk/2017_jsm/</link>
+      <pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/2017_jsm/</guid>
+      <description>&lt;p&gt;See the corresponding 
+&lt;a href=&#34;https://norcalbiostat.github.io/chem_ss/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;project page&lt;/a&gt; for the full analysis.&lt;/p&gt;
 </description>
     </item>
     

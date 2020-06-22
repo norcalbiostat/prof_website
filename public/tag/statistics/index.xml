@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Statistics | Dr. D.</title>
+    <title>statistics | Dr. D.</title>
     <link>/tag/statistics/</link>
       <atom:link href="/tag/statistics/index.xml" rel="self" type="application/rss+xml" />
-    <description>Statistics</description>
+    <description>statistics</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Sat, 18 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
-      <title>Statistics</title>
+      <title>statistics</title>
       <link>/tag/statistics/</link>
     </image>
     
     <item>
-      <title>Passion Driven Stats</title>
+      <title>Passion Driven Statistics - Statistics to support science</title>
       <link>/project/chem-ss/</link>
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/project/chem-ss/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Practical Multivariate Statistics 6th ed.</title>
+      <link>/publication/pma6/</link>
+      <pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/pma6/</guid>
+      <description>&lt;p&gt;This is the sixth edition of a popular textbook on multivariate analysis. Well-regarded for its practical and accessible approach, with excellent examples and good guidance on computing, the book is particularly popular for teaching outside statistics, i.e. in epidemiology, social science, business, etc. The sixth edition has been updated with a new chapter on data visualization, a distinction made between exploratory and confirmatory analyses and a new section on generalized estimating equations and many new updates throughout. This new edition will enable the book to continue as one of the leading textbooks in the area, particularly for non-statisticians.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;book_cover.png&#34; alt=&#34;book cover&#34;&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

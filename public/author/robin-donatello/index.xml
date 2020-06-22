@@ -5,12 +5,22 @@
     <link>/author/robin-donatello/</link>
       <atom:link href="/author/robin-donatello/index.xml" rel="self" type="application/rss+xml" />
     <description>Robin Donatello</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Sat, 29 Jul 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/author/robin-donatello/avatar_hu35a9716dffe38d7666631c986efce41e_24477_270x270_fill_q90_lanczos_center.jpg</url>
+      <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
       <title>Robin Donatello</title>
       <link>/author/robin-donatello/</link>
     </image>
+    
+    <item>
+      <title>Examining the Effect of a Pedagogical Change in a High Failure Rate College Science Course in the Face of a Shifting Demographic Student Body</title>
+      <link>/talk/2017_jsm/</link>
+      <pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>/talk/2017_jsm/</guid>
+      <description>&lt;p&gt;See the corresponding 
+&lt;a href=&#34;https://norcalbiostat.github.io/chem_ss/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;project page&lt;/a&gt; for the full analysis.&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

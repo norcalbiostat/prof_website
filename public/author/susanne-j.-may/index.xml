@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Susanne J. May | Dr. D.</title>
+    <link>/author/susanne-j.-may/</link>
+      <atom:link href="/author/susanne-j.-may/index.xml" rel="self" type="application/rss+xml" />
+    <description>Susanne J. May</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Sat, 19 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
+      <title>Susanne J. May</title>
+      <link>/author/susanne-j.-may/</link>
+    </image>
+    
+    <item>
+      <title>Practical Multivariate Statistics 6th ed.</title>
+      <link>/publication/pma6/</link>
+      <pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/pma6/</guid>
+      <description>&lt;p&gt;This is the sixth edition of a popular textbook on multivariate analysis. Well-regarded for its practical and accessible approach, with excellent examples and good guidance on computing, the book is particularly popular for teaching outside statistics, i.e. in epidemiology, social science, business, etc. The sixth edition has been updated with a new chapter on data visualization, a distinction made between exploratory and confirmatory analyses and a new section on generalized estimating equations and many new updates throughout. This new edition will enable the book to continue as one of the leading textbooks in the area, particularly for non-statisticians.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;book_cover.png&#34; alt=&#34;book cover&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
