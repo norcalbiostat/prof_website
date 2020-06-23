@@ -148,10 +148,13 @@ Ah! This is where I got the info about the slug from!
 Serve site and... well turns out you don't even need that last step. Okay better. Posts are done. 
 
 
-> :pencil: You -can- Knit your `.Rmd` file to see what it looks like while working on it, just delete it before you save. It'll get re-rendered when you build site, in the 'proper' format that's needed for display on a Hugo based website. 
+:exclamation: You -can- Knit your `.Rmd` file to see what it looks like while working on it, just delete it before you save. It'll get re-rendered when you build site, in the 'proper' format that's needed for display on a Hugo based website. 
 
 > :question: At the bottom of each post is info about the author (me), with a bio that's part of the default text. I need to find where this is at to remove it. Not necessary/desired for a single author page. 
 
+> :question: Each post has a "last updated on", and it's the date i 'created' the file - which in the case of this website update it's saying June 11, 2020. That's not the date i want to show. I've messed with the `date` and the `lastmod` date in the YAML header.. i've tried quotes and no quotes, i've tried updating the metadata. Nothing. 
+
+Answer: See this page: https://sourcethemes.com/academic/docs/managing-content/#page-features
 
 ### Publications
 
@@ -179,6 +182,28 @@ Now this is a ton of work to update :(
 :question: how to get rid of the timestamp? 
 :question: how to get rid of author bio at the bottom of the talk. This was an earlier question also. 
 
+* **Conference Talks**
+    - The `date` on line 4 is the start of the conference, the `enddate` is the last day. Remove the time, and set `allday` to `yes`. 
 
+## Additional Content/Sections
+
+I want to work on adding sections for the following areas. 
+
+* Academic Advising (blog post template)
+    - General info on letter of reference requests
+    - Statistics/DS program guide
+    - Academic life? 
+    - Choosing graduate school? 
+* Project advising (project template)
+    - A place to showcase the work students are doing
+    - Highlights the students work
+    - Acts as a recruitment tool for prospective students. 
+    - MS students: committee member only? - This could get really big. 
+    
+
+
+## In closing
+
+That's it for now. I'll write more about the process of adding courses later, as I figure it out. 
 
 

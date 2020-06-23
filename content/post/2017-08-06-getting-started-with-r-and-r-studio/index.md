@@ -198,7 +198,7 @@ You can edit *tex files directly in R Studio, a separate tex editor is not neces
 # R Commander: Pointing and clicking your way along
 #### A Basic Statistics GUI for R
 <center>
-<img src="http://socserv.mcmaster.ca/jfox/Misc/Rcmdr/Rcmdr-screenshot.jpg" style="width: 500px;"/>
+<img src="https://socserv.mcmaster.ca/jfox/Misc/Rcmdr/Rcmdr-screenshot.jpg" style="width: 500px;"/>
 </center>
 
 #### Additional setup for R Commander

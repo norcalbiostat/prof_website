@@ -162,12 +162,14 @@
 &lt;li&gt;Use Rstudio Addin to &lt;em&gt;Update Metadata&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Serve site and&amp;hellip; well turns out you don&amp;rsquo;t even need that last step. Okay better. Posts are done.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;✏ You -can- Knit your &lt;code&gt;.Rmd&lt;/code&gt; file to see what it looks like while working on it, just delete it before you save. It&amp;rsquo;ll get re-rendered when you build site, in the &amp;lsquo;proper&amp;rsquo; format that&amp;rsquo;s needed for display on a Hugo based website.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;❗ You -can- Knit your &lt;code&gt;.Rmd&lt;/code&gt; file to see what it looks like while working on it, just delete it before you save. It&amp;rsquo;ll get re-rendered when you build site, in the &amp;lsquo;proper&amp;rsquo; format that&amp;rsquo;s needed for display on a Hugo based website.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;❓ At the bottom of each post is info about the author (me), with a bio that&amp;rsquo;s part of the default text. I need to find where this is at to remove it. Not necessary/desired for a single author page.&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❓ Each post has a &amp;ldquo;last updated on&amp;rdquo;, and it&amp;rsquo;s the date i &amp;lsquo;created&amp;rsquo; the file - which in the case of this website update it&amp;rsquo;s saying June 11, 2020. That&amp;rsquo;s not the date i want to show. I&amp;rsquo;ve messed with the &lt;code&gt;date&lt;/code&gt; and the &lt;code&gt;lastmod&lt;/code&gt; date in the YAML header.. i&amp;rsquo;ve tried quotes and no quotes, i&amp;rsquo;ve tried updating the metadata. Nothing.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Answer: See this page: &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#page-features&#34;&gt;https://sourcethemes.com/academic/docs/managing-content/#page-features&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;publications&#34;&gt;Publications&lt;/h3&gt;
 &lt;p&gt;Interesting change. Before, this was just a folder containing one &lt;code&gt;.md&lt;/code&gt; file per pub. The Academic theme now has three subfolders, &lt;code&gt;conference-paper&lt;/code&gt;, &lt;code&gt;journal-article&lt;/code&gt; and &lt;code&gt;preprint&lt;/code&gt;. The examples for each are really good to keep, so I &amp;ldquo;commented out&amp;rdquo; each pub by renaming &lt;code&gt;index.md&lt;/code&gt; to &lt;code&gt;_index.md&lt;/code&gt; and changed the folder name to &lt;code&gt;example-&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -196,6 +198,35 @@
 &lt;/ul&gt;
 &lt;p&gt;❓ how to get rid of the timestamp?
 ❓ how to get rid of author bio at the bottom of the talk. This was an earlier question also.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Conference Talks&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;date&lt;/code&gt; on line 4 is the start of the conference, the &lt;code&gt;enddate&lt;/code&gt; is the last day. Remove the time, and set &lt;code&gt;allday&lt;/code&gt; to &lt;code&gt;yes&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;additional-contentsections&#34;&gt;Additional Content/Sections&lt;/h2&gt;
+&lt;p&gt;I want to work on adding sections for the following areas.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Academic Advising (blog post template)
+&lt;ul&gt;
+&lt;li&gt;General info on letter of reference requests&lt;/li&gt;
+&lt;li&gt;Statistics/DS program guide&lt;/li&gt;
+&lt;li&gt;Academic life?&lt;/li&gt;
+&lt;li&gt;Choosing graduate school?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Project advising (project template)
+&lt;ul&gt;
+&lt;li&gt;A place to showcase the work students are doing&lt;/li&gt;
+&lt;li&gt;Highlights the students work&lt;/li&gt;
+&lt;li&gt;Acts as a recruitment tool for prospective students.&lt;/li&gt;
+&lt;li&gt;MS students: committee member only? - This could get really big.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;in-closing&#34;&gt;In closing&lt;/h2&gt;
+&lt;p&gt;That&amp;rsquo;s it for now. I&amp;rsquo;ll write more about the process of adding courses later, as I figure it out.&lt;/p&gt;
 </description>
     </item>
     

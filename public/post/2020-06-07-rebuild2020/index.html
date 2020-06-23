@@ -244,7 +244,7 @@
     
       <meta property="article:published_time" content="2020-06-07T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-21T10:26:15-07:00">
+    <meta property="article:modified_time" content="2020-06-21T20:55:39-07:00">
   
 
   
@@ -273,7 +273,7 @@
   "headline": "Rebuilding this Site, Again, from Near Scratch",
   
   "datePublished": "2020-06-07T00:00:00Z",
-  "dateModified": "2020-06-21T10:26:15-07:00",
+  "dateModified": "2020-06-21T20:55:39-07:00",
   
   "author": {
     "@type": "Person",
@@ -613,7 +613,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    8 min read
+    9 min read
   </span>
   
 
@@ -794,12 +794,14 @@
 <li>Use Rstudio Addin to <em>Update Metadata</em></li>
 </ul>
 <p>Serve site and&hellip; well turns out you don&rsquo;t even need that last step. Okay better. Posts are done.</p>
-<blockquote>
-<p>✏ You -can- Knit your <code>.Rmd</code> file to see what it looks like while working on it, just delete it before you save. It&rsquo;ll get re-rendered when you build site, in the &lsquo;proper&rsquo; format that&rsquo;s needed for display on a Hugo based website.</p>
-</blockquote>
+<p>❗ You -can- Knit your <code>.Rmd</code> file to see what it looks like while working on it, just delete it before you save. It&rsquo;ll get re-rendered when you build site, in the &lsquo;proper&rsquo; format that&rsquo;s needed for display on a Hugo based website.</p>
 <blockquote>
 <p>❓ At the bottom of each post is info about the author (me), with a bio that&rsquo;s part of the default text. I need to find where this is at to remove it. Not necessary/desired for a single author page.</p>
 </blockquote>
+<blockquote>
+<p>❓ Each post has a &ldquo;last updated on&rdquo;, and it&rsquo;s the date i &lsquo;created&rsquo; the file - which in the case of this website update it&rsquo;s saying June 11, 2020. That&rsquo;s not the date i want to show. I&rsquo;ve messed with the <code>date</code> and the <code>lastmod</code> date in the YAML header.. i&rsquo;ve tried quotes and no quotes, i&rsquo;ve tried updating the metadata. Nothing.</p>
+</blockquote>
+<p>Answer: See this page: <a href="https://sourcethemes.com/academic/docs/managing-content/#page-features">https://sourcethemes.com/academic/docs/managing-content/#page-features</a></p>
 <h3 id="publications">Publications</h3>
 <p>Interesting change. Before, this was just a folder containing one <code>.md</code> file per pub. The Academic theme now has three subfolders, <code>conference-paper</code>, <code>journal-article</code> and <code>preprint</code>. The examples for each are really good to keep, so I &ldquo;commented out&rdquo; each pub by renaming <code>index.md</code> to <code>_index.md</code> and changed the folder name to <code>example-</code></p>
 <blockquote>
@@ -828,6 +830,35 @@
 </ul>
 <p>❓ how to get rid of the timestamp?
 ❓ how to get rid of author bio at the bottom of the talk. This was an earlier question also.</p>
+<ul>
+<li><strong>Conference Talks</strong>
+<ul>
+<li>The <code>date</code> on line 4 is the start of the conference, the <code>enddate</code> is the last day. Remove the time, and set <code>allday</code> to <code>yes</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="additional-contentsections">Additional Content/Sections</h2>
+<p>I want to work on adding sections for the following areas.</p>
+<ul>
+<li>Academic Advising (blog post template)
+<ul>
+<li>General info on letter of reference requests</li>
+<li>Statistics/DS program guide</li>
+<li>Academic life?</li>
+<li>Choosing graduate school?</li>
+</ul>
+</li>
+<li>Project advising (project template)
+<ul>
+<li>A place to showcase the work students are doing</li>
+<li>Highlights the students work</li>
+<li>Acts as a recruitment tool for prospective students.</li>
+<li>MS students: committee member only? - This could get really big.</li>
+</ul>
+</li>
+</ul>
+<h2 id="in-closing">In closing</h2>
+<p>That&rsquo;s it for now. I&rsquo;ll write more about the process of adding courses later, as I figure it out.</p>
 
     </div>
 
