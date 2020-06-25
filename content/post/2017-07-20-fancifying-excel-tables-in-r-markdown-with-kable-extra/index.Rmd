@@ -5,6 +5,8 @@ date: '2017-07-20'
 categories:
   - programming
   - pretty
+profile: false
+editable: false
 tags:
   - R
   - kable

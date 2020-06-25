@@ -8,6 +8,7 @@ tags:
   - blogdown
   - website
 slug: new-website-using-blogdown
+profile: false
 ---
 
 As a teacher, i'm on a 9 month contract. That means technically I don't "work" over summer. However as _any_ academic can tell you, that's not how it goes. Everyone works over summer, it's just what they work on (and when they work on it) is more of a personal preference. Some get grants and work with students, some are busy working in the labs to advance their own research. Some even decide to teach summer school (I'm not quite that crazy yet). All of us eventually have to start to get their lesson plans going for the fall. It creeps up on you faster than you realize!

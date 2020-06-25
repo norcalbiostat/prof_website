@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teaching | Dr. D.</title>
+    <link>/teaching/</link>
+      <atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <description>Teaching</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright>
+    <image>
+      <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
+      <title>Teaching</title>
+      <link>/teaching/</link>
+    </image>
+    
+  </channel>
+</rss>

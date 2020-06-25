@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 120  # Order that this section will appear.
 
-title = "Popular Topics"
+title = "Topics I talk about"
 subtitle = ""
 
 [content]
@@ -19,4 +19,14 @@ subtitle = ""
   # Minimum and maximum font sizes (1.0 = 100%).
   font_size_min = 0.7
   font_size_max = 2.0
+  
+[design.background]
+ 
+  # Background image.
+  image = "headers/dogs.jpg"  # Name of image in `static/img/`.
+  image_darken = 0.7  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+  image_size = "cover"  #  Options are `cover` (default), `contain`, or `actual` size.
+  image_position = "center"  # Options include `left`, `center` (default), or `right`.
+  image_parallax = true  # Use a fun parallax-like fixed background effect? true/false
+
 +++

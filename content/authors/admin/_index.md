@@ -21,10 +21,8 @@ email: "rdonatello@csuchico.edu"
 interests:
 - Racial Equity in STEM
 - Data Science
-- Teaching people how to harness the power of their data
+- Student Success
 - Data Editing and Imputation
-- Data Visualization
-- Bayesian Methods for Analysis
 - Gardening for food
 - Pitbulls and puppies
 - Being outdoors
@@ -66,20 +64,19 @@ superuser: true
 title: Robin Donatello
 user_groups:
 - Researchers
-- Visitors
 ---
 
 
-When I'm not working in the garden to grow food for my family, I'd rather be out adventuring with my dogs, or getting in some video game time. Otherwise I'm
+When I'm not on campus, typically i'm growing :carrot::ear_of_rice::tomato::eggplant::green_apple: for my family, out adventuring with my :dog::poodle: , or getting some :video_game::game_die::books: time in. 
 
-* [Teaching courses](/courses) courses in Statistics and Data Science.
+Campus life consists of: 
+
+* [Training](/courses) the next generation of Scientists how to harness the power of Statistics and Data in a responsible and ethical manner. 
+* Supporting students in their adventure through [academic advising]() or [research support](). 
 * Leading the [Data Science Initative (DSI)](http://datascience.csuchico.edu) to develop Data Science capacity on our campus.
-* Providing analytical support for campus-level Basic Needs and Student Success programs.    
-* Organizing the [Chico R Users Group](https://www.meetup.com/Chico-R-Users-Group/) (Recruiting help)
-* Running [Software and Data Carpentry](https://carpentries.org/) workshops. 
-* Helping the [Center for Healthy Communities](https://www.csuchico.edu/chc/) develop data science and analytical tools to ensure their programs are effective and meeting the basic needs of students. 
+* Providing analytical support and statitistical consulting for many [projects](#projects) on and off campus. 
 
-<span style="color:red">I am currently on Sabbatical until Fall 2021.</span>
+<span style="color:red">I am currently on Sabbatical until Fall 2021. :green_heart: </span>
 
 <!---
 <span style="color:red">Current student looking for your [class page](#teaching)? </span>

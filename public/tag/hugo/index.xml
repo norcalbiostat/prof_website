@@ -162,14 +162,15 @@
 &lt;li&gt;Use Rstudio Addin to &lt;em&gt;Update Metadata&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Serve site and&amp;hellip; well turns out you don&amp;rsquo;t even need that last step. Okay better. Posts are done.&lt;/p&gt;
+&lt;h5 id=&#34;page-featureshttpssourcethemescomacademicdocsmanaging-contentpage-features&#34;&gt;
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#page-features&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Page features&lt;/a&gt;&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Turn off profile blurb that shows at the bottom of each post. Not necessary/desired for a single author page. You can also toggle off &lt;code&gt;reading_time&lt;/code&gt;, &lt;code&gt;share&lt;/code&gt;ing links, &lt;code&gt;commentable&lt;/code&gt; and &lt;code&gt;editable&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;❗ You -can- Knit your &lt;code&gt;.Rmd&lt;/code&gt; file to see what it looks like while working on it, just delete it before you save. It&amp;rsquo;ll get re-rendered when you build site, in the &amp;lsquo;proper&amp;rsquo; format that&amp;rsquo;s needed for display on a Hugo based website.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;❓ At the bottom of each post is info about the author (me), with a bio that&amp;rsquo;s part of the default text. I need to find where this is at to remove it. Not necessary/desired for a single author page.&lt;/p&gt;
-&lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;❓ Each post has a &amp;ldquo;last updated on&amp;rdquo;, and it&amp;rsquo;s the date i &amp;lsquo;created&amp;rsquo; the file - which in the case of this website update it&amp;rsquo;s saying June 11, 2020. That&amp;rsquo;s not the date i want to show. I&amp;rsquo;ve messed with the &lt;code&gt;date&lt;/code&gt; and the &lt;code&gt;lastmod&lt;/code&gt; date in the YAML header.. i&amp;rsquo;ve tried quotes and no quotes, i&amp;rsquo;ve tried updating the metadata. Nothing.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Answer: See this page: &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#page-features&#34;&gt;https://sourcethemes.com/academic/docs/managing-content/#page-features&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;publications&#34;&gt;Publications&lt;/h3&gt;
 &lt;p&gt;Interesting change. Before, this was just a folder containing one &lt;code&gt;.md&lt;/code&gt; file per pub. The Academic theme now has three subfolders, &lt;code&gt;conference-paper&lt;/code&gt;, &lt;code&gt;journal-article&lt;/code&gt; and &lt;code&gt;preprint&lt;/code&gt;. The examples for each are really good to keep, so I &amp;ldquo;commented out&amp;rdquo; each pub by renaming &lt;code&gt;index.md&lt;/code&gt; to &lt;code&gt;_index.md&lt;/code&gt; and changed the folder name to &lt;code&gt;example-&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -196,7 +197,7 @@
 &lt;li&gt;files: &lt;code&gt;talk/folder/file&lt;/code&gt; - no relative paths.&lt;/li&gt;
 &lt;li&gt;TOML vs YAML Hell.  TOML uses +++ at the top, YAML uses &amp;mdash;. TOML uses &lt;code&gt;=&lt;/code&gt;, YAML uses &lt;code&gt;:&lt;/code&gt;. And none can the two comingle.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;❓ how to get rid of the timestamp?
+&lt;p&gt;❓ how to get rid of the timestamp? 
 ❓ how to get rid of author bio at the bottom of the talk. This was an earlier question also.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Conference Talks&lt;/strong&gt;
@@ -224,6 +225,39 @@
 &lt;li&gt;MS students: committee member only? - This could get really big.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;making-a-new-section&#34;&gt;Making a new section&lt;/h2&gt;
+&lt;p&gt;I want a section on the homepage for teaching. I think I&amp;rsquo;m okay with just having a list like my old site, so I just copied &lt;code&gt;content/home/demo.md&lt;/code&gt;, renamed it as &lt;code&gt;teaching.md&lt;/code&gt;, then copied the content in from the old site widget.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Going to need subpages for this. Courses/Notebook/Data/Workshops&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;featured-images&#34;&gt;Featured images&lt;/h2&gt;
+&lt;p&gt;You&amp;rsquo;d think that adding a link to &lt;code&gt;image&lt;/code&gt; into this section of the header would work, but no.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;header:
+  caption: &amp;quot;&amp;quot;
+  image: 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Add this to the header instead.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;image:
+  placement: 1
+  caption: &amp;quot;test&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Read more 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;adding-a-student-page&#34;&gt;Adding a student page&lt;/h2&gt;
+&lt;p&gt;I did this using by creating a 
+&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-widget-page&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;new widget page&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make new folder under &lt;code&gt;content/&lt;/code&gt; called &lt;code&gt;students/.&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add &lt;code&gt;index.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Move the &lt;code&gt;people.md&lt;/code&gt; widget out of &lt;code&gt;home/&lt;/code&gt; into &lt;code&gt;students/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Each person gets a folder under &lt;code&gt;/content/authors&lt;/code&gt; - and is assigned to a &lt;code&gt;user_group&lt;/code&gt;.
+&lt;ul&gt;
+&lt;li&gt;This display is adjusted in the &lt;code&gt;people.md&lt;/code&gt; file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;add a &lt;code&gt;weight: &amp;lt;number&amp;gt;&lt;/code&gt; to the header after &lt;code&gt;title&lt;/code&gt; to control order. 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues/1080#issuecomment-528684130&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ref&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;in-closing&#34;&gt;In closing&lt;/h2&gt;
 &lt;p&gt;That&amp;rsquo;s it for now. I&amp;rsquo;ll write more about the process of adding courses later, as I figure it out.&lt;/p&gt;

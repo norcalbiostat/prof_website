@@ -11,6 +11,8 @@ tags:
   - hugo
 subtitle: 'An annual adventure'
 summary: ''
+profile: false
+editable: false
 authors: []
 lastmod: '2020-06-07T09:17:03-07:00'
 featured: no
@@ -147,14 +149,15 @@ Ah! This is where I got the info about the slug from!
 
 Serve site and... well turns out you don't even need that last step. Okay better. Posts are done. 
 
+##### [Page features](https://sourcethemes.com/academic/docs/managing-content/#page-features)
+
+* Turn off profile blurb that shows at the bottom of each post. Not necessary/desired for a single author page. You can also toggle off `reading_time`, `share`ing links, `commentable` and `editable`. 
 
 :exclamation: You -can- Knit your `.Rmd` file to see what it looks like while working on it, just delete it before you save. It'll get re-rendered when you build site, in the 'proper' format that's needed for display on a Hugo based website. 
 
-> :question: At the bottom of each post is info about the author (me), with a bio that's part of the default text. I need to find where this is at to remove it. Not necessary/desired for a single author page. 
 
 > :question: Each post has a "last updated on", and it's the date i 'created' the file - which in the case of this website update it's saying June 11, 2020. That's not the date i want to show. I've messed with the `date` and the `lastmod` date in the YAML header.. i've tried quotes and no quotes, i've tried updating the metadata. Nothing. 
 
-Answer: See this page: https://sourcethemes.com/academic/docs/managing-content/#page-features
 
 ### Publications
 
@@ -201,6 +204,39 @@ I want to work on adding sections for the following areas.
     - MS students: committee member only? - This could get really big. 
     
 
+## Making a new section
+I want a section on the homepage for teaching. I think I'm okay with just having a list like my old site, so I just copied `content/home/demo.md`, renamed it as `teaching.md`, then copied the content in from the old site widget. 
+
+* Going to need subpages for this. Courses/Notebook/Data/Workshops... 
+
+
+## Featured images
+
+You'd think that adding a link to `image` into this section of the header would work, but no. 
+```
+header:
+  caption: ""
+  image: 
+```
+
+Add this to the header instead.
+```
+image:
+  placement: 1
+  caption: "test"
+```
+
+Read more [here](https://sourcethemes.com/academic/docs/managing-content/#featured-image). 
+
+## Adding a student page
+I did this using by creating a [new widget page](https://sourcethemes.com/academic/docs/managing-content/#create-a-widget-page)
+
+* Make new folder under `content/` called `students/.`
+* Add `index.md` 
+* Move the `people.md` widget out of `home/` into `students/`
+* Each person gets a folder under `/content/authors` - and is assigned to a `user_group`. 
+    - This display is adjusted in the `people.md` file. 
+* add a `weight: <number>` to the header after `title` to control order. [ref](https://github.com/gcushen/hugo-academic/issues/1080#issuecomment-528684130)
 
 ## In closing
 

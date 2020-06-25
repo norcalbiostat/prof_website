@@ -23,6 +23,10 @@
   </url>
   
   <url>
+    <loc>/author/alumni-first/</loc>
+  </url>
+  
+  <url>
     <loc>/courses/math_315/example2/</loc>
     <lastmod>2020-06-04T15:08:42-07:00</lastmod>
   </url>
@@ -30,6 +34,15 @@
   <url>
     <loc>/courses/math_456/example2/</loc>
     <lastmod>2020-06-04T15:08:42-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/alumni-2-2011/</loc>
+  </url>
+  
+  <url>
+    <loc>/students/</loc>
+    <lastmod>2020-06-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -438,8 +451,19 @@
   </url>
   
   <url>
-    <loc>/courses/</loc>
-    <lastmod>2020-06-04T15:08:42-07:00</lastmod>
+    <loc>/author/alumni/</loc>
+  </url>
+  
+  <url>
+    <loc>/author/alumni/</loc>
+  </url>
+  
+  <url>
+    <loc>/author/alumni/</loc>
+  </url>
+  
+  <url>
+    <loc>/author/alumni/</loc>
   </url>
   
   <url>
@@ -468,6 +492,19 @@
   <url>
     <loc>/author/robin-donatello/</loc>
     <lastmod>2020-06-21T20:55:39-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/</loc>
+    <lastmod>2020-06-04T15:08:42-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/ug-stat-major/</loc>
+  </url>
+  
+  <url>
+    <loc>/author/ug-student/</loc>
   </url>
   
   <url>

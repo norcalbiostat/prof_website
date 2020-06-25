@@ -9,6 +9,8 @@ tags:
   - Rstudio
   - Rmarkdown
   - LaTeX
+profile: false
+editable: false
 ---
 
 # Overview
