@@ -29,7 +29,7 @@ subtitle = "Past and Present. :star: indicates I serve(d) on their committee (no
  css_class = ""
 +++
 
-Text at the top? Link from here an additional pages for 
+Text at the top? Will be centered.  Link from here an additional pages for 
 
 * academic advising (including how to ask for a letter of ref)
 * choosing grad school

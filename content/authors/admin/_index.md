@@ -67,7 +67,7 @@ user_groups:
 ---
 
 
-When I'm not on campus, typically i'm growing :carrot::ear_of_rice::tomato::eggplant::green_apple: for my family, out adventuring with my :dog::poodle: , or getting some :video_game::game_die::books: time in. 
+When I'm not on campus, typically i'm growing :carrot::ear_of_rice::tomato::eggplant::green_apple: for my family, out adventuring with my :dog:🧔:poodle: , or getting some :video_game::game_die::books: time in. 
 
 Campus life consists of: 
 

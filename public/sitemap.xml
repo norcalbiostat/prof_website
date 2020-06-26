@@ -24,6 +24,7 @@
   
   <url>
     <loc>/author/alumni-first/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
@@ -38,56 +39,92 @@
   
   <url>
     <loc>/author/alumni-2-2011/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/students/</loc>
-    <lastmod>2020-06-24T00:00:00+00:00</lastmod>
+    <loc>/project/ash/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/blogdown/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <loc>/project/chc/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/data-science/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/ds/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <loc>/tag/featured/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/hugo/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/r-markdown/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/2020-06-07-rebuild2020/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <loc>/project/ilearn/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/project/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/public-health/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/statistics/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/student-success/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/students/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/blogdown/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/ds/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/hugo/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/r-markdown/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2020-06-07-rebuild2020/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
@@ -97,17 +134,17 @@
   
   <url>
     <loc>/project/chem-ss/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/statistics/</loc>
     <lastmod>2020-06-22T21:03:23-07:00</lastmod>
   </url>
   
   <url>
     <loc>/talk/2020_ichps/</loc>
     <lastmod>2020-06-21T20:55:39-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/pma6/</loc>
+    <lastmod>2019-10-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -122,7 +159,7 @@
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-06-21T20:55:39-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
@@ -148,6 +185,11 @@
   <url>
     <loc>/author/virginia-a.-clark/</loc>
     <lastmod>2020-06-21T20:55:39-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/cnn/</loc>
+    <lastmod>2019-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -187,47 +229,47 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/dplyr/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/category/efficiency/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/foreach/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/ggplot/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/category/programming/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/r/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/rmarkdown/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/post/2018-09-13-using-dplyr-and-foreach/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
@@ -241,8 +283,18 @@
   </url>
   
   <url>
+    <loc>/project/enloe_bariatric/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/project/nsc-poster/</loc>
     <lastmod>2020-06-21T20:55:39-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/community-coding/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -251,8 +303,38 @@
   </url>
   
   <url>
-    <loc>/tag/data-science/</loc>
-    <lastmod>2020-06-21T20:55:39-07:00</lastmod>
+    <loc>/project/data-fest/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/ds-pols/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/empi/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/housing_insecurity/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/missing-data/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/nursing-simulation/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/blank/</loc>
+    <lastmod>2018-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -277,11 +359,6 @@
   
   <url>
     <loc>/author/louise-a.-rohrbach/</loc>
-    <lastmod>2020-06-21T20:55:39-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/public-health/</loc>
     <lastmod>2020-06-21T20:55:39-07:00</lastmod>
   </url>
   
@@ -342,17 +419,17 @@
   
   <url>
     <loc>/post/2017-08-06-software-overview/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/latex/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/rstudio/</loc>
-    <lastmod>2020-06-22T21:03:23-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
@@ -367,27 +444,27 @@
   
   <url>
     <loc>/post/2017-07-20-fancifying-excel-tables-in-r-markdown-with-kable-extra/</loc>
-    <lastmod>2020-06-15T22:21:26-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/kable/</loc>
-    <lastmod>2020-06-15T22:21:26-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/kable_extra/</loc>
-    <lastmod>2020-06-15T22:21:26-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/category/pretty/</loc>
-    <lastmod>2020-06-15T22:21:26-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/stringr/</loc>
-    <lastmod>2020-06-15T22:21:26-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
@@ -417,17 +494,17 @@
   
   <url>
     <loc>/post/2017-07-08-new-website-using-blogdown/</loc>
-    <lastmod>2020-06-15T22:21:26-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/category/professional/</loc>
-    <lastmod>2020-06-15T22:21:26-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/tag/website/</loc>
-    <lastmod>2020-06-15T22:21:26-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
@@ -452,18 +529,22 @@
   
   <url>
     <loc>/author/alumni/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/author/alumni/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/author/alumni/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/author/alumni/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
@@ -491,20 +572,22 @@
   
   <url>
     <loc>/author/robin-donatello/</loc>
-    <lastmod>2020-06-21T20:55:39-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/</loc>
-    <lastmod>2020-06-04T15:08:42-07:00</lastmod>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/author/ug-stat-major/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
     <loc>/author/ug-student/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
@@ -513,6 +596,7 @@
   
   <url>
     <loc>/author/%E5%90%B3%E6%81%A9%E9%81%94/</loc>
+    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
 </urlset>

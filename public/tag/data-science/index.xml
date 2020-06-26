@@ -5,12 +5,53 @@
     <link>/tag/data-science/</link>
       <atom:link href="/tag/data-science/index.xml" rel="self" type="application/rss+xml" />
     <description>data-science</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Tue, 29 May 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Thu, 25 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
       <title>data-science</title>
       <link>/tag/data-science/</link>
     </image>
+    
+    <item>
+      <title>Center for Healthy Communities</title>
+      <link>/project/chc/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/project/chc/</guid>
+      <description>&lt;p&gt;As a member of the 
+&lt;a href=&#34;http://datascience.csuchico.edu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Science Initiative&lt;/a&gt;, I have been working with the 
+&lt;a href=&#34;https://www.csuchico.edu/chc/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Center for Healthy Communties&lt;/a&gt; since 2019 as a statistical consultant, data manager, providing data skills training workshops and managing Data Science student interns. I help the CHC streamline and organize their data processes, research and program evaluation tasks.&lt;/p&gt;
+&lt;p&gt;The primary contract that I work on is the &lt;strong&gt;CalFresh Outreach Program&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;CalFresh Food is a nutrition assistance program that helps low-income individuals and families buy the food they need. CalFresh Food dollars help stretch a tight food budget and help many people afford to incorporate healthy foods like fruits and vegetables into their diets.&lt;/p&gt;
+&lt;h3 id=&#34;data-product--deliverables&#34;&gt;Data Product / Deliverables&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://chc-cfo-reporting.csuchico.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Website for subcontractors to upload required reporting files quarterly.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Results of the Bsic needs Stucent Success Survey 
+&lt;a href=&#34;https://chicocalfresh.github.io/bns-website/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;student-collaborators&#34;&gt;Student Collaborators&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Brandon Leff [link to his author page]&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>/project/cnn/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      <guid>/project/cnn/</guid>
+      <description>&lt;p&gt;Paper surveys are still a preferred in-class data collection method due to the captive audience, ease of creation (e.g. MS word), and administration. Data entry is time consuming and expensive. This research explored using convolutional neural networks (CNN, a deep learning process) to automate the data entry of thousands of surveys administered as part of a college program assessment. CNN are used in image detection (e.g. is there a cute cat in the picture?), where digital images are stored as arrays with entries corresponding to pixel color. CNN’s are constructed by creating many layers that each apply specific matrix operations to extract the most salient characteristics in the image. Our work differs from image detection; our goal was to identify where a mark exists on a page (e.g. circles, x’s), and classify it as the corresponding response. Like other machine learning models, CNN depend on quality and quantity of training data, and can be computationally intensive but feasible on a moderate powered server. Preliminary results achieved 92% validation accuracy, demonstrating it’s feasible to use paper surveys without the burden of manual data entry or costly software licenses.&lt;/p&gt;
+&lt;h2 id=&#34;student-researcher&#34;&gt;Student Researcher&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Kristofer Walker [link to his page]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+&lt;p&gt;Kris presented his work in the 
+&lt;a href=&#34;http://jointmathematicsmeetings.org/meetings/national/jmm2020/2245_maasessstud#post&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Student Poster Session&lt;/a&gt; at the 
+&lt;a href=&#34;http://jointmathematicsmeetings.org/meetings/national/jmm2020/2245_intro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2020 Joint Math Meetings&lt;/a&gt;, January 15-18, 2020, Denver, CO.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>College of Natural Sciences Poster Session</title>
@@ -46,10 +87,42 @@
     </item>
     
     <item>
+      <title>Community Coding</title>
+      <link>/project/community-coding/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/community-coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data Science Initative</title>
       <link>/project/dsi/</link>
       <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
       <guid>/project/dsi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DataFest</title>
+      <link>/project/data-fest/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/data-fest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DS POLS Twitter project</title>
+      <link>/project/ds-pols/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/ds-pols/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>/project/blank/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/blank/</guid>
       <description></description>
     </item>
     

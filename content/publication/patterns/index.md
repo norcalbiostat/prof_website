@@ -9,7 +9,7 @@ authors:
 - Louise Ann Rohrbach
 - Abdelmonem A. Afifi
 date: "2016-05-02"
-doi: ""
+doi: "http://dx.doi.org/10.1080/00224499.2016.1164800"
 featured: false
 image:
   caption: ''

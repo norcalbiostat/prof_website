@@ -5,12 +5,89 @@
     <link>/project/</link>
       <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Sat, 06 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Thu, 25 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
       <link>/project/</link>
     </image>
+    
+    <item>
+      <title>Adolescent and School Health</title>
+      <link>/project/ash/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/project/ash/</guid>
+      <description>&lt;p&gt;I have been working with the ASH unit since 2007. Here is a summary of the projects this research group has worked on.&lt;/p&gt;
+&lt;h3 id=&#34;project-connect-2005-2010&#34;&gt;Project Connect (2005-2010)&lt;/h3&gt;
+&lt;p&gt;Project Connect was a teenage pregnancy and STD prevention study conducted in LAUSD schools. Twelve high schools in areas with STD and pregnancy rates exceeding the Healthy People 2010 [14] goals were matched into six pairs based on criteria including chlamydia and birth rates, school demographics, and number of students, and were invited to participate. To minimize contamination between conditions, the schools in each pair were purposively assigned to either the intervention or control condition so that no intervention school attendance area shared a geographic boundary with any control school. Schools were matched using publicly available data before any staff contact with school personnel.&lt;/p&gt;
+&lt;h3 id=&#34;keeping-it-real-lac-2010--2015&#34;&gt;Keeping It Real LAC (2010 -2015)&lt;/h3&gt;
+&lt;p&gt;Funded through the Office of Adolescent Health, Keeping It Real LAC (KIR) trained 7th and 8th grade teachers in 24 CUSD and LAUSD middle schools in the evidence-based, abstinence-plus curriculum It’s Your Game…Keep It Real! (IYG). KIR demonstrated that, with appropriate training and support, middle school teachers are capable of delivering evidence-based sexual health education that impacts student risk behaviors. The success of KIR and the growing demand for the IYG curriculum provided powerful evidence of its fit in Los Angeles, and paved the way for KIR-T.&lt;/p&gt;
+&lt;h3 id=&#34;keeping-it-real-together-2015-2020&#34;&gt;Keeping It Real Together (2015-2020)&lt;/h3&gt;
+&lt;p&gt;Keeping It Real Together (KIR-T) is a multi-agency collaborative that works to to reduce and prevent teen pregnancy and sexually transmitted diseases among Los Angeles County youth. Our goal is to change the landscape of sexual health in Los Angeles County through school-based sexual health education, parent workshops, improved access to health services, and community mobilization and partnership&lt;/p&gt;
+&lt;p&gt;For more details on program outcomes and success stories see &lt;a href=&#34;https://keepingitrealtogether.org/&#34;&gt;https://keepingitrealtogether.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;related-publications--presentations&#34;&gt;Related Publications &amp;amp; Presentations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://doi.org/10.1016/j.jadohealth.2018.09.021&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Effectiveness Evaluation of It’s Your Game; Keep It Real, a Middle School HIV/Sexually Transmitted Infection/Pregnancy Prevention Program (2018)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://doi.org/10.1016/j.jadohealth.2017.07.017&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Structural Intervention With School Nurses Increases Receipt of Sexual Health Care Among Male High School Students (2017)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://dx.doi.org/10.1080/00224499.2016.1164800&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Patterns of Sexual Experience Among Urban Latino and African American Ninth Grade Students (2016)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://dx.doi.org/10.1016/j.jadohealth.2012.03.010&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Improving the Implementation of a Condom Availability Program in Urban High Schools (2012)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://dx.doi.org/10.1016/j.jadohealth.2014.04.005&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Project Connect Health Systems Intervention: Linking Sexually
+Experienced Youth to Sexual and Reproductive Health Care (2014)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Center for Healthy Communities</title>
+      <link>/project/chc/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/project/chc/</guid>
+      <description>&lt;p&gt;As a member of the 
+&lt;a href=&#34;http://datascience.csuchico.edu&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data Science Initiative&lt;/a&gt;, I have been working with the 
+&lt;a href=&#34;https://www.csuchico.edu/chc/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Center for Healthy Communties&lt;/a&gt; since 2019 as a statistical consultant, data manager, providing data skills training workshops and managing Data Science student interns. I help the CHC streamline and organize their data processes, research and program evaluation tasks.&lt;/p&gt;
+&lt;p&gt;The primary contract that I work on is the &lt;strong&gt;CalFresh Outreach Program&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;CalFresh Food is a nutrition assistance program that helps low-income individuals and families buy the food they need. CalFresh Food dollars help stretch a tight food budget and help many people afford to incorporate healthy foods like fruits and vegetables into their diets.&lt;/p&gt;
+&lt;h3 id=&#34;data-product--deliverables&#34;&gt;Data Product / Deliverables&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://chc-cfo-reporting.csuchico.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Website for subcontractors to upload required reporting files quarterly.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Results of the Bsic needs Stucent Success Survey 
+&lt;a href=&#34;https://chicocalfresh.github.io/bns-website/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;student-collaborators&#34;&gt;Student Collaborators&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Brandon Leff [link to his author page]&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Institutional Learning through Empirical Assessment and Researching iNterventions</title>
+      <link>/project/ilearn/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/project/ilearn/</guid>
+      <description>&lt;p&gt;The iLEARN project will initiate a systematic, institutional approach to assessing the impact of programs on student success. The preliminary assessment will concentrate on interventions currently in practice at the university. In particular, we will investigate the following active programs:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Spring 2019 Course Redesign Faculty Learning Community (FLC)&lt;/li&gt;
+&lt;li&gt;Academic Probation workshops&lt;/li&gt;
+&lt;li&gt;Supplemental Instruction programs&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The goal of iLEARN is to close the loop on interventions by rigorously analyzing the effectiveness of current programs intended to improve student success (establish a baseline, make changes, re-evaluate program, increment additional changes or cancel intervention.)  In addition, the iLEARN project will also incorporate existing surveys (i.e, BCSSE, NSSE, FSSE) to provide supplemental insights for predicting student success and enabling the university to place students in early intervention programs.&lt;/p&gt;
+&lt;p&gt;We began sharing project activity ideas in March 2019. Project analysis work will start in Summer 2020 and extend into the 20-21AY&lt;/p&gt;
+&lt;h1 id=&#34;partners&#34;&gt;Partners&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.csuchico.edu/csci/people/faculty/buffardi-kevin.shtml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kevin Buffardi&lt;/a&gt; (Computer Science)&lt;/li&gt;
+&lt;li&gt;Ian Donatello (
+&lt;a href=&#34;https://www.csuchico.edu/ir/index.shtml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Institutional Research&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Sustaining Success in Chemistry</title>
@@ -25,6 +102,39 @@
       <link>/project/chem-ss/</link>
       <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/project/chem-ss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PMA6</title>
+      <link>/project/pma6/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/project/pma6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>/project/cnn/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      <guid>/project/cnn/</guid>
+      <description>&lt;p&gt;Paper surveys are still a preferred in-class data collection method due to the captive audience, ease of creation (e.g. MS word), and administration. Data entry is time consuming and expensive. This research explored using convolutional neural networks (CNN, a deep learning process) to automate the data entry of thousands of surveys administered as part of a college program assessment. CNN are used in image detection (e.g. is there a cute cat in the picture?), where digital images are stored as arrays with entries corresponding to pixel color. CNN’s are constructed by creating many layers that each apply specific matrix operations to extract the most salient characteristics in the image. Our work differs from image detection; our goal was to identify where a mark exists on a page (e.g. circles, x’s), and classify it as the corresponding response. Like other machine learning models, CNN depend on quality and quantity of training data, and can be computationally intensive but feasible on a moderate powered server. Preliminary results achieved 92% validation accuracy, demonstrating it’s feasible to use paper surveys without the burden of manual data entry or costly software licenses.&lt;/p&gt;
+&lt;h2 id=&#34;student-researcher&#34;&gt;Student Researcher&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Kristofer Walker [link to his page]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;presentations&#34;&gt;Presentations&lt;/h2&gt;
+&lt;p&gt;Kris presented his work in the 
+&lt;a href=&#34;http://jointmathematicsmeetings.org/meetings/national/jmm2020/2245_maasessstud#post&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Student Poster Session&lt;/a&gt; at the 
+&lt;a href=&#34;http://jointmathematicsmeetings.org/meetings/national/jmm2020/2245_intro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2020 Joint Math Meetings&lt;/a&gt;, January 15-18, 2020, Denver, CO.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bariatric study of ginger</title>
+      <link>/project/enloe_bariatric/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/enloe_bariatric/</guid>
       <description></description>
     </item>
     
@@ -62,10 +172,74 @@
     </item>
     
     <item>
+      <title>Community Coding</title>
+      <link>/project/community-coding/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/community-coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Data Science Initative</title>
       <link>/project/dsi/</link>
       <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
       <guid>/project/dsi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DataFest</title>
+      <link>/project/data-fest/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/data-fest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DS POLS Twitter project</title>
+      <link>/project/ds-pols/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/ds-pols/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EMPI</title>
+      <link>/project/empi/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/empi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Housing Insecurity</title>
+      <link>/project/housing_insecurity/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/housing_insecurity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Missing Data</title>
+      <link>/project/missing-data/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/missing-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nursing Simulation</title>
+      <link>/project/nursing-simulation/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/nursing-simulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>/project/blank/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <guid>/project/blank/</guid>
       <description></description>
     </item>
     

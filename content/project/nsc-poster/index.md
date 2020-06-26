@@ -5,7 +5,7 @@ date: '2018-05-29'
 slug: nsc-poster
 categories: []
 tags:
-- data-science
+- Data-Science
 summary: 'Streamlining abstract submission, processing, and judging for the annual College Poster Session at CSU, Chico. Pipeline uses Google Forms, R, Markdown, Sweave, LaTeX, GitHub, and Shiny. '
 authors: []
 external_link: ''
