@@ -27,7 +27,7 @@ Paper surveys are still a preferred in-class data collection method due to the c
 
 ## Student Researcher
 
-* Kristofer Walker [link to his page]
+* [Kristofer Walker](../../author/kristofer-walker/)
 
 ## Presentations
 
