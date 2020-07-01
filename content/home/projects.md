@@ -23,7 +23,7 @@ subtitle = ""
   
   [[content.filter_button]]
     name = "Featured"
-    tag = "Featured"
+    tag = "*"
   
   [[content.filter_button]]
     name = "Student Success"
