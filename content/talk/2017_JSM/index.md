@@ -5,7 +5,6 @@ address:
   country: United States
   region: MD
 all_day: yes
-authors: [Robin Donatello]
 date: 2017-07-29
 date_end: 2017-08-03
 event: Joint Statistical Meetings
@@ -16,8 +15,6 @@ image:
   focal_point: 
 location: 
 math: true
-projects:
-- student-success
 publishDate: 2017-08-03
 slides: 
 summary: 
