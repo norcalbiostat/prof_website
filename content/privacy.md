@@ -10,4 +10,5 @@ share: false
 title: Privacy Policy
 ---
 
-...
+Need to write a privacy policy here. 
+I don't collect anyones data. 

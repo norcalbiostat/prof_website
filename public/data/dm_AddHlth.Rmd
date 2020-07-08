@@ -1,0 +1,267 @@
+---
+title: "Add Health"
+output: 
+  html_document: 
+    highlight: tango
+    theme: flatly
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+
+The National Longitudinal Study of Adolescent to Adult Health (Add Health) is a longitudinal study of a nationally representative sample of adolescents in grades 7-12 in the United States during the 1994-95 school year. The Add Health cohort has been followed into young adulthood with four in-home interviews, the most recent in 2008, when the sample was aged 24-32. Add Health is re-interviewing cohort members in a Wave V follow-up from 2016-2018 to collect social, environmental, behavioral, and biological data with which to track the emergence of chronic disease as the cohort moves through their fourth decade of life.
+
+More info at: http://www.cpc.unc.edu/projects/addhealth 
+
+# Import
+This is a CSV file, so we could read it in using `read.csv` but I prefer the functionality of `read_csv` found in the `readr` package. 
+```{r}
+library(readr)
+rawdata <- read_csv(file="AddHealth_Wave_IV.csv")
+```
+
+
+##  Trim down variables
+Goof ups are bound to happen. Let's rename our `rawdata` as `mydata`, and do all our data cleaning on `mydata`. That way if/when we goof up, we just need to run the code chunk below and it will reset `mydata` back to pre-recodes (and not have to read the entire CSV data set from the hard drive all over again.)
+```{r}
+mydata <- rawdata 
+```
+
+We could use dplyr to `%>% select()` only variables we want to keep on the data set in this above code chunk, but we can also "clean up" the data set at the end before saving the clean file to disk. 
+
+# Recode variables
+### Gender
+BIO_SEX is coded as 1=male, 2=female, 6=missing. I want to recode this into an indicator of being female. 
+
+```{r}
+mydata$female <- mydata$BIO_SEX-1
+mydata$female[mydata$BIO_SEX==6] <- NA
+table(mydata$BIO_SEX, mydata$female ,useNA="always")
+```
+
+For plotting purposes, I would also like to have a categorical version of gender. 
+```{r}
+mydata$female_c <- factor(mydata$female, labels=c("Male", "Female"))
+table(mydata$female, mydata$female_c ,useNA="always")
+```
+
+### General Health
+```{r}
+table(mydata$H4GH1)
+```
+No missing variables, but I want to apply labels and convert to a factor variable. 
+
+```{r}
+mydata$genhealth <- factor(mydata$H4GH1, 
+                              labels = c("Excellent", "Very good", "Good", "Fair", "Poor")) 
+```
+
+### Relationships
+With how many people have you had a romantic or sexual relationship that lasted less than 6 months since 2001?
+
+```{r}
+table(mydata$H4TR6)
+mydata$H4TR6[mydata$H4TR6 >990] <- NA
+boxplot(mydata$H4TR6)
+```
+Median number of opposite-sex partners in lifetime among sexually experienced men and women aged 25-44 years of age 2002, 2006-2010 and 2011-2015: 6.7 for men, 3.8 for women. 
+Key Statistics from the National Survey of Family Growth - N Listing https://www.cdc.gov/nchs/nsfg/key_statistics/n.htm
+
+Using the above information, I am going to truncate the number of short term partners to be below 10. 
+```{r}
+mydata$casual_part <- ifelse(mydata$H4TR6 > 10, 10, mydata$H4TR6)
+boxplot(mydata$casual_part)                           
+```
+
+## Number of jobs
+```{r}
+table(mydata$H4LM3)
+mydata$H4LM3[mydata$H4LM3 >90] <- NA
+boxplot(mydata$H4LM3)
+mydata$njobs <-mydata$H4LM3
+```
+
+
+### BMI
+```{r}
+summary(mydata$H4BMI)
+```
+There are out of range variables here. Check codebook and remove using an `ifelse` statement that says _Make a new variable `BMI`. If `H4BMI` is less than 100 set `BMI` equal to `H4BMI`. Otherwise (if `H4BMI` is $geq$ 100) set `BMI` to missing_. 
+
+```{r}
+mydata$BMI <- ifelse(mydata$H4BMI < 100, mydata$H4BMI, NA)
+```
+
+### Blood Pressure Class
+```{r}
+table(mydata$H4BPCLS)
+```
+
+Set missing and change labels
+```{r}
+mydata$H4BPCLS[mydata$H4BPCLS %in% c(6, 7, 9)] <- NA
+mydata$bp_class <- factor(mydata$H4BPCLS, labels = c('Normal', 'Pre-HTN', 'HTN-I', 'HTN-II'))
+table(mydata$H4BPCLS, mydata$bp_class, useNA="always")
+```
+
+
+### Sleep 
+
+#### Wake up on workdays
+Time they wake up on workdays consists of three variables: hours (`H4SP1H`), minutes(`H4SP1M`) and if the time listed is in AM or PM (`H4SP1T`). I want to convert this to a continuous 24 hour time variable. 
+
+* First set values to missing
+```{r}
+mydata$H4SP1T[mydata$H4SP1T %in% c(6, 8)] <- NA
+mydata$H4SP1M[mydata$H4SP1M %in% c(96, 98)] <- NA
+mydata$H4SP1H[mydata$H4SP1H %in% c(96, 98)] <- NA
+```
+Confirm
+```{r}
+table(mydata$H4SP1H, useNA="always")
+summary(mydata$H4SP1M, useNA="always")
+table(mydata$H4SP1T, useNA="always")
+```
+
+* Recode am/pm to numbers of hours to add (0 for AM, 12 for PM). 
+```{r}
+mydata$ampm <- car::recode(mydata$H4SP1T, "1=0; 2=12")
+```
+But we don't want to add 12 hours to 12pm, so we need to change the rows when hours = 12 and time = pm to not add any time. 
+```{r}
+mydata$ampm[mydata$H4SP1H == 12 & mydata$H4SP1T == 2] <- 0
+```
+
+* Now create 24 hour time by adding hours + am/pm + minutes
+```{r}
+mydata$wakeup <- mydata$H4SP1H + mydata$ampm + mydata$H4SP1M/60
+summary(mydata$wakeup)
+```
+Wake up times range from 1am to 11:30 pm. No out of range times seen. 
+
+Check to make sure the times added up correctly. Print out the top 5 rows (using `slice`) for only the time columns (`select`), and dropping the rows with missing values (`na.omit`)
+```{r}
+library(dplyr)
+mydata %>% select(H4SP1H, H4SP1M, ampm, wakeup) %>% na.omit %>% slice(1:5)
+```
+Row 1 check: 6 hours, 0 minutes, am, --> 0600 (6). Row 3 check: 6 hours, 30 minutes, am --> 0630 (6.5). Time was calculated correctly. 
+
+
+#### Bedtime up on workdays
+```{r}
+mydata$H4SP2T[mydata$H4SP2T %in% c(6, 8)] <- NA
+mydata$H4SP2M[mydata$H4SP2M %in% c(96, 98)] <- NA
+mydata$H4SP2H[mydata$H4SP2H %in% c(96, 98)] <- NA
+
+mydata$ampm2 <- car::recode(mydata$H4SP2T, "1=0; 2=12")
+mydata$ampm2[mydata$H4SP2H == 12 & mydata$H4SP2T == 2] <- 0
+mydata$bedtime <- mydata$H4SP2H + mydata$ampm2 + mydata$H4SP2M/60
+summary(mydata$bedtime)
+```
+
+We lost people who went to bed or woke up between 12 and 1am - whups.
+
+Indicator for people who likely work the night shift - go to bed between 5am and 3pm
+```{r}
+odd.sleep.records <- which(mydata$bedtime > 5 & mydata$bedtime < 15)
+
+# Not run -- run this line if you want to limit your analysis sample to only those with "normal" sleep schedule
+#mydata <- mydata[-odd.sleep.records,]
+```
+
+
+### Sleep Duration
+Only useful after eliminating those with odd sleep patterns (above)
+
+```{r}
+# people who go to bed early are expected to wake up before midnight. 
+mydata$sleep_duration <- mydata$wakeup - mydata$bedtime 
+
+# these people go to bed after 3pm, but before midnight. Get list of records where this occurs
+normal.sleep.records <- which(mydata$bedtime < 24 & mydata$bedtime > 15)
+
+# for these people who sleep over midnight, calculate their sleep duration. 
+mydata$sleep_duration[normal.sleep.records] <- (24-mydata$bedtime[normal.sleep.records]) +
+                                                      mydata$wakeup[normal.sleep.records]
+summary(mydata$sleep_duration)
+boxplot(mydata$sleep_duration)
+
+# not run
+# also kick out ppl with calculated sleep time over 12 h
+#mydata <- filter(mydata, sleep_duration > 12)
+```
+
+
+## Smoking (H4TO1)
+```{r}
+table(mydata$H4TO1)
+```
+
+Recode 6 & 8 to missing, create a copy that is a factor variable. 
+```{r}
+mydata$H4TO1[mydata$H4TO1 %in% c(6,8)] <- NA
+mydata$eversmoke_c <- factor(mydata$H4TO1, labels=c("Non Smoker", "Smoker"))
+```
+
+## Income
+> Now think about your personal earnings. In {2006/2007/2008},how much income did you receive from personal earnings before taxes, that is, wages or salaries, including tips, bonuses, and overtime pay, and income from self-employment?
+
+Personal Income is highly skewed right. 
+```{r}
+mydata$H4EC2[mydata$H4EC2 > 999995 ] <- NA
+boxplot(mydata$H4EC2)
+summary(mydata$H4EC2)
+```
+
+The Federal poverty level was $10,210 for a single person household in 2008. Let's do two things
+1. Make an indicator variable called `poverty` for if a person's income is below the federal poverty level
+
+```{r}
+mydata$poverty <- ifelse(mydata$H4EC2 < 10210, 1, 0)
+table(mydata$poverty)
+```
+
+2. Make a new variable called `income` that contains the personal earnings for individuals who make above this poverty limit, but below 250,000
+
+```{r}
+mydata$income <- ifelse(mydata$H4EC2<10201 | mydata$H4EC2>250000, NA, mydata$H4EC2)
+summary(mydata$income)
+boxplot(mydata$income)
+```
+
+Now Income is still skewed right. Let's take a log transformation of it in effort to make the distribution more normal. 
+```{r}
+mydata$logincome <- log(mydata$income)
+boxplot(mydata$logincome)
+qqnorm(mydata$logincome)
+qqline(mydata$logincome, col="red")
+```
+
+Still slightly skewed right, but better than before. 
+
+
+#  Trim down variables
+Optional but helpful when dealing with large data sets.
+Only include variables that I will be using in analysis. This uses the `dplyr` library `select()` function. 
+```{r, eval=FALSE}
+addhealth <- mydata %>% select(female, female_c, genhealth,BMI, bp_class, wakeup, bedtime, sleep_duration, poverty, income, logincome, eversmoke_c, njobs, casual_part) 
+str(addhealth)
+```
+
+```{r, echo=FALSE}
+addhealth <- mydata
+```
+
+# Export analysis data
+Save the cleaned `addhealth` data set as a `.Rdata` file for use in graphing and analysis. 
+```{r}
+save(addhealth, file="addhealth_clean.Rdata")
+```
+
+
+# Session Info
+This document was compiled on `r Sys.time()` and with the following system information:
+```{r}
+sessionInfo()
+```

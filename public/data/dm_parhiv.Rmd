@@ -1,0 +1,159 @@
+---
+title: "Data management for the Parental HIV data set from PMA6"
+output: 
+  html_document: 
+    highlight: tango
+    theme: flatly
+---
+
+# Purpose
+The purpose of this file is to clean and recode the parental data set. Each time this file is run it will write a new data set to the hard drive with the current date. 
+
+Each time a new recode or edit is added a note should be written about when and why this edit was made, and this file should be compiled. 
+
+# Import the raw data
+The raw data from the textbook is stored in a github repository.  
+
+```{r, message=FALSE, warning=FALSE}
+library(dplyr)
+hiv <- read.delim("https://raw.githubusercontent.com/norcalbiostat/pma6_code/master/data/Parhiv.txt",
+                   sep="\t", stringsAsFactors = FALSE, header=TRUE)
+```
+
+I personally always set the names to lower case to make it easier to type. 
+```{r}
+names(hiv) <- tolower(names(hiv))
+```
+
+
+## Change factor variables from numeric to categorical.
+
+```{r}
+hiv$gender  <- factor(hiv$gender, labels=c("Male", "Female"))
+hiv$livwith <- factor(hiv$livwith, labels=c("Both parents", "One parent", "Other"))
+hiv$jobmo   <- factor(hiv$jobmo, labels=c("Employed", "Unemployed", "Retired/Disabled"))
+hiv$edumo   <- factor(hiv$edumo, labels=c("<HS", "HS/GED", "HS+"))
+hiv$howrel  <- factor(hiv$howrel, labels=c("Very", "Somewhat", "Not at all"))
+hiv$finsit  <- factor(hiv$finsit, labels=c("Very poor", "Poor", "Necessities" ,"Comfortable"))
+hiv$ethn    <- factor(hiv$ethn, labels=c("Latinx", "Black", "Other"))
+hiv$attserv <- factor(hiv$attserv, labels=c("Never", "Sometimes", "Frequently"))
+hiv$frnds   <- factor(hiv$frnds, labels=c("good friends", "Lots acquaint.", "Few acquaint.", "not close to anyone"))
+hiv$likesch <- factor(hiv$likesch, labels=c("Very much", "somewhat", "meh", "dislike somewhat", "dislike very much"))
+```
+
+
+### Set missing values
+
+If haven't started smoking/drinking, then set age started to missing. 
+```{r}
+hiv$agesmoke[hiv$agesmoke==0] <- NA
+hiv$agealc[hiv$agealc==0] <- NA
+hiv$agemar[hiv$agemar==0] <- NA
+```
+
+### Change dichotomous measures to binary indicators where 0= non event and 1=event. 
+Change 1/2 to 0/1
+```{r}
+hiv$siblings <- hiv$siblings -1 
+hiv$school <- hiv$school -1 
+hiv$hookey <- hiv$hookey -1 
+```
+
+
+###  Update the Parental HIV data set by creating all the subscales listed at the bottom of the codebook.
+    
+I will use this space to show many different ways to approach this task. The methods are not numbered by any real characteristic. For each scale in the list I just thought of a method that would work easily for the variable at hand, that I had not already demonstrated. Some methods are more advanced than others. You will find the method(s) that work best for you. 
+
+#### Method 1: Reverse code all sub items that require it by making new variables. Then apply the mean function across that matrix (`cbind`) of variables. See the [documentation](http://dplyr.tidyverse.org/reference/recode.html) for help using the `dplyr` `recode()` function. 
+
+```{r}
+rpb02 <- recode(hiv$pb02, `1`=4,  `2`=3, `3`=2, `4`=1) 
+table(rpb02, hiv$pb02, useNA="always") 
+rpb04 <- 5-hiv$pb04 #easier way to flip a scale
+rpb14 <- 5-hiv$pb14
+rpb16 <- 5-hiv$pb16
+rpb18 <- 5-hiv$pb18
+rpb24 <- 5-hiv$pb24
+
+hiv$parent_care <- apply(cbind(hiv$pb01, rpb02, rpb04, hiv$pb05, hiv$pb06, hiv$pb11, hiv$pb12, 
+                          rpb14, rpb16, hiv$pb17, rpb18, rpb24), 1, mean)
+# confirm recode
+summary(hiv$parent_care)
+```
+
+#### Method 2: Reverse code sub-items at the time of combining (`cbind`). 
+```{r}
+hiv$parent_overprotection <- apply(cbind(5-hiv$pb03, 5-hiv$pb07, hiv$pb08, hiv$pb09, hiv$pb10, 
+                                         hiv$pb13, 5-hiv$pb15, hiv$pb19, hiv$pb20, 5-hiv$pb21, 
+                                         5-hiv$pb22, hiv$pb23, 5-hiv$pb25), 1, mean)
+summary(hiv$parent_overprotection)
+```
+
+#### Method 3: Take the row-wise mean across columns with a variable name that starts with bsi
+```{r}
+# Find the column numbers whose variable names start with the string bsi
+bsi.columns <- grep("^bsi", names(hiv))
+# Apply the function mean() row-wise (1) across the column numbers found  above. 
+hiv$bsi_overall <- apply(hiv[,bsi.columns], 1, mean)
+# confirm that some numbers were created and that the variable is not fully missing, 
+# and all values are in the appropriate range of 0 to 4. 
+summary(hiv$bsi_overall) 
+```
+
+#### Method 4: Take the row-wise mean across specified columns using the variable names
+```{r}
+hiv$bsi_somat <- apply(hiv[,c("bsi02","bsi07","bsi23","bsi29","bsi30","bsi33","bsi37")], 1, mean)
+summary(hiv$bsi_somat)
+```
+
+#### Method 5: Using the `mutate` function, `rowwise`, in `dplyr`
+```{r}
+hiv <- hiv %>% 
+       rowwise() %>% 
+       mutate(bsi_obcomp = mean(c(bsi05, bsi15, bsi26, bsi27, bsi32, bsi36)))
+summary(hiv$bsi_obcomp)
+```
+
+
+#### Method 6: Using Method #5 but for *all* the remaining variables. 
+```{r}
+hiv <- hiv %>% 
+       rowwise() %>% 
+       mutate(bsi_interp = mean(c(bsi20:bsi22, bsi42)),
+              bsi_depress = mean(c(bsi09, bsi16, bsi17, bsi18 ,bsi35, bsi50)),
+              bsi_anxiety = mean(c(bsi01, bsi12, bsi19, bsi38 ,bsi45, bsi49)),
+              bsi_hostil = mean(c(bsi06 ,bsi13, bsi40, bsi41, bsi46)),
+              bsi_phobic = mean(c(bsi08, bsi28, bsi31, bsi43, bsi47)),
+              bsi_paranoid = mean(c(bsi04 ,bsi10 ,bsi24, bsi48 ,bsi51)),
+              bsi_psycho = mean(c(bsi03, bsi14, bsi34, bsi44, bsi53))
+              ) %>% 
+        ungroup() # to prevent further operations from being done row-wise
+
+summary(cbind(hiv$bsi_interp, hiv$bsi_depress, hiv$bsi_anxiety, hiv$bsi_hostil, hiv$bsi_phobic, 
+        hiv$bsi_paranoid, hiv$bsi_psycho))
+```
+The column names here are listed as V1-V7, which is fine. This was just for the `summary()` information. Nothing that we are going to keep. You can confirm that the variables were created with the names you intended to create using the `names()` function. 
+
+```{r}
+names(hiv)
+```
+See, all the subscales have been appended to the end of the data set. 
+
+
+# Save the cleaned data set with todays date. 
+
+
+The `sys.date()` function takes the current date from your computer. The value is then formatted nicely for human consumption and added (pasted) to the file name before written to the path specified as a new text file. 
+
+```{r}
+date <- format(Sys.Date(), "%m%d%y")
+filename <- paste("C:/Box/Data/parhiv/parhiv_", date, ".txt", sep="")
+write.table(hiv, filename, sep="\t", row.names=FALSE)
+```
+
+# Session Info
+This document was compiled on `r Sys.time()` and with the following system information:
+```{r}
+sessionInfo()
+```
+
