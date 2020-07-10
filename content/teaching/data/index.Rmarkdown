@@ -35,22 +35,24 @@ Each entry contains the following pieces.
 
 The National Longitudinal Study of Adolescent to Adult Health (Add Health) is a longitudinal study of a nationally representative sample of adolescents in grades 7-12 in the United States during the 1994-95 school year. The Add Health cohort has been followed into young adulthood with four in-home interviews, the most recent in 2008, when the sample was aged 24-32. Add Health is re-interviewing cohort members in a Wave V follow-up from 2016-2018 to collect social, environmental, behavioral, and biological data with which to track the emergence of chronic disease as the cohort moves through their fourth decade of life. More info at: http://www.cpc.unc.edu/projects/addhealth 
 
-* [Clean Data](../addhealth_clean.Rdata), [Raw data](../AddHealth_Wave_IV.csv)
-* [Codebook](../AddHealth_Wave_IV.pdf)
-* [Data Management script](../dm_AddHlth.html)
+* [Clean Data](../../../static/data/addhealth_clean.Rdata), [Raw data](../../../static/data/AddHealth_Wave_IV.csv)
+* [Codebook](../../../static/data/AddHealth_Wave_IV.pdf)
+* [Data Management script](../../../static/data/dm_AddHlth.html)
 * The cleaned AddHealth data set is provided as an R data file, not single external data set. The code below uses the `load()` function to load the data directly into your environment. `r emo::ji("warning")` Note the absence of the assignment arrow `<-`. This is intentional and your data will not load correctly if you try to use the arrow. 
 
 ```{r}
 load("../../../static/data/addhealth_clean.Rdata")
-str(addhealth)
+str(addhealth, give.attr=FALSE)
 ```
+
+----
 
 ## Ames
 
 * [Ames](../ames.csv): All residential home sales in Ames, Iowa between 2006 and 2010. The data set contains many explanatory variables on the quality and quantity of physical attributes of residential homes in Iowa sold between 2006 and 2010. Most of the variables describe information a typical home buyer would like to know about a property (square footage, number of bedrooms and bathrooms, size of lot, etc.). A detailed discussion of variables can be found in the original paper: _De Cock D. 2011. Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project. Journal of Statistics Education; 19(3)_.
 ```{r}
 ames <- read.csv("../../../static/data/ames.csv", header=TRUE)
-str(ames)
+str(ames, give.attr=FALSE)
 ```
 
 
@@ -59,7 +61,7 @@ str(ames)
 * [countyComplete](../countyComplete.csv): Characteristics of different counties in the United States. Information on this data set can be found in the full [Open Intro Data Codebook](../Open Intro Data Codebook.pdf). Just search for the data set name. 
 ```{r}
 county <- read.csv("../../../static/data/countyComplete.csv", header=TRUE, stringsAsFactors = FALSE)
-str(county)
+str(county, give.attr=FALSE)
 ```
 
 ## Depression

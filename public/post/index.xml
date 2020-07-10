@@ -197,7 +197,7 @@
 &lt;li&gt;files: &lt;code&gt;talk/folder/file&lt;/code&gt; - no relative paths.&lt;/li&gt;
 &lt;li&gt;TOML vs YAML Hell.  TOML uses +++ at the top, YAML uses &amp;mdash;. TOML uses &lt;code&gt;=&lt;/code&gt;, YAML uses &lt;code&gt;:&lt;/code&gt;. And none can the two comingle.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;❓ how to get rid of the timestamp?
+&lt;p&gt;❓ how to get rid of the timestamp? 
 ❓ how to get rid of author bio at the bottom of the talk. This was an earlier question also.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Conference Talks&lt;/strong&gt;
@@ -415,7 +415,7 @@ head(eColi_abs)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;The &lt;em&gt;console&lt;/em&gt; is the full panel on the left
 &lt;img src=&#34;/img/rstudio/rstudio-console.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Everytime you launch RStudio, it will have the same text at the top of the
+&lt;li&gt;Everytime you launch RStudio, it will have the same text at the top of the 
 console telling you the version of R that you&amp;rsquo;re running.&lt;/li&gt;
 &lt;li&gt;Below that information is the &lt;em&gt;prompt&lt;/em&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt; . As its name suggests, this prompt is really a request, a request for a command.&lt;/li&gt;
 &lt;li&gt;Initially, interacting with R is all about typing commands and interpreting the output.&lt;/li&gt;
@@ -451,7 +451,7 @@ console telling you the version of R that you&amp;rsquo;re running.&lt;/li&gt;
 &lt;li&gt;The top left is your editor window, where you write code or script, the console is now at the bottom. Sometimes it&amp;rsquo;s minimized, you can use the boxes in the top right corner of the console window to bring up the console.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-working.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;When we type R code in a specific way up here, the results show up both
+&lt;p&gt;When we type R code in a specific way up here, the results show up both 
 right below the code you just typed, and in the console itself.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;2+2
 &lt;/code&gt;&lt;/pre&gt;
@@ -541,7 +541,7 @@ names using the collection operator &lt;code&gt;c()&lt;/code&gt;.&lt;/p&gt;
 output as Rcmdr uses the old markdown package which only can create HTML output.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;more-help&#34;&gt;More help&lt;/h1&gt;
-&lt;p&gt;For more help and/or places to start learning, I would recommend starting with the resources R Studio already has curated for you.
+&lt;p&gt;For more help and/or places to start learning, I would recommend starting with the resources R Studio already has curated for you. 
 &lt;a href=&#34;https://www.rstudio.com/online-learning/&#34;&gt;https://www.rstudio.com/online-learning/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
@@ -671,7 +671,7 @@ for the topic of this post.&lt;/p&gt;
 &lt;p&gt;Then along comes 
 &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;. Extremely happy with what Yihui Xie has been doing with Rmarkdown in general I watched a webinar and was sold on trying it.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve been pretty much following 
-&lt;a href=&#34;https://apreshill.rbind.io/post/up-and-running-with-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alison Presmanes Hill&amp;rsquo;s walk through&lt;/a&gt;.
+&lt;a href=&#34;https://apreshill.rbind.io/post/up-and-running-with-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alison Presmanes Hill&amp;rsquo;s walk through&lt;/a&gt;. 
 Needless to say i&amp;rsquo;m currently on section 6.5.2: New markdown posts ;) So far this has been &lt;strong&gt;really&lt;/strong&gt; easy and straight forward to implement.&lt;/p&gt;
 &lt;p&gt;So, post #1 done. Moving on to section 7: Deploy in Netlify. Yet another new program/site/thing to learn but i&amp;rsquo;m excited and I think it&amp;rsquo;ll be easy. Can&amp;rsquo;t wait to see this new site live!&lt;/p&gt;
 </description>

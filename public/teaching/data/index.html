@@ -244,7 +244,7 @@
     
       <meta property="article:published_time" content="2020-07-08T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-07-08T13:59:22-07:00">
+    <meta property="article:modified_time" content="2020-07-09T17:59:30-07:00">
   
 
   
@@ -659,7 +659,7 @@
 <p>Each entry contains the following pieces.</p>
 <ol>
 <li>Information about the data set and where it comes from. Citation/credits where possible.</li>
-<li>The link to the <strong>data</strong> set. ❌ Right click to save this file to your class folder. Do not left click to open.
+<li>The link to the <strong>data</strong> set. ❌ Right click to save this file to your class folder. Do not left click to open. 
 a. [optional] A link to the <strong>raw data</strong> file. There may be times when the raw, or unprocessed, data is needed.</li>
 <li>A <strong>codebook</strong> where available. This will most often be the codebook for the raw data (will not include variables created by me in the data management script).</li>
 <li>A <strong>data management script</strong> where available. Presented as a RMarkdown script, this will show you exactly what data processing steps have been taken already.</li>
@@ -671,16 +671,16 @@ a. [optional] A link to the <strong>raw data</strong> file. There may be times w
 <p>The National Longitudinal Study of Adolescent to Adult Health (Add Health) is a longitudinal study of a nationally representative sample of adolescents in grades 7-12 in the United States during the 1994-95 school year. The Add Health cohort has been followed into young adulthood with four in-home interviews, the most recent in 2008, when the sample was aged 24-32. Add Health is re-interviewing cohort members in a Wave V follow-up from 2016-2018 to collect social, environmental, behavioral, and biological data with which to track the emergence of chronic disease as the cohort moves through their fourth decade of life. More info at: <a href="http://www.cpc.unc.edu/projects/addhealth">http://www.cpc.unc.edu/projects/addhealth</a></p>
 <ul>
 <li>
-<a href="../addhealth_clean.Rdata">Clean Data</a>, 
-<a href="../AddHealth_Wave_IV.csv">Raw data</a></li>
+<a href="../../../static/data/addhealth_clean.Rdata">Clean Data</a>, 
+<a href="../../../static/data/AddHealth_Wave_IV.csv">Raw data</a></li>
 <li>
-<a href="../AddHealth_Wave_IV.pdf">Codebook</a></li>
+<a href="../../../static/data/AddHealth_Wave_IV.pdf">Codebook</a></li>
 <li>
-<a href="../dm_AddHlth.html">Data Management script</a></li>
+<a href="../../../static/data/dm_AddHlth.html">Data Management script</a></li>
 <li>The cleaned AddHealth data set is provided as an R data file, not single external data set. The code below uses the <code>load()</code> function to load the data directly into your environment. ⚠️ Note the absence of the assignment arrow <code>&lt;-</code>. This is intentional and your data will not load correctly if you try to use the arrow.</li>
 </ul>
 <pre><code class="language-r">load(&quot;../../../static/data/addhealth_clean.Rdata&quot;)
-str(addhealth)
+str(addhealth, give.attr=FALSE)
 </code></pre>
 <pre><code>## Classes 'tbl_df', 'tbl' and 'data.frame':	6504 obs. of  992 variables:
 ##  $ AID           : int  5710027 5710131 5710317 5710386 5710455 5710464 5710467 5710962 5711089 5711107 ...
@@ -783,218 +783,15 @@ str(addhealth)
 ##  $ H4GH10        : int  NA 0 NA 0 NA NA NA 2 NA 0 ...
 ##  $ H4GH11H       : int  NA 9 NA 2 NA NA NA 11 NA 9 ...
 ##   [list output truncated]
-##  - attr(*, &quot;spec&quot;)=List of 2
-##   ..$ cols   :List of 976
-##   .. ..$ AID     : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ BIO_SEX : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ agew1   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_double&quot; &quot;collector&quot;
-##   .. ..$ IMONTH4 : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ IDAY4   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ IYEAR4  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ MACNO4  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ INTID4  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ BIO_SEX4: list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ VERSION4: list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_character&quot; &quot;collector&quot;
-##   .. ..$ BREAK_Q : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_character&quot; &quot;collector&quot;
-##   .. ..$ PRYEAR4 : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ PRETEST4: list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ PRISON4 : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD1M  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD1Y  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD2A  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD2B  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD2C  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD2D  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD2E  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD2F  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD3   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD4   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD5   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD6M  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD6Y  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4OD7   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP1   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP2M  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP2Y  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP3   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP4   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP5   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP6   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP7   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP8M  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP8Y  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP9   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP10  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP11  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP12  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP13  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP14  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP15M : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP15Y : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP16  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP17  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP18  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP19  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP20  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP21  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP22  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP23  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP24  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP25  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP26  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP27  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP28  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP29M : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP29Y : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP30  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP31  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP32  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP33  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP34  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP35  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP36  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP37  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP38  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP39  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WP40  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WS1   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WS2   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WS3A  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WS3B  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WS3C  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WS3D  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WS3E  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WS3F  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WS3G  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WS3H  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WS4   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4WS5   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH1   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH2   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH3M  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH3D  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH3Y  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH4A  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH4B  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH5F  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH5I  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH6   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH7   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH8   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH9   : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH10  : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. ..$ H4GH11H : list()
-##   .. .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_integer&quot; &quot;collector&quot;
-##   .. .. [list output truncated]
-##   ..$ default: list()
-##   .. ..- attr(*, &quot;class&quot;)= chr [1:2] &quot;collector_guess&quot; &quot;collector&quot;
-##   ..- attr(*, &quot;class&quot;)= chr &quot;col_spec&quot;
 </code></pre>
+<hr>
 <h2 id="ames">Ames</h2>
 <ul>
 <li>
 <a href="../ames.csv">Ames</a>: All residential home sales in Ames, Iowa between 2006 and 2010. The data set contains many explanatory variables on the quality and quantity of physical attributes of residential homes in Iowa sold between 2006 and 2010. Most of the variables describe information a typical home buyer would like to know about a property (square footage, number of bedrooms and bathrooms, size of lot, etc.). A detailed discussion of variables can be found in the original paper: <em>De Cock D. 2011. Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Project. Journal of Statistics Education; 19(3)</em>.</li>
 </ul>
 <pre><code class="language-r">ames &lt;- read.csv(&quot;../../../static/data/ames.csv&quot;, header=TRUE)
-str(ames)
+str(ames, give.attr=FALSE)
 </code></pre>
 <pre><code>## 'data.frame':	2930 obs. of  82 variables:
 ##  $ Order          : int  1 2 3 4 5 6 7 8 9 10 ...
@@ -1086,7 +883,7 @@ str(ames)
 <a href="../countyComplete.csv">countyComplete</a>: Characteristics of different counties in the United States. Information on this data set can be found in the full [Open Intro Data Codebook](../Open Intro Data Codebook.pdf). Just search for the data set name.</li>
 </ul>
 <pre><code class="language-r">county &lt;- read.csv(&quot;../../../static/data/countyComplete.csv&quot;, header=TRUE, stringsAsFactors = FALSE)
-str(county)
+str(county, give.attr=FALSE)
 </code></pre>
 <pre><code>## 'data.frame':	3116 obs. of  56 variables:
 ##  $ name                                     : chr  &quot;Autauga County&quot; &quot;Baldwin County&quot; &quot;Barbour County&quot; &quot;Bibb County&quot; ...
@@ -1217,7 +1014,7 @@ diamonds &lt;- ggplot2::diamonds # load the data without loading the ggplot2 pac
 dsmall &lt;- diamonds[sample(nrow(diamonds), 1000), ] # create the subset
 str(dsmall)
 </code></pre>
-<pre><code>## tibble [1,000 × 10] (S3: tbl_df/tbl/data.frame)
+<pre><code>## tibble [1,000 x 10] (S3: tbl_df/tbl/data.frame)
 ##  $ carat  : num [1:1000] 0.3 0.32 0.25 0.34 0.9 1.25 0.9 1.76 1.38 1.61 ...
 ##  $ cut    : Ord.factor w/ 5 levels &quot;Fair&quot;&lt;&quot;Good&quot;&lt;..: 5 2 5 5 3 5 5 4 3 4 ...
 ##  $ color  : Ord.factor w/ 7 levels &quot;D&quot;&lt;&quot;E&quot;&lt;&quot;F&quot;&lt;&quot;G&quot;&lt;..: 4 1 2 1 2 3 4 5 7 6 ...
@@ -1504,7 +1301,7 @@ str(pabmi)
 str(washpost)
 </code></pre>
 <hr>
-<p><em>This page last updated on2020-07-09 17:04:22</em></p>
+<p><em>This page last updated on2020-07-10 14:45:10</em></p>
 
           </div>
 
@@ -1525,7 +1322,7 @@ str(washpost)
         </div>
 
         <div class="body-footer">
-          <p>Last updated on Jul 8, 2020</p>
+          <p>Last updated on Jul 9, 2020</p>
 
           
 
@@ -1537,7 +1334,7 @@ str(washpost)
   
 
 <p class="edit-page">
-  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/teaching/data/index.markdown">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/teaching%5cdata%5cindex.markdown">
     <i class="fas fa-pen pr-2"></i>Edit this page
   </a>
 </p>

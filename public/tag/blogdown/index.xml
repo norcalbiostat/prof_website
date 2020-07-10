@@ -197,7 +197,7 @@
 &lt;li&gt;files: &lt;code&gt;talk/folder/file&lt;/code&gt; - no relative paths.&lt;/li&gt;
 &lt;li&gt;TOML vs YAML Hell.  TOML uses +++ at the top, YAML uses &amp;mdash;. TOML uses &lt;code&gt;=&lt;/code&gt;, YAML uses &lt;code&gt;:&lt;/code&gt;. And none can the two comingle.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;❓ how to get rid of the timestamp?
+&lt;p&gt;❓ how to get rid of the timestamp? 
 ❓ how to get rid of author bio at the bottom of the talk. This was an earlier question also.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Conference Talks&lt;/strong&gt;
@@ -278,7 +278,7 @@
 &lt;p&gt;Then along comes 
 &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;. Extremely happy with what Yihui Xie has been doing with Rmarkdown in general I watched a webinar and was sold on trying it.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve been pretty much following 
-&lt;a href=&#34;https://apreshill.rbind.io/post/up-and-running-with-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alison Presmanes Hill&amp;rsquo;s walk through&lt;/a&gt;.
+&lt;a href=&#34;https://apreshill.rbind.io/post/up-and-running-with-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alison Presmanes Hill&amp;rsquo;s walk through&lt;/a&gt;. 
 Needless to say i&amp;rsquo;m currently on section 6.5.2: New markdown posts ;) So far this has been &lt;strong&gt;really&lt;/strong&gt; easy and straight forward to implement.&lt;/p&gt;
 &lt;p&gt;So, post #1 done. Moving on to section 7: Deploy in Netlify. Yet another new program/site/thing to learn but i&amp;rsquo;m excited and I think it&amp;rsquo;ll be easy. Can&amp;rsquo;t wait to see this new site live!&lt;/p&gt;
 </description>
