@@ -31,14 +31,14 @@ hero_media = "teaching_collage.jpg"
   # image_parallax = true  # Use a fun parallax-like fixed background effect? true/false
   
   # Text color (true=light or false=dark).
-  text_color_light = true
+  # text_color_light = true
 
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [cta]
   url = "/teaching"
-  label = "View All Course Material"
+  label = "Course Materials"
   icon_pack = "fas"
   icon = "book"
 
