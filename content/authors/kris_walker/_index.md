@@ -42,3 +42,4 @@ Kris Walker is an undergraduate Mathematics major (Statistics emphasis). Kris is
 
 ## Projects
 
+* [Using Convolutional Neural Networks as a method of automatic data entry of PDF paper surveys](../../project/cnn/)
