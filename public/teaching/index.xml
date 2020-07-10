@@ -5,7 +5,7 @@
     <link>/teaching/</link>
       <atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
     <description>Teaching</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Wed, 08 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright>
     <image>
       <url>/teaching/featured.jpg</url>
       <title>Teaching</title>
@@ -21,7 +21,7 @@
 &lt;p&gt;Each entry contains the following pieces.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Information about the data set and where it comes from. Citation/credits where possible.&lt;/li&gt;
-&lt;li&gt;The link to the &lt;strong&gt;data&lt;/strong&gt; set. ❌ Right click to save this file to your class folder. Do not left click to open. 
+&lt;li&gt;The link to the &lt;strong&gt;data&lt;/strong&gt; set. ❌ Right click to save this file to your class folder. Do not left click to open.
 a. [optional] A link to the &lt;strong&gt;raw data&lt;/strong&gt; file. There may be times when the raw, or unprocessed, data is needed.&lt;/li&gt;
 &lt;li&gt;A &lt;strong&gt;codebook&lt;/strong&gt; where available. This will most often be the codebook for the raw data (will not include variables created by me in the data management script).&lt;/li&gt;
 &lt;li&gt;A &lt;strong&gt;data management script&lt;/strong&gt; where available. Presented as a RMarkdown script, this will show you exactly what data processing steps have been taken already.&lt;/li&gt;
@@ -579,7 +579,7 @@ diamonds &amp;lt;- ggplot2::diamonds # load the data without loading the ggplot2
 dsmall &amp;lt;- diamonds[sample(nrow(diamonds), 1000), ] # create the subset
 str(dsmall)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## tibble [1,000 x 10] (S3: tbl_df/tbl/data.frame)
+&lt;pre&gt;&lt;code&gt;## tibble [1,000 × 10] (S3: tbl_df/tbl/data.frame)
 ##  $ carat  : num [1:1000] 0.3 0.32 0.25 0.34 0.9 1.25 0.9 1.76 1.38 1.61 ...
 ##  $ cut    : Ord.factor w/ 5 levels &amp;quot;Fair&amp;quot;&amp;lt;&amp;quot;Good&amp;quot;&amp;lt;..: 5 2 5 5 3 5 5 4 3 4 ...
 ##  $ color  : Ord.factor w/ 7 levels &amp;quot;D&amp;quot;&amp;lt;&amp;quot;E&amp;quot;&amp;lt;&amp;quot;F&amp;quot;&amp;lt;&amp;quot;G&amp;quot;&amp;lt;..: 4 1 2 1 2 3 4 5 7 6 ...
@@ -866,7 +866,7 @@ str(pabmi)
 str(washpost)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;em&gt;This page last updated on2020-07-08 13:54:17&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This page last updated on2020-07-09 17:04:22&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     

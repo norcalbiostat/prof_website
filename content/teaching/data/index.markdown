@@ -596,7 +596,7 @@ str(dsmall)
 ```
 
 ```
-## tibble [1,000 x 10] (S3: tbl_df/tbl/data.frame)
+## tibble [1,000 × 10] (S3: tbl_df/tbl/data.frame)
 ##  $ carat  : num [1:1000] 0.3 0.32 0.25 0.34 0.9 1.25 0.9 1.76 1.38 1.61 ...
 ##  $ cut    : Ord.factor w/ 5 levels "Fair"<"Good"<..: 5 2 5 5 3 5 5 4 3 4 ...
 ##  $ color  : Ord.factor w/ 7 levels "D"<"E"<"F"<"G"<..: 4 1 2 1 2 3 4 5 7 6 ...
@@ -908,5 +908,5 @@ str(washpost)
 
 ---
 
-_This page last updated on2020-07-08 13:54:17_
+_This page last updated on2020-07-09 17:04:22_
 

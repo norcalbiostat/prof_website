@@ -19,6 +19,12 @@
   name = "Students"
   url = "students/"
   weight = 30
+
+#[[main]]
+#  name = "Advising"
+#  url = "advising3"
+#  weight = 35
+  
   
 [[main]]
   name = "Pubs & Talks"

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Advising3s | Dr. D.</title>
+    <link>/advising3/</link>
+      <atom:link href="/advising3/index.xml" rel="self" type="application/rss+xml" />
+    <description>Advising3s</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Thu, 09 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
+      <title>Advising3s</title>
+      <link>/advising3/</link>
+    </image>
+    
+    <item>
+      <title>Letters of Recommendation</title>
+      <link>/advising3/letters-of-recommendation/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/advising3/letters-of-recommendation/</guid>
+      <description>&lt;p&gt;Still need to figure out the docs structure
+OMG ALL DOCS ARE LINKED TOGETHER.&lt;/p&gt;
+&lt;p&gt;WORSE - the title of the page is directly generated from the folder name.. AND PLURALIZED&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

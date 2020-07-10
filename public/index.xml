@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Dr. D.</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Wed, 08 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Thu, 09 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
       <title>Dr. D.</title>
@@ -55,6 +55,17 @@
     </item>
     
     <item>
+      <title>Letters of Recommendation</title>
+      <link>/advising3/letters-of-recommendation/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/advising3/letters-of-recommendation/</guid>
+      <description>&lt;p&gt;Still need to figure out the docs structure
+OMG ALL DOCS ARE LINKED TOGETHER.&lt;/p&gt;
+&lt;p&gt;WORSE - the title of the page is directly generated from the folder name.. AND PLURALIZED&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Data</title>
       <link>/teaching/data/</link>
       <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
@@ -63,7 +74,7 @@
 &lt;p&gt;Each entry contains the following pieces.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Information about the data set and where it comes from. Citation/credits where possible.&lt;/li&gt;
-&lt;li&gt;The link to the &lt;strong&gt;data&lt;/strong&gt; set. ❌ Right click to save this file to your class folder. Do not left click to open. 
+&lt;li&gt;The link to the &lt;strong&gt;data&lt;/strong&gt; set. ❌ Right click to save this file to your class folder. Do not left click to open.
 a. [optional] A link to the &lt;strong&gt;raw data&lt;/strong&gt; file. There may be times when the raw, or unprocessed, data is needed.&lt;/li&gt;
 &lt;li&gt;A &lt;strong&gt;codebook&lt;/strong&gt; where available. This will most often be the codebook for the raw data (will not include variables created by me in the data management script).&lt;/li&gt;
 &lt;li&gt;A &lt;strong&gt;data management script&lt;/strong&gt; where available. Presented as a RMarkdown script, this will show you exactly what data processing steps have been taken already.&lt;/li&gt;
@@ -621,7 +632,7 @@ diamonds &amp;lt;- ggplot2::diamonds # load the data without loading the ggplot2
 dsmall &amp;lt;- diamonds[sample(nrow(diamonds), 1000), ] # create the subset
 str(dsmall)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## tibble [1,000 x 10] (S3: tbl_df/tbl/data.frame)
+&lt;pre&gt;&lt;code&gt;## tibble [1,000 × 10] (S3: tbl_df/tbl/data.frame)
 ##  $ carat  : num [1:1000] 0.3 0.32 0.25 0.34 0.9 1.25 0.9 1.76 1.38 1.61 ...
 ##  $ cut    : Ord.factor w/ 5 levels &amp;quot;Fair&amp;quot;&amp;lt;&amp;quot;Good&amp;quot;&amp;lt;..: 5 2 5 5 3 5 5 4 3 4 ...
 ##  $ color  : Ord.factor w/ 7 levels &amp;quot;D&amp;quot;&amp;lt;&amp;quot;E&amp;quot;&amp;lt;&amp;quot;F&amp;quot;&amp;lt;&amp;quot;G&amp;quot;&amp;lt;..: 4 1 2 1 2 3 4 5 7 6 ...
@@ -908,7 +919,7 @@ str(pabmi)
 str(washpost)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;em&gt;This page last updated on2020-07-08 13:54:17&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This page last updated on2020-07-09 17:04:22&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -994,7 +1005,8 @@ Experienced Youth to Sexual and Reproductive Health Care (2014)&lt;/a&gt;&lt;/li
       <link>/students/</link>
       <pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate>
       <guid>/students/</guid>
-      <description></description>
+      <description>&lt;p&gt;Does this text end up anywhere?&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -1182,7 +1194,7 @@ Experienced Youth to Sexual and Reproductive Health Care (2014)&lt;/a&gt;&lt;/li
 &lt;li&gt;files: &lt;code&gt;talk/folder/file&lt;/code&gt; - no relative paths.&lt;/li&gt;
 &lt;li&gt;TOML vs YAML Hell.  TOML uses +++ at the top, YAML uses &amp;mdash;. TOML uses &lt;code&gt;=&lt;/code&gt;, YAML uses &lt;code&gt;:&lt;/code&gt;. And none can the two comingle.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;❓ how to get rid of the timestamp? 
+&lt;p&gt;❓ how to get rid of the timestamp?
 ❓ how to get rid of author bio at the bottom of the talk. This was an earlier question also.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Conference Talks&lt;/strong&gt;
@@ -1364,13 +1376,13 @@ $$&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-One 
+One
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; &gt;
-&lt;strong&gt;Two&lt;/strong&gt; 
+&lt;strong&gt;Two&lt;/strong&gt;
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; &gt;
-Three 
+Three
 &lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
@@ -1568,7 +1580,7 @@ head(eColi_abs)&lt;/code&gt;&lt;/pre&gt;
       <link>/privacy/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
       <guid>/privacy/</guid>
-      <description>&lt;p&gt;Need to write a privacy policy here. 
+      <description>&lt;p&gt;Need to write a privacy policy here.
 I don&amp;rsquo;t collect anyones data.&lt;/p&gt;
 </description>
     </item>
@@ -1777,7 +1789,7 @@ Terms and conditions?&lt;/p&gt;
 &lt;p&gt;The &lt;em&gt;console&lt;/em&gt; is the full panel on the left
 &lt;img src=&#34;/img/rstudio/rstudio-console.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Everytime you launch RStudio, it will have the same text at the top of the 
+&lt;li&gt;Everytime you launch RStudio, it will have the same text at the top of the
 console telling you the version of R that you&amp;rsquo;re running.&lt;/li&gt;
 &lt;li&gt;Below that information is the &lt;em&gt;prompt&lt;/em&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt; . As its name suggests, this prompt is really a request, a request for a command.&lt;/li&gt;
 &lt;li&gt;Initially, interacting with R is all about typing commands and interpreting the output.&lt;/li&gt;
@@ -1813,7 +1825,7 @@ console telling you the version of R that you&amp;rsquo;re running.&lt;/li&gt;
 &lt;li&gt;The top left is your editor window, where you write code or script, the console is now at the bottom. Sometimes it&amp;rsquo;s minimized, you can use the boxes in the top right corner of the console window to bring up the console.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-working.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;When we type R code in a specific way up here, the results show up both 
+&lt;p&gt;When we type R code in a specific way up here, the results show up both
 right below the code you just typed, and in the console itself.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;2+2
 &lt;/code&gt;&lt;/pre&gt;
@@ -1903,7 +1915,7 @@ names using the collection operator &lt;code&gt;c()&lt;/code&gt;.&lt;/p&gt;
 output as Rcmdr uses the old markdown package which only can create HTML output.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;more-help&#34;&gt;More help&lt;/h1&gt;
-&lt;p&gt;For more help and/or places to start learning, I would recommend starting with the resources R Studio already has curated for you. 
+&lt;p&gt;For more help and/or places to start learning, I would recommend starting with the resources R Studio already has curated for you.
 &lt;a href=&#34;https://www.rstudio.com/online-learning/&#34;&gt;https://www.rstudio.com/online-learning/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
@@ -1998,17 +2010,15 @@ is read in. Make adjustments to the excel file as needed, rebuild and git push.
 for the topic of this post.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;sessionInfo()&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## R version 4.0.0 (2020-04-24)
-## Platform: x86_64-w64-mingw32/x64 (64-bit)
-## Running under: Windows 10 x64 (build 18362)
+## Platform: x86_64-apple-darwin17.0 (64-bit)
+## Running under: macOS Mojave 10.14.6
 ## 
 ## Matrix products: default
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRblas.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRlapack.dylib
 ## 
 ## locale:
-## [1] LC_COLLATE=English_United States.1252 
-## [2] LC_CTYPE=English_United States.1252   
-## [3] LC_MONETARY=English_United States.1252
-## [4] LC_NUMERIC=C                          
-## [5] LC_TIME=English_United States.1252    
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
@@ -2023,8 +2033,8 @@ for the topic of this post.&lt;/p&gt;
 ## [13] rlang_0.4.6       httr_1.4.1        tools_4.0.0       webshot_0.5.2    
 ## [17] xfun_0.14         htmltools_0.4.0   ellipsis_0.3.1    yaml_2.2.1       
 ## [21] digest_0.6.25     tibble_3.0.1      lifecycle_0.2.0   crayon_1.3.4     
-## [25] bookdown_0.20     readr_1.3.1       purrr_0.3.4       vctrs_0.3.0      
-## [29] glue_1.4.1        evaluate_0.14     rmarkdown_2.3     blogdown_0.20    
+## [25] bookdown_0.19     readr_1.3.1       purrr_0.3.4       vctrs_0.3.0      
+## [29] glue_1.4.1        evaluate_0.14     rmarkdown_2.1     blogdown_0.19    
 ## [33] stringi_1.4.6     cellranger_1.1.0  compiler_4.0.0    pillar_1.4.4     
 ## [37] scales_1.1.1      generics_0.0.2    pkgconfig_2.0.3&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -2053,7 +2063,7 @@ for the topic of this post.&lt;/p&gt;
 &lt;p&gt;Then along comes 
 &lt;a href=&#34;https://bookdown.org/yihui/blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;. Extremely happy with what Yihui Xie has been doing with Rmarkdown in general I watched a webinar and was sold on trying it.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve been pretty much following 
-&lt;a href=&#34;https://apreshill.rbind.io/post/up-and-running-with-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alison Presmanes Hill&amp;rsquo;s walk through&lt;/a&gt;. 
+&lt;a href=&#34;https://apreshill.rbind.io/post/up-and-running-with-blogdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alison Presmanes Hill&amp;rsquo;s walk through&lt;/a&gt;.
 Needless to say i&amp;rsquo;m currently on section 6.5.2: New markdown posts ;) So far this has been &lt;strong&gt;really&lt;/strong&gt; easy and straight forward to implement.&lt;/p&gt;
 &lt;p&gt;So, post #1 done. Moving on to section 7: Deploy in Netlify. Yet another new program/site/thing to learn but i&amp;rsquo;m excited and I think it&amp;rsquo;ll be easy. Can&amp;rsquo;t wait to see this new site live!&lt;/p&gt;
 </description>

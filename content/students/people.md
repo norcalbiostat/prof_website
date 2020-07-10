@@ -2,10 +2,10 @@
 widget = "people"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 68  # Order that this section will appear.
+weight = 10  # Order that this section will appear.
 
 title = "The awesome people I get to work with"
-subtitle = "Past and Present. :star: indicates I serve(d) on their committee (not working)"
+subtitle = "Past and Present"
 
 [content]
   # Choose which groups/teams of users to display.
@@ -29,9 +29,4 @@ subtitle = "Past and Present. :star: indicates I serve(d) on their committee (no
  css_class = ""
 +++
 
-Text at the top? Will be centered.  Link from here an additional pages for 
 
-* academic advising (including how to ask for a letter of ref)
-* choosing grad school
-* how to get academic help
-* Basic needs

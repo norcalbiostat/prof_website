@@ -51,7 +51,7 @@
 &lt;p&gt;The &lt;em&gt;console&lt;/em&gt; is the full panel on the left
 &lt;img src=&#34;/img/rstudio/rstudio-console.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Everytime you launch RStudio, it will have the same text at the top of the 
+&lt;li&gt;Everytime you launch RStudio, it will have the same text at the top of the
 console telling you the version of R that you&amp;rsquo;re running.&lt;/li&gt;
 &lt;li&gt;Below that information is the &lt;em&gt;prompt&lt;/em&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt; . As its name suggests, this prompt is really a request, a request for a command.&lt;/li&gt;
 &lt;li&gt;Initially, interacting with R is all about typing commands and interpreting the output.&lt;/li&gt;
@@ -87,7 +87,7 @@ console telling you the version of R that you&amp;rsquo;re running.&lt;/li&gt;
 &lt;li&gt;The top left is your editor window, where you write code or script, the console is now at the bottom. Sometimes it&amp;rsquo;s minimized, you can use the boxes in the top right corner of the console window to bring up the console.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/img/rstudio/rstudio-working.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;When we type R code in a specific way up here, the results show up both 
+&lt;p&gt;When we type R code in a specific way up here, the results show up both
 right below the code you just typed, and in the console itself.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;2+2
 &lt;/code&gt;&lt;/pre&gt;
@@ -177,7 +177,7 @@ names using the collection operator &lt;code&gt;c()&lt;/code&gt;.&lt;/p&gt;
 output as Rcmdr uses the old markdown package which only can create HTML output.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id=&#34;more-help&#34;&gt;More help&lt;/h1&gt;
-&lt;p&gt;For more help and/or places to start learning, I would recommend starting with the resources R Studio already has curated for you. 
+&lt;p&gt;For more help and/or places to start learning, I would recommend starting with the resources R Studio already has curated for you.
 &lt;a href=&#34;https://www.rstudio.com/online-learning/&#34;&gt;https://www.rstudio.com/online-learning/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
