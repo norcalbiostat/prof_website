@@ -18,7 +18,7 @@ interests:
 organizations:
 - name: California State University, Chico
   url: ""
-role: Graduate Student in Soil Science Education
+role: Soil Science Education
 social:
 - icon: twitter
   icon_pack: fab

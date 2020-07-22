@@ -18,7 +18,7 @@ interests:
 organizations:
 - name: California State University, Chico
   url: ""
-role: <Nutrition Education Major>
+role: Nutrition Education
 social:
 - icon: envelope
   icon_pack: fas
