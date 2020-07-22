@@ -1,37 +1,37 @@
 ---
 authors:
 - Emilee Hansen
-bio: 
+bio: Not used
 education:
   courses:
-  - course: MS in Nutrition Research
+  - course: BS Nutrition and Food Sciences
+    institution: California State University, Chico
+    year: 2019
+  - course: MS Nutrtition Education
     institution: California State University, Chico
     year: 2021
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-email: ""
+email: not used
 interests:
-- Artificial Intelligence
-
+- Eating Competence
+- Pedagogy
+- Motivational Interviewing
 organizations:
 - name: California State University, Chico
   url: ""
-role: Graduate Student in Nutrition
+role: <Nutrition Education Major>
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: mailto::ehansen11@mail.csuchico.edu
 superuser: false
 title: Emilee Hansen
 user_groups:
 - Grad Students
 ---
 
+Hi, I'm Emilee! I grew up in a small town called Corning, California where I still reside.  Upon completion of my master's degree, I plan to complete my dietetic internship and become a registered dietitian. I currently work for the Women, Infants, and Children (WIC) program in Shasta county and would like to continue my work with them as a registered dietitian in the future. I am also very interested in student success programs. Throughout my college career, I have worked for the Supplemental Instruction (SI) program at Chico State. In my current research, I am looking into the efficacy of the SI program at Chico State.  Please reach out to me by email if you have questions or would like to discuss any of my interests in further detail.
+
+## Projects
+
+* The Longitudinal Effects of Supplemental Instruction in Nutrtion Students at Chico State
 

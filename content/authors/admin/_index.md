@@ -71,8 +71,8 @@ When I'm not on campus, typically i'm growing :carrot::ear_of_rice::tomato::eggp
 
 Campus life consists of: 
 
-* [Training](/courses) the next generation of Scientists how to harness the power of Statistics and Data in a responsible and ethical manner. 
-* Supporting students in their academic adventures through intensive advising and [research support](/students). 
+* [Training](#teaching) the next generation of Scientists how to harness the power of Statistics and Data in a responsible and ethical manner. 
+* Supporting students in their academic adventures through intensive advising and [research](/students). 
 * Leading the [Data Science Initative (DSI)](http://datascience.csuchico.edu) to develop Data Science capacity on our campus.
 * Providing analytical support and statitistical consulting for many [projects](#projects) on and off campus. 
 
