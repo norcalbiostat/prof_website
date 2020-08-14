@@ -629,6 +629,7 @@
     <li><a href="#addhealth">AddHealth</a></li>
     <li><a href="#ames">Ames</a></li>
     <li><a href="#countycomplete">countyComplete</a></li>
+    <li><a href="#crime-data">Crime Data</a></li>
     <li><a href="#depression">Depression</a></li>
     <li><a href="#download-times">Download Times</a></li>
     <li><a href="#diamonds-small">Diamonds (small)</a></li>
@@ -704,6 +705,16 @@ dim(ames)
 dim(county)
 </code></pre>
 <pre><code>## [1] 3116   56
+</code></pre>
+<h2 id="crime-data">Crime Data</h2>
+<ul>
+<li>
+<a href="../../../data/Crime_Data">Crime_Data</a>: State and regional level information on crime and murder rates.</li>
+</ul>
+<pre><code class="language-r">crime &lt;- readxl::read_excel(&quot;../../../static/data/Crime_Data.xlsx&quot;)
+dim(crime)
+</code></pre>
+<pre><code>## [1] 51 11
 </code></pre>
 <h2 id="depression">Depression</h2>
 <ul>
@@ -831,7 +842,7 @@ dim(pabmi)
 dim(washpost)
 </code></pre>
 <hr>
-<p><em>This page last updated on2020-07-10 15:42:08</em></p>
+<p><em>This page last updated on2020-08-14 16:13:23</em></p>
 
           </div>
 

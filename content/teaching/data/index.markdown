@@ -79,6 +79,19 @@ dim(county)
 ## [1] 3116   56
 ```
 
+## Crime Data
+
+* [Crime_Data](../../../data/Crime_Data): State and regional level information on crime and murder rates. 
+
+```r
+crime <- readxl::read_excel("../../../static/data/Crime_Data.xlsx")
+dim(crime)
+```
+
+```
+## [1] 51 11
+```
+
 ## Depression
 * [Depress](../../../data/depress_081217.txt) Tab delimited text file. The depression data set is from the first set of interviews of a prospective study of depression in the adult residents of Los Angeles County and includes 294 observations. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The [codebook](../DepressCodebook.txt) can be downloaded as a text file. 
 
@@ -236,5 +249,5 @@ dim(washpost)
 
 ---
 
-_This page last updated on2020-07-10 15:42:08_
+_This page last updated on2020-08-14 16:13:23_
 

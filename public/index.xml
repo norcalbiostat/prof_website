@@ -120,6 +120,16 @@ dim(county)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] 3116   56
 &lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;crime-data&#34;&gt;Crime Data&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;../../../data/Crime_Data&#34;&gt;Crime_Data&lt;/a&gt;: State and regional level information on crime and murder rates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;crime &amp;lt;- readxl::read_excel(&amp;quot;../../../static/data/Crime_Data.xlsx&amp;quot;)
+dim(crime)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] 51 11
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id=&#34;depression&#34;&gt;Depression&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -246,7 +256,7 @@ dim(pabmi)
 dim(washpost)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;em&gt;This page last updated on2020-07-10 15:42:08&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This page last updated on2020-08-14 16:13:23&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
