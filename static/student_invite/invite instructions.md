@@ -7,9 +7,10 @@ There are two spots where this information will show
 2. Your own page - click on any person to see thier page. 
 
 Each entry below surrounded by `< >` is a place for you to provide your information. 
+Please remove the `< >` once you are done. 
 Mind the spacing/indenting. This is important for the markdown to render correctly. 
 
-* courses: Each course is a degree progrmam. You can copy/paste this informaiton to add a second course (such as DS certificate or a minor)
+* courses: Each course is a degree program. You can copy/paste this informaiton to add a second course (such as DS certificate or a minor)
 * interests: Limit 3-4 for space. At most 1 personal, the rest professional or a topic area of interest (like sports)
 * role: shows up under your picture
 * social: Icons that show up under your picture. add/remove as many as you like. 
