@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Dr. D.</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Thu, 09 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Thu, 06 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
       <title>Dr. D.</title>
@@ -52,6 +52,14 @@
 &lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
 &lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Deliberate practice in simulation - Evaluation of repetitive code training on nursing students&#39; BLS team skills</title>
+      <link>/publication/nursing_evaluation/</link>
+      <pubDate>Thu, 06 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/nursing_evaluation/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -627,7 +635,12 @@ Experienced Youth to Sexual and Reproductive Health Care (2014)&lt;/a&gt;&lt;/li
       <link>/project/pma6/</link>
       <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
       <guid>/project/pma6/</guid>
-      <description></description>
+      <description>&lt;h2 id=&#34;student-assistance&#34;&gt;Student Assistance&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;../../author/jack-fogliasso/&#34;&gt;Jack Fogliasso&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -986,14 +999,11 @@ Terms and conditions?&lt;/p&gt;
 &lt;li&gt;Great way to dedicate time to working on that project you&amp;rsquo;ve been meaning to get around to.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Come and hang out with other coders in a welcoming and supportive environment.&lt;/p&gt;
-&lt;h2 id=&#34;summer-2020-hours-wed-2-4pm-until-august-12&#34;&gt;Summer 2020 Hours: Wed 2-4pm until August 12&lt;/h2&gt;
+&lt;h2 id=&#34;fall-2020&#34;&gt;Fall 2020&lt;/h2&gt;
+&lt;p&gt;Lots of help this semester! See the full schedule with Zoom links at &lt;a href=&#34;https://www.csuchico.edu/datascience/community-coding.shtml&#34;&gt;https://www.csuchico.edu/datascience/community-coding.shtml&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Please don&amp;rsquo;t forget to 
 &lt;a href=&#34;bit.ly/community_coding&#34;&gt;sign in&lt;/a&gt;. This helps demonstrate that this service is used.&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://csuchico.zoom.us/j/97998102303?pwd=Tkp0Mnhaek9HQUk0SGNOclEvaGZuUT09&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Zoom join link&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;bit.ly/cc_hours&#34;&gt;Flyer&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;em&gt;Want to contribute your time and expertise? Log in and let&amp;rsquo;s chat.&lt;/em&gt;&lt;/p&gt;
 </description>
@@ -1044,14 +1054,6 @@ Terms and conditions?&lt;/p&gt;
       <link>/project/missing-data/</link>
       <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
       <guid>/project/missing-data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nursing Simulation</title>
-      <link>/project/nursing-simulation/</link>
-      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
-      <guid>/project/nursing-simulation/</guid>
       <description></description>
     </item>
     

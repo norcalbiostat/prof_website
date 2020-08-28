@@ -22,4 +22,7 @@ slides: ''
 profile: false
 ---
 
+## Student Assistance
+
+* [Jack Fogliasso](../../author/jack-fogliasso/)
 

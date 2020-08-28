@@ -24,11 +24,12 @@ Never code alone :)
 
 Come and hang out with other coders in a welcoming and supportive environment. 
 
-## Summer 2020 Hours: Wed 2-4pm until August 12
+## Fall 2020 
+
+Lots of help this semester! See the full schedule with Zoom links at https://www.csuchico.edu/datascience/community-coding.shtml
 
 * Please don't forget to [sign in](bit.ly/community_coding). This helps demonstrate that this service is used. 
-* [Zoom join link](https://csuchico.zoom.us/j/97998102303?pwd=Tkp0Mnhaek9HQUk0SGNOclEvaGZuUT09). 
-* [Flyer](bit.ly/cc_hours)
+
 
 _Want to contribute your time and expertise? Log in and let's chat._
 
