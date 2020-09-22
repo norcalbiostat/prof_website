@@ -121,7 +121,7 @@ dim(ames)
 &lt;h2 id=&#34;countycomplete&#34;&gt;countyComplete&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;../../../data/countyComplete.csv&#34;&gt;countyComplete&lt;/a&gt;: Characteristics of different counties in the United States. Information on this data set can be found in the full [Open Intro Data Codebook](../Open Intro Data Codebook.pdf). Just search for the data set name.&lt;/li&gt;
+&lt;a href=&#34;../../../data/countyComplete.csv&#34;&gt;countyComplete&lt;/a&gt;: Characteristics of different counties in the United States. Information on this data set can be found in the full [Open Intro Data Codebook](../../../data/Open Intro Data Codebook.pdf). Just search for the data set name.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;county &amp;lt;- read.csv(&amp;quot;../../../static/data/countyComplete.csv&amp;quot;, header=TRUE, stringsAsFactors = FALSE)
 dim(county)
@@ -142,7 +142,7 @@ dim(crime)
 &lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;../../../data/depress_081217.txt&#34;&gt;Depress&lt;/a&gt; Tab delimited text file. The depression data set is from the first set of interviews of a prospective study of depression in the adult residents of Los Angeles County and includes 294 observations. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The 
-&lt;a href=&#34;../DepressCodebook.txt&#34;&gt;codebook&lt;/a&gt; can be downloaded as a text file.&lt;/li&gt;
+&lt;a href=&#34;../../../data/DepressCodebook.txt&#34;&gt;codebook&lt;/a&gt; can be downloaded as a text file.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;depress &amp;lt;- read.delim(&amp;quot;../../../static/data/depress_081217.txt&amp;quot;, header=TRUE,sep=&amp;quot;\t&amp;quot;)
 dim(depress)
@@ -185,7 +185,7 @@ dim(quake)
 &lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;../../../data/email.txt&#34;&gt;email&lt;/a&gt;: &lt;strong&gt;Right Click and select &lt;code&gt;save link as&lt;/code&gt; to save this file to your class folder.&lt;/strong&gt; These data represent incoming emails for the first three months of 2012 for David Diez&amp;rsquo;s (&lt;em&gt;An Open Intro Statistics Textbook author&lt;/em&gt;) Gmail Account, early months of 2012. All personally identifiable information has been removed. 
-&lt;a href=&#34;../EmailCodebook.html&#34;&gt;Email Codebook&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;../../../data/EmailCodebook.html&#34;&gt;Email Codebook&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;email &amp;lt;- read.delim(&amp;quot;../../../static/data/email.txt&amp;quot;, header=TRUE, stringsAsFactors = FALSE, sep=&amp;quot;\t&amp;quot;)
 dim(email)
@@ -216,7 +216,7 @@ dim(hsb2)
 &lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;../../../data/Lung_081217.txt&#34;&gt;Lung&lt;/a&gt; Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of various types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The 
-&lt;a href=&#34;../LungCodebook.txt&#34;&gt;codebook&lt;/a&gt; can be downloaded as a text file.&lt;/li&gt;
+&lt;a href=&#34;../../../data/LungCodebook.txt&#34;&gt;codebook&lt;/a&gt; can be downloaded as a text file.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;fev &amp;lt;- read.delim(&amp;quot;../../../static/data/Lung_081217.txt&amp;quot;, header=TRUE,sep=&amp;quot;\t&amp;quot;)
 dim(fev)
@@ -227,7 +227,7 @@ dim(fev)
 &lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;../../../data/NCbirths.csv&#34;&gt;NCbirths&lt;/a&gt;: Publicly released data on a random sample of births recorded in North Carolina in 2004.
-&lt;a href=&#34;../NCBirthsCodebook.html&#34;&gt;Codebook&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;../../../data/NCBirthsCodebook.html&#34;&gt;Codebook&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ncbirths &amp;lt;- read.csv(&amp;quot;../../../static/data/NCbirths.csv&amp;quot;, header=TRUE, stringsAsFactors = FALSE)
 dim(ncbirths)
@@ -238,7 +238,7 @@ dim(ncbirths)
 &lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;../../../data/PARHIV_081217.txt&#34;&gt;ParentalHIV&lt;/a&gt;: Data collected as part of a clinical trial to evaluate behavioral interventions for families with a parent with HIV. The data include information on a subset of 252 adolescent children of parents with HIV. The 
-&lt;a href=&#34;../ParhivCodebook.txt&#34;&gt;Codebook&lt;/a&gt; describes the variables and gives a brief description of their meaning. The data is owned by by Dr. Mary Jane Rotheram-Borus, Professor of Psychology and Behavioral Sciences, Director of the Center for Community Health, Neuropsychiatric Institute, UCLA and used with permission in conjunction with the textbook Practical Multivariate Analysis by Afifi et.al.&lt;/li&gt;
+&lt;a href=&#34;../../../data/ParhivCodebook.txt&#34;&gt;Codebook&lt;/a&gt; describes the variables and gives a brief description of their meaning. The data is owned by by Dr. Mary Jane Rotheram-Borus, Professor of Psychology and Behavioral Sciences, Director of the Center for Community Health, Neuropsychiatric Institute, UCLA and used with permission in conjunction with the textbook Practical Multivariate Analysis by Afifi et.al.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;parHIV &amp;lt;- read.delim(&amp;quot;../../../static/data/PARHIV_081217.txt&amp;quot;, header=TRUE, stringsAsFactors = FALSE, sep=&amp;quot;\t&amp;quot;)
 dim(parHIV)
@@ -264,7 +264,7 @@ dim(pabmi)
 dim(washpost)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;em&gt;This page last updated on2020-08-14 16:13:23&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This page last updated on2020-09-21 19:20:21&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
