@@ -81,7 +81,7 @@ dim(county)
 
 ## Crime Data
 
-* [Crime_Data](../../../data/Crime_Data): State and regional level information on crime and murder rates. 
+* [Crime_Data](../../../data/Crime_Data.xlsx): State and regional level information on crime and murder rates. 
 
 ```r
 crime <- readxl::read_excel("../../../static/data/Crime_Data.xlsx")
@@ -249,5 +249,5 @@ dim(washpost)
 
 ---
 
-_This page last updated on2020-09-21 19:20:21_
+_This page last updated on2021-01-27 17:48:00_
 

@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Dr. D.</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2020</copyright><lastBuildDate>Thu, 06 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Robin Donatello, 2021</copyright><lastBuildDate>Thu, 06 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_huf04b1cfef9bd3535e59178ed913aa604_851_512x512_fill_lanczos_center_2.png</url>
       <title>Dr. D.</title>
@@ -131,7 +131,7 @@ dim(county)
 &lt;h2 id=&#34;crime-data&#34;&gt;Crime Data&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;../../../data/Crime_Data&#34;&gt;Crime_Data&lt;/a&gt;: State and regional level information on crime and murder rates.&lt;/li&gt;
+&lt;a href=&#34;../../../data/Crime_Data.xlsx&#34;&gt;Crime_Data&lt;/a&gt;: State and regional level information on crime and murder rates.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;crime &amp;lt;- readxl::read_excel(&amp;quot;../../../static/data/Crime_Data.xlsx&amp;quot;)
 dim(crime)
@@ -205,7 +205,7 @@ dim(moon)
 &lt;h2 id=&#34;hs-and-beyond&#34;&gt;HS and Beyond&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;a href=&#34;../../../data/hsb2.txt&#34;&gt;High School and Beyond&lt;/a&gt;. The High School and Beyond (HS&amp;amp;B) Longitudinal Study was the second study conducted as part of NCES&amp;rsquo; National Longitudinal Studies Program. This program was established to study the educational, vocational, and personal development of young people, beginning with their elementary or high school years and following them over time as they take on adult roles and responsibilities. &lt;a href=&#34;http://nces.ed.gov/statprog/handbook/pdf/hsb.pdf&#34;&gt;http://nces.ed.gov/statprog/handbook/pdf/hsb.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;a href=&#34;../../../data/hsb2.txt&#34;&gt;High School and Beyond&lt;/a&gt;. The High School and Beyond (HS&amp;amp;B) Longitudinal Study was the second study conducted as part of NCES&#39; National Longitudinal Studies Program. This program was established to study the educational, vocational, and personal development of young people, beginning with their elementary or high school years and following them over time as they take on adult roles and responsibilities. &lt;a href=&#34;http://nces.ed.gov/statprog/handbook/pdf/hsb.pdf&#34;&gt;http://nces.ed.gov/statprog/handbook/pdf/hsb.pdf&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;hsb2 &amp;lt;- read.delim(&amp;quot;../../../static/data/hsb2.txt&amp;quot;, sep=&amp;quot;\t&amp;quot;)
 dim(hsb2)
@@ -264,7 +264,7 @@ dim(pabmi)
 dim(washpost)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;em&gt;This page last updated on2020-09-21 19:20:21&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This page last updated on2021-01-27 17:48:00&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -1204,7 +1204,7 @@ right below the code you just typed, and in the console itself.&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;In RStudio the file menu go to &lt;em&gt;Tools&lt;/em&gt; then &lt;em&gt;Global Options&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;Uncheck &amp;ldquo;Restore .RData into workspace at startup&amp;rdquo; and &amp;ldquo;Always save history&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Where it says &amp;lsquo;Save workspace to .RData on exit:&amp;rdquo; Select &amp;lsquo;Never&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;Where it says &amp;lsquo;Save workspace to .RData on exit:&amp;quot; Select &amp;lsquo;Never&amp;rsquo;&lt;/li&gt;
 &lt;li&gt;Click &lt;em&gt;apply&lt;/em&gt; then &lt;em&gt;ok&lt;/em&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;r-packages-how-things-get-done&#34;&gt;R packages: How things get done.&lt;/h2&gt;
