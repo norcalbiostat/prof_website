@@ -24,7 +24,7 @@ social:
   icon_pack: fas
   link: mailto::jfogliasso@csus.edu
 superuser: false
-title: Jack Fogliasso
+title: (2020) Jack Fogliasso
 user_groups:
 - Alumni
 ---

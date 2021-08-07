@@ -4,7 +4,9 @@ authors:
 bio: A soil scientist and burgeoning ceramic artist I am obsessed with clay in all of its potential forms
 education:
   courses:
-  - course: MS in Soil Education Info Systems
+  - course: PhD Student  - Land and Atmospheric Sciences
+    institution: University of Minnesota
+  - course: M.S. in Interdisciplinary Soil Science
     institution: California State University-Chico
     year: 2020
   - course: BS in Soil Science
@@ -16,10 +18,13 @@ interests:
 - Soil Mapping
 - Soil Education and Outreach
 organizations:
-- name: California State University, Chico
+- name: University of Minnesota
   url: ""
 role: Soil Science Education
 social:
+- icon: envelope
+  icon_pack: fas
+  link: mailto::irfandin@gmail.com
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/planetirf
@@ -27,10 +32,13 @@ social:
   icon_pack: fab
   link: https://github.com/planetirf
 superuser: false
-title: Irfan Ainuddin
+title: (2021) Irfan Ainuddin
 user_groups:
-- Grad Students
+- Alumni
 ---
 
-See Irfan's webpage at: http://planetirf.org/
+Irf is a PhD Student at University of Minnesota - Land and Atmospheric Sciences, studying permafrost affected soils to understand permafrost genesis and morphology, quantify organic carbon stocks, and apply geospatial techniques to map distributions of permafrost
+
+See Irfan's webpage at: http://planetirf.org/ and his capstone project at http://www.soilboxes.com:3838/app2/.
+
 

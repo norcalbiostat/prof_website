@@ -22,7 +22,7 @@ role: Mathematics - Statistics
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto::bnleff@mail.csuchico.edu
+  link: mailto::bnleff@ucdavis.edu
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/leff_brandon
@@ -30,12 +30,14 @@ social:
   icon_pack: fab
   link: https://github.com/bnleff
 superuser: false
-title: Brandon Leff
+title: (2021) Brandon Leff
 user_groups:
-- Undergraduates
+- Alumni
 ---
 
 Hi, I'm Brandon. I am an undergraduate student at Chico State graduating in Spring 2021. My main interests in a professional sense are Biostatistics, Data Science, and Sports (Mostly Basketball). In my personal life I really enjoy competitive gaming and bowling. I have traveled all around California participating in youth bowling tournaments and have even competed at the state championships. I currently am a Data Science Intern at CHC in Chico and my main focuses are in CalFresh Outreach and SNAP-Ed. Feel free to email me or follow me on twitter if you have any questions both regarding my interests or anything else.
+
+Fall '21 update: Brandon will be attending UC Davis for a MS in Statistics with a concentration in Data Science. 
 
 ## Projects
 
@@ -45,4 +47,6 @@ This project was my final portfolio for my Intro to Data Science course at Chico
 
 https://introdsci.github.io/DataScience-bnleff/
 
+Capstone Project: Modeling athlete wellness and performance. 
+https://bnleff.shinyapps.io/dashboard/
 

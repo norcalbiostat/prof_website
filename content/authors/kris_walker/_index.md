@@ -22,7 +22,7 @@ role: Mathematics
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto::kswalker@mail.csuchico.edu
+  link: mailto::kswalker@andrew.cmu.edu
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/Walkerevolution
@@ -33,12 +33,15 @@ social:
   icon_pack: fab
   link: https://github.com/Taudin
 superuser: false
-title: Kris Walker
+title: (2021) Kris Walker
 user_groups:
-- Undergraduates
+- Alumni
 ---
 
-Kris Walker is an undergraduate Mathematics major (Statistics emphasis). Kris is especially interested in probability theory, statistical learning, and programming in C++, R, and Python. Beginning Fall 2021, he hopes to attend a masters program in either applied statistics or computational finance.
+Kris Walker is an undergraduate Mathematics major (Statistics emphasis). Kris is especially interested in probability theory, statistical learning, and programming in C++, R, and Python. 
+
+Kris was accepted into the PhD in Statistics at Carnegie Mellon University starting Fall 2021! 
+
 
 ## Projects
 
