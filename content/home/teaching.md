@@ -56,7 +56,7 @@ I teach the following courses at Chico State,
 - MATH 350: [Intro. to Probability and Statistics](https://math350.netlify.app/)
 - MATH 385: Introduction to Data Science
 - MATH 456: [Applied Statistical Methods II](https://norcalbiostat.github.io/MATH456/)
-- MATH 485: [Advanced Data Science](https://norcalbiostat.github.io/ADS/)
+- MATH 485: [Advanced Data Science](https://data485.netlify.app/)
 - MATH 615: [Stat Methods for Graduate Research](https://norcalbiostat.github.io/MATH615/)
 - MATH 685: Data Science for Graduate Research
 
