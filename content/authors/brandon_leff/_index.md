@@ -4,6 +4,9 @@ authors:
 bio: Not used
 education:
   courses:
+  - course: MS Statistics
+    institution: UC Davis
+    year: 2023
   - course: BS Statistics
     institution: California State University, Chico
     year: 2021
@@ -18,7 +21,7 @@ interests:
 organizations:
 - name: California State University, Chico
   url: ""
-role: Mathematics - Statistics
+role: BS Statistics
 social:
 - icon: envelope
   icon_pack: fas

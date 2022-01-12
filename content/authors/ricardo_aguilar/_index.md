@@ -4,19 +4,19 @@ authors:
 bio: 
 education:
   courses:
-  - course: MS in Biostatistics
+  - course: MS Biostatistics
     institution: University of California, Los Angeles
     year: 2021
-  - course: BS in Statistics
+  - course: BS Statistics
     institution: California State University, Chico
     year: 2019
 email: ""
 interests:
-
+- Biostatistics
 organizations:
-- name: University of California, Los Angeles
+- name: Children Health Orange County
   url: ""
-role: Current MS student in UCLA Biostatistics 
+role:  BS Statistics
 superuser: false
 title: (2019) Ricardo Aguilar
 weight: 2

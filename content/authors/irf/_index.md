@@ -20,7 +20,7 @@ interests:
 organizations:
 - name: University of Minnesota
   url: ""
-role: Soil Science Education
+role: MS in Interdisciplinary Soil Science
 social:
 - icon: envelope
   icon_pack: fas
