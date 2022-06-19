@@ -47,5 +47,5 @@
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[main]]
     name = "CV"
-    url = "https://github.com/norcalbiostat/CV/raw/master/CV.pdf"
+    url = "https://github.com/norcalbiostat/CV_Donatello.pdf"
     weight = 70
