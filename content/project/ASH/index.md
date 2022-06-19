@@ -7,7 +7,6 @@ categories: []
 tags:
 - Public-Health
 - Statistics
-- Featured
 summary: 'Los-Angeles based research group implementing school-based teen pregnancy prevention programs'
 authors: []
 external_link: ''

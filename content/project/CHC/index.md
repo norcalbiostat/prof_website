@@ -10,7 +10,7 @@ tags:
 - Featured
 summary: 'Working to help hungry students get the nutritious food they need to stay healthy and succeed.'
 authors: []
-external_link: ''
+external_link: 'https://www.csuchico.edu/chc/'
 image:
   caption: ''
   focal_point: ''
@@ -32,9 +32,10 @@ CalFresh Food is a nutrition assistance program that helps low-income individual
 ### Data Product / Deliverables
 
 * [Website for subcontractors to upload required reporting files quarterly.](https://chc-cfo-reporting.csuchico.edu/)
-* Results of the Bsic needs Stucent Success Survey [website](https://chicocalfresh.github.io/bns-website/index.html)
+* Internal dashboards for progress on survey administration
+* Results of the Basic needs Student Success Survey [website](https://chicocalfresh.github.io/bns-website/index.html)
+    - Similar website for [[BNS3 Pilot 2]](https://chicocalfresh.github.io/bns-pilot2-website/) seriously enhanced by [Derek Helm](https://derekhelms.netlify.app/)
+* Regularly supervise 1-3 Statistics and Data Science student interns and student analyst staff
+* Manage 2-4 Statistics/Data Science interns each semester. 
 
-### Student Collaborators
-
-* Brandon Leff [link to his author page]
 

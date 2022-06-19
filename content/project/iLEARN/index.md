@@ -7,7 +7,6 @@ categories: []
 tags:
 - Statistics
 - Student-Success
-- Featured
 summary: 'The iLEARN project will initiate a systematic, institutional approach to assessing the impact of programs on student success. '
 authors: []
 external_link: ''

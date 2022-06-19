@@ -1,8 +1,7 @@
 ---
 authors:
 - admin
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My research interests are often in the field of Public Health, Education and Student Success. I enjoy using data to help others make the world a better place. 
 education:
   courses:
   - course: Dr. P.H. in Biostatistics

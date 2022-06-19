@@ -2,14 +2,15 @@
 title: DataFest
 author: Robin Donatello
 date: '2018-05-29'
-slug: 
+slug: datafest
 categories: []
 tags:
 - Data-Science
 - Statistics
-summary: ''
+- Featured
+summary: 'Annual weekend long undergraduate data challenge event. Friendly competition with food, fun and prizes.'
 authors: []
-external_link: ''
+external_link: 'https://chicodatafest.netlify.app/'
 image:
   caption: ''
   focal_point: ''
