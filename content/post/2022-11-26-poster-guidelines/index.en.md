@@ -185,11 +185,11 @@ A selection of sample posters, class projects have comments regarding what made 
 
 ## Professional Conference Presentations
 
-* [Patterns of Sexual Experience Among an Urban Sample of Latino and African-American 9th Grade Students](static/poster_guidelines/prof/2013 Jeffries APHA Sex patterns.pdf) _Jeffries, RA., De Rosa, CJ., Moulton, B., Chung, EQ._
-* [Sexual Identity and Associated Factors Among and Ethnically Diverse Sample of 9th Grade Public School Students](static/poster_guidelines/prof/2014 Viola SRA Sexual Identity.pdf) _Viola, R., Jeffries, RA., Moulton, B., De Rosa, CJ._
-* [Pre-sexual behaviors as predictors of sexual risk in adolescents: Examining alternate outcomes in sexual health education programs](static/poster_guidelines/prof/2017 Moulton APHA Presex proxy.pdf) _Moulton, BD., Donatello, RA., Rohrbach, L., Afifi, A., Meyer, KI., Leon, P., Lau, C._
-* [Implementing a Flipped Classroom and Active Learning Techniques in General Chemistry to Augment Student Success at a Mid-Sized Rural University](static/poster_guidelines/prof/2017 Smith CHEM ED.pdf) _Smith, M., Aguilar, R., Cherrette, V., Rose, A., Crane, J., Park, C., Bladorn, E., Mills, H., Sherry, S., Chatha, C., Park, H., Dailey, H., Donatello, RA., Wasinger, E._
-* [The Impact of Supplemental Instruction on Student Success](static/poster_guidelines/prof/2019 SI analysis.pdf) _Aguilar, R., Donatello, RA._
+* [Patterns of Sexual Experience Among an Urban Sample of Latino and African-American 9th Grade Students](prof/2013 Jeffries APHA Sex patterns.pdf) _Jeffries, RA., De Rosa, CJ., Moulton, B., Chung, EQ._
+* [Sexual Identity and Associated Factors Among and Ethnically Diverse Sample of 9th Grade Public School Students](prof/2014 Viola SRA Sexual Identity.pdf) _Viola, R., Jeffries, RA., Moulton, B., De Rosa, CJ._
+* [Pre-sexual behaviors as predictors of sexual risk in adolescents: Examining alternate outcomes in sexual health education programs](prof/2017 Moulton APHA Presex proxy.pdf) _Moulton, BD., Donatello, RA., Rohrbach, L., Afifi, A., Meyer, KI., Leon, P., Lau, C._
+* [Implementing a Flipped Classroom and Active Learning Techniques in General Chemistry to Augment Student Success at a Mid-Sized Rural University](prof/2017 Smith CHEM ED.pdf) _Smith, M., Aguilar, R., Cherrette, V., Rose, A., Crane, J., Park, C., Bladorn, E., Mills, H., Sherry, S., Chatha, C., Park, H., Dailey, H., Donatello, RA., Wasinger, E._
+* [The Impact of Supplemental Instruction on Student Success](prof/2019 SI analysis.pdf) _Aguilar, R., Donatello, RA._
 
 
 
