@@ -30,7 +30,7 @@ Because I can't get a table of contents to work yet.
 * [Aestetics](#aesthetics): Font, tables, graphics, colors, logos, 
 * [Printing](#printing): Guidance, location and prices
 * [Evaluation](#evaluation-criteria): grading rubric
-* [Examples](#examples): Selected examples
+* [Examples](#examples): Selected examples with comments. 
 
 # Templates
 
@@ -181,45 +181,61 @@ This is a general set of criteria commonly used to score posters.
 
 
 # Examples
-A selection of sample posters, class projects have comments regarding what made them stand out, and what could be improved. 
 
-## Professional Conference Presentations
+This [Google Drive](https://drive.google.com/drive/folders/17KzZcFXnTevOi_hlVVNmdFPW_ngdqhFA) folder contains a selection of sample posters, from professional conferences, graduate and undergraduate class projects. Class projects have comments regarding what made them stand out, and what could be improved. 
 
-* [Patterns of Sexual Experience Among an Urban Sample of Latino and African-American 9th Grade Students](prof/2013 Jeffries APHA Sex patterns.pdf) _Jeffries, RA., De Rosa, CJ., Moulton, B., Chung, EQ._
-* [Sexual Identity and Associated Factors Among and Ethnically Diverse Sample of 9th Grade Public School Students](prof/2014 Viola SRA Sexual Identity.pdf) _Viola, R., Jeffries, RA., Moulton, B., De Rosa, CJ._
-* [Pre-sexual behaviors as predictors of sexual risk in adolescents: Examining alternate outcomes in sexual health education programs](prof/2017 Moulton APHA Presex proxy.pdf) _Moulton, BD., Donatello, RA., Rohrbach, L., Afifi, A., Meyer, KI., Leon, P., Lau, C._
-* [Implementing a Flipped Classroom and Active Learning Techniques in General Chemistry to Augment Student Success at a Mid-Sized Rural University](prof/2017 Smith CHEM ED.pdf) _Smith, M., Aguilar, R., Cherrette, V., Rose, A., Crane, J., Park, C., Bladorn, E., Mills, H., Sherry, S., Chatha, C., Park, H., Dailey, H., Donatello, RA., Wasinger, E._
-* [The Impact of Supplemental Instruction on Student Success](prof/2019 SI analysis.pdf) _Aguilar, R., Donatello, RA._
+## Professional Conferences
 
+Professional Conference Presentations
+
+* [Patterns of Sexual Experience Among an Urban Sample of Latino and African-American 9th Grade Students](https://drive.google.com/file/d/1bP-tZ1xMxeQ2vCXQDU3Hd0Un0p8fneC4) _Jeffries, RA., De Rosa, CJ., Moulton, B., Chung, EQ._
+* [Sexual Identity and Associated Factors Among and Ethnically Diverse Sample of 9th Grade Public School Students](https://drive.google.com/file/d/153AHv6DArv7T3RvnjqFIWgvGAFrlmPFK) _Viola, R., Jeffries, RA., Moulton, B., De Rosa, CJ._
+* [Pre-sexual behaviors as predictors of sexual risk in adolescents: Examining alternate outcomes in sexual health education programs](https://drive.google.com/file/d/1PukWu4HzfajVowyd_CBxS5UgZCM58gVx) _Moulton, BD., Donatello, RA., Rohrbach, L., Afifi, A., Meyer, KI., Leon, P., Lau, C._
+* [Implementing a Flipped Classroom and Active Learning Techniques in General Chemistry to Augment Student Success at a Mid-Sized Rural University](https://drive.google.com/file/d/1LpsfwslrEUvZ9btRL379FhIJRIFflxg4) _Smith, M., Aguilar, R., Cherrette, V., Rose, A., Crane, J., Park, C., Bladorn, E., Mills, H., Sherry, S., Chatha, C., Park, H., Dailey, H., Donatello, RA., Wasinger, E._
+* [The Impact of Supplemental Instruction on Student Success](https://drive.google.com/file/d/1YopFzpGNAqPfz_xLpwPK59IJvd6EF9o1) _Aguilar, R., Donatello, RA._
 
 
 ## Graduate class projects 
 
-* [Relationship Between Alcohol Consumption and Among Gender and Age Groups](grad/2018 nesarc alcohol gender age.pdf)
+* [Relationship Between Alcohol Consumption and Among Gender and Age Groups](https://drive.google.com/file/d/1i2d5LqhB4zGaR6B-OeymCJninzUKw7AY) _Gonzales, J._
     - Good tables, could use larger font. 
     - Clearly stated research questions
     - Good balance of white space. Not entirely walls of text. 
-* [Species-specific tree leaf comparisons in the absence of bird predation on caterpillars](grad/2018 Caterpillars.pdf) _Parker S._
-    - Excellent use of whitespace, balanced colors. Great table 1, bullet point results make it easy to read.
-* [Effects of Childhood Social Support on Trauma](grad/2016 Social support and childhood trauma.pdf) _Hostler, M., Thornton A., Wong R._
-    - Clearly laid out variables of interest and RQ's. Good use of pie charts. The 3D scatterplot is not helpful. Model results presented in a nice table, but not explained. 
-* [Using 2010 U.S. Census Demographics to Determine a Predictor for Beer and Wine Consumption](grad/2016 Census Alcohol.pdf) _Ellis, C., Esposito, C., LaGrange, A._
-    - Great use of maps, model comparison table in the bottom middle. Bullet points clear and easy to read. Univariate summary statistics very clearly laid out. 
-
+* [Species-specific tree leaf comparisons in the absence of bird predation on caterpillars](https://drive.google.com/file/d/1myM_nrJP3bMW4TJvW9RqHM8DQ3VEOLz) _Parker S._
+    - Excellent use of whitespace, balanced colors. 
+    - Great table 1, bullet point results make it easy to read.
+* [Effects of Childhood Social Support on Trauma](https://drive.google.com/file/d/1fHWFihLqhBBzedDIzVNYdxk4dN1WAxys) _Hostler, M., Thornton A., Wong R._
+    - Clearly laid out variables of interest and RQ's. 
+    - Good use of pie charts. 
+    - The 3D scatterplot is not helpful. 
+    - Model results presented in a nice table, but not explained. 
+* [Using 2010 U.S. Census Demographics to Determine a Predictor for Beer and Wine Consumption](https://drive.google.com/file/d/1dcu7LBIyn-_BCOPNulztPSYzJBEBpeSQ) _Ellis, C., Esposito, C., LaGrange, A._
+    - Great use of maps, model comparison table in the bottom middle. 
+    - Bullet points clear and easy to read. 
+    - Univariate summary statistics very clearly laid out. 
+* [Moving away from BMI](https://drive.google.com/file/d/1dtJlamveAIQ0O37OnAVCbhBlDQN74gGR) _Brooke, C., Coronoa, J., Kessner, Sl, Lona, I._
+    - Great modification of base plots to tell a story. 
+    - Good use of middle two columns to explain two separate outcomes. 
+    - Clean tables, sufficient whitespace
 
 
 ## Undergraduate class Projects
 
-* [The Associations Between Familial Relationships, Daily Activities and Delinquency in Adolescents](ug/PDS Guetta.tif) _Guetta, R._
-    - Very clearly laid out RQ's and introduction. Discussion connects to current literature. 
-* [The Effects of Voter Demographics on the 2016 Primary Elections](ug/2016 Primary Election.pdf) _Jordan, A., Arriaza, L., Ejaz, N., Loeblich, A., Wain, C._ 
-    - Watermarks on bottom corners make words difficult to read. Table under results not made in Excel. Not easy to follow direction of story 
-* [Influence of drivers race on the outcome of a traffic stop](ug/2019 race traffic.pdf)
-* [Investigating the association between parental dynamics and adolescent deviant behavior](ug/2017 addhealth parent dynamics and deviant behavior.pdf)
-* [The relationship between one's self-image and feeling that they are liked by their peers](ug/2017 Addhealth self image.pdf)
-* [The relationship between sleep disturbance and mental health](ug/2017 Addhealth sleep mental health.pdf)
-* [The association between quality of sleep and general health](ug/2018 Addhealth Sleep general health.pdf)
-* [Does tree type affect the type of caterpillars that are found in the presence of birds?](ug/2018 caterpillars.pdf)
+* [The Associations Between Familial Relationships, Daily Activities and Delinquency in Adolescents](https://drive.google.com/file/d/1rMn9o8jVSzL3mAwK9eeHnAXy_631PPsH) _Guetta, R._
+    - Very clearly laid out RQ's and introduction. 
+    - Discussion connects to current literature. 
+* [The Effects of Voter Demographics on the 2016 Primary Elections](https://drive.google.com/file/d/1ua1xV5t3Y6BqChvpKaTGIQ1HKobzaZMq) _Jordan, A., Arriaza, L., Ejaz, N., Loeblich, A., Wain, C._ 
+    - Watermarks on bottom corners make words difficult to read. 
+    - Table under results not made in Excel. 
+    - Not easy to follow direction of story 
+* [Influence of drivers race on the outcome of a traffic stop](https://drive.google.com/file/d/14Hos0VCUMp8UemQkRXVsaM-tcG7juaPs) _Gomez, E._
+* [Investigating the association between parental dynamics and adolescent deviant behavior](https://drive.google.com/file/d/1nfksc9ckdKXtkVnuwb8QP50bKBOMhWlc) _FLores, A., Turner S._
+* [The relationship between one's self-image and feeling that they are liked by their peers](https://drive.google.com/file/d/1-QfkiWXl3R1uiPpYgYonnQiN7k4lJL0O) _Stainton, E., Simpson, B._
+* [The relationship between sleep disturbance and mental health](https://drive.google.com/file/d/1I_zoEYcQzlnClbnaNNcbmhxVbhH0UJEh) _Myrick, S., Rizzo, S._
+* [Crater Depth & Diameter and their Association with Hemisphere & Ejecta Type](https://drive.google.com/file/d/1ekNlBIMVjjCUMuNC1J6aJvCkC-7dOatC) _Huntington, C. and Mavis, E._
+  - Clean borderless columns
+  - Good modification of high density plots
+* [Does tree type affect the type of caterpillars that are found in the presence of birds?](https://drive.google.com/file/d/1hSl0S7hw7MGvoVH95FuAzkX0w2zf4kVq) _Tucker, K., McKibben. C._
 
 
 
