@@ -209,6 +209,7 @@ dim(ncbirths)
 
 * [ParentalHIV](PARHIV_081217.txt): Data collected as part of a clinical trial to evaluate behavioral interventions for families with a parent with HIV. The data include information on a subset of 252 adolescent children of parents with HIV. The [Codebook](ParhivCodebook.txt) describes the variables and gives a brief description of their meaning. The data is owned by by Dr. Mary Jane Rotheram-Borus, Professor of Psychology and Behavioral Sciences, Director of the Center for Community Health, Neuropsychiatric Institute, UCLA and used with permission in conjunction with the textbook Practical Multivariate Analysis by Afifi et.al. 
 
+* [Full data Management script](dm_parhiv.html)
 
 ```r
 parHIV <- read.delim("PARHIV_081217.txt", header=TRUE, stringsAsFactors = FALSE, sep="\t")
