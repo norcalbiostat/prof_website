@@ -458,7 +458,7 @@ compiled.</p>
 this code file. I read it in and store it as an object <code>raw</code>,
 so I can use it to confirm my recodes and edits work correctly.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>raw <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">&quot;Parhiv.txt&quot;</span>, <span class="at">sep=</span><span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span>, <span class="at">header=</span><span class="cn">TRUE</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>raw <span class="ot">&lt;-</span> <span class="fu">read.table</span>(<span class="st">&quot;E:/Dropbox/PMA6/PMA6_Shared/data6e/Parhiv.txt&quot;</span>, <span class="at">sep=</span><span class="st">&quot;</span><span class="sc">\t</span><span class="st">&quot;</span>, <span class="at">header=</span><span class="cn">TRUE</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>hiv <span class="ot">&lt;-</span> raw <span class="co"># this is the table that will be edited</span></span></code></pre></div>
 <p>I personally always set the names to lower case to make it easier to
 type.</p>
@@ -979,11 +979,11 @@ set.</p>
 </div>
 <div id="save-the-cleaned-data-as-a-.rdata-file" class="section level1">
 <h1>Save the cleaned data as a .Rdata file</h1>
-<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(hiv, <span class="at">file =</span> <span class="st">&quot;parhiv_clean.Rata&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(hiv, <span class="at">file =</span> <span class="st">&quot;parhiv_clean.Rdata&quot;</span>)</span></code></pre></div>
 </div>
 <div id="session-info" class="section level1">
 <h1>Session Info</h1>
-<p>This document was compiled on 2023-03-04 13:59:07 and with the
+<p>This document was compiled on 2023-03-28 18:04:40 and with the
 following system information:</p>
 <div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
 <pre><code>## R version 4.2.1 (2022-06-23 ucrt)

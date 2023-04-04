@@ -36,6 +36,6 @@ CalFresh Food is a nutrition assistance program that helps low-income individual
 * Results of the Basic needs Student Success Survey [website](https://chicocalfresh.github.io/bns-website/index.html)
     - Similar website for [[BNS3 Pilot 2]](https://chicocalfresh.github.io/bns-pilot2-website/) seriously enhanced by [Derek Helm](https://derekhelms.netlify.app/)
 * Regularly supervise 1-3 Statistics and Data Science student interns and student analyst staff
-* Manage 2-4 Statistics/Data Science interns each semester. 
+ 
 
 
