@@ -18,7 +18,7 @@ interests:
 organizations:
 - name: California State University, Chico
   url: ""
-role: BS Mathematics - Statistics
+role: BS Statistics
 social:
 - icon: envelope
   icon_pack: fas

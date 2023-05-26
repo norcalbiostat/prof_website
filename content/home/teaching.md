@@ -45,13 +45,14 @@ hero_media = "book_cover.png"
 
 # Note. An optional note to show underneath the links.
 [cta_note]
-  label = 'Last updated Jan, 2023'
+  label = 'Last updated May, 2023'
 +++
 
 I teach the following courses at Chico State, 
 
 - MATH 105: Introduction to Statistics
 - MATH 130: [Introduction to R](https://norcalbiostat.github.io/MATH130/)
+- MATH 185: Data Science for Social Good (Pilot F23)
 - MATH 315: [Applied Statistical Methods I](https://norcalbiostat.github.io/MATH315/)
 - MATH 350: [Intro. to Probability and Statistics](https://math350.netlify.app/)
 - MATH 385: Introduction to Data Science
@@ -67,7 +68,7 @@ And have created, curated, or contributed to the following teaching materials, m
 * [Curated data sets](data/)
 Wherever possible I try to use real world, non pre-processed data in the classroom. 
 * [Applied Statistics Notebook](https://norcalbiostat.github.io/AppliedStatistics_notes/)
-A compilation of Applied Statistics lecture notes using [Bookdown](https://bookdown.org/) that I use in multiple classes. 5
+A compilation of Applied Statistics lecture notes using [Bookdown](https://bookdown.org/) that I use in multiple classes.
 
 
 

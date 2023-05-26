@@ -4,7 +4,7 @@ This document provides guidance on how to fill this out.
 
 There are two spots where this information will show
 1. A brief intro - https://www.norcalbiostat.com/students/
-2. Your own page - click on any person to see thier page. 
+2. Your own page - click on any person to see their page. 
 
 Each entry below surrounded by `< >` is a place for you to provide your information. 
 Please remove the `< >` once you are done. 
@@ -29,9 +29,6 @@ education:
   - course: <BS Statistics>
     institution: California State University, Chico
     year: 2021
-  - course: Data Science Certificate
-    institution: California State University, Chico
-    year: 2021
 email: not used
 interests:
 - <Statistics> 
@@ -42,7 +39,7 @@ role: Statistics Major, Data Science Certificate
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto::bnleff@mail.csuchico.edu
+  link: mailto::rdonatello@mail.csuchico.edu
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/GeorgeCushen

@@ -18,7 +18,7 @@ interests:
 organizations:
 - name: California State University, Sacramento
   url: ""
-role: BS Pure Mathematics Pure
+role: BS Pure Mathematics
 social:
 - icon: envelope
   icon_pack: fas

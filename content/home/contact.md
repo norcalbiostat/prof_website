@@ -1,6 +1,6 @@
 +++
-# Contact widget.
-widget = "contact"  # See https://sourcethemes.com/academic/docs/page-builder/
+# Contact widget https://wowchemy.com/blocks-v1/contact/#top
+widget = "contact"  
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 2  # Order that this section will appear.
