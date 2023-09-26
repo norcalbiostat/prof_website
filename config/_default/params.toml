@@ -104,7 +104,7 @@ coordinates = {latitude = "39.731073", longitude = "-121.845712"}
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
-office_hours = ["Office Hours for F223: TBD"]
+office_hours = ["Office Hours for F23: MW 2-3pm Holt 202; Tue 3-4pm and Fri 2-4pm on Zoom"]
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
 appointment_url = "https://dr-donatello.youcanbook.me/"
@@ -112,7 +112,7 @@ appointment_url = "https://dr-donatello.youcanbook.me/"
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
-  {icon = "twitter", icon_pack = "fab", name = "@norcalbiostat", link = "https://twitter.com/norcalbiostat"},
+  #{icon = "twitter", icon_pack = "fab", name = "@norcalbiostat", link = "https://twitter.com/norcalbiostat"},
   {icon = "discord", icon_pack = "fab", name = "@Dr.D on Chico State Math/Stats Discord", link = "https://discord.gg/tzcB4MJadW"},
   #{icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
   #{icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
