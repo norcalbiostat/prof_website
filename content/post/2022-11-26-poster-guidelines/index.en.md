@@ -19,11 +19,9 @@ projects: []
 ---
 
 
-This post contains general guidelines on how to make a scientific poster. You should always check the standards and requirements for the specific conference, site or session where you will be presenting. 
+This post contains general guidelines on how to make a scientific poster. You should always check the standards and requirements for the specific conference, site or session where you will be presenting. _Updated 11-2023_
 
 # Quick links to content on this page
-
-Because I can't get a table of contents to work yet. 
 
 * [Templates](#templates): Templates so you don't reinvent the wheel. 
 * [Content](#content): Sections within the poster
@@ -67,16 +65,14 @@ The following sections of information must be included in each poster. The choic
 4. **Sample characteristics**
     - This is where _Table 1_ goes, a concise univariate description of your sample. 
     - Analysis sample size, N(%) for each categorical variable, mean(sd) (or mean/median) for each continuous measurement. 
+    - Could be a candidate for [tbl_summary](https://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html)
 5. **Results**
     - No more than 2 graphs or tables for bivariate comparisons
     - One multivariate table or plot. Here are some options
-        - The `coefplot()` function in the `arm` package is an excellent way of displaying the results of a MV model. 
-          Save the results of a model as an object `my.model <- lm(your model here)` then call `coefplot(my.model)` 
-          on that object. 
-        - forestplot https://cran.r-project.org/web/packages/forestplot/vignettes/forestplot.html 
-        - Want to roll your own? Check out 
-          [this SO post](https://stackoverflow.com/questions/32440899/coefplot-in-r-change-ci-line-colours))
-        - Stargazer can make a nice table - but you should rebuild this directly in Powerpoint. 
+        - [tbl_regression](https://www.danieldsjoberg.com/gtsummary/articles/tbl_regression.html)
+        - The `coefplot()` function in the `arm` package. [Example](https://friendly.github.io/VisMLM-course/examples/coefplots-demo.html)
+        - [Forestplot](https://cran.r-project.org/web/packages/forestplot/vignettes/forestplot.html)
+        
     - At least one coefficient, the primary explanatory variable, must be interpreted in context of the problem. 
     - You are just stating results here, not justifying, explaining or connecting any meanings. 
 6. **Conclusions/discussion**
@@ -112,6 +108,7 @@ The following sections of information must be included in each poster. The choic
 * Use borders for the top, and bottom of the table
     - Use vertical borders sparingly. Probably only for the far left corner. 
     - Powerpoint has some good auto-formats you can use. 
+* New (but untested) option as of 2023 - create regression tables using [tbl_regression](https://www.danieldsjoberg.com/gtsummary/articles/tbl_regression.html#gt-functions-to-format-table), then save as an image using [gtsave](https://gt.rstudio.com/reference/gtsave.html)
 
 ### Graphics
 * Copy/pasted graphics do not scale up well and will print out very pixelated or blurry. 
@@ -146,7 +143,8 @@ Your poster is a professional publication. It should reflect your campus properl
 
 
 
-# Printing (as appropriate)
+# Printing (as appropriate - prices are as of 2022)
+
 * Don't wait until the morning of to print - this is ESPECIALLY true in Spring when there are multiple poster symposiums being conducted. 
 * Don't spend a fortune!
 * **Recommended option** Copy & Print center in the Library [website](https://www.csuchico.edu/copycenter/index.shtml). Prices range from $20 (18"x24") to $72 (36" x 48")
