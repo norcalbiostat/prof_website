@@ -68,7 +68,7 @@ dim(ames)
 
 ## countyComplete
 
-* [countyComplete](../../../data/countyComplete.csv): Characteristics of different counties in the United States. Information on this data set can be found in the full [Open Intro Data Codebook](../../../data/Open Intro Data Codebook.pdf). Just search for the data set name. 
+* [countyComplete](../../../data/countyComplete.csv): Characteristics of different counties in the United States. Information on this data set can be found in the full [Open Intro Data Codebook](https://www.openintro.org/data/index.php?data=county).
 
 ```r
 county <- read.csv("../../../static/data/countyComplete.csv", header=TRUE, stringsAsFactors = FALSE)
@@ -76,7 +76,7 @@ dim(county)
 ```
 
 ```
-## [1] 3116   56
+## [1] 3142   15
 ```
 
 ## Crime Data
@@ -93,10 +93,10 @@ dim(crime)
 ```
 
 ## Depression
-* [Depress](../../../data/depress_081217.txt) Tab delimited text file. The depression data set is from the first set of interviews of a prospective study of depression in the adult residents of Los Angeles County and includes 294 observations. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The [codebook](../../../data/DepressCodebook.txt) can be downloaded as a text file. 
+* [Depress](../../../data/Depress.txt) Tab delimited text file. The depression data set is from the first set of interviews of a prospective study of depression in the adult residents of Los Angeles County and includes 294 observations. More details on the origin and study design can be found in Practical Multivariate Analysis by Afifi et.al. The [codebook](../../../data/DepressCodebook.txt) can be downloaded as a text file. 
 
 ```r
-depress <- read.delim("../../../static/data/depress_081217.txt", header=TRUE,sep="\t")
+depress <- read.delim("../../../static/data/Depress.txt", header=TRUE,sep="\t")
 dim(depress)
 ```
 
@@ -116,24 +116,6 @@ dim(dt)
 ```
 ## [1] 48  2
 ```
-
-## Diamonds (small)
-
-* [dsmall](../../../data/dsmall.txt) This is a randomly drawn sample from the `diamonds` data set found in the `ggplot2` package. For those not using `R` I have provided a tab delimited text file for download. For those using R, use the code below to create the `dsmall` data set. The [codebook](http://ggplot2.tidyverse.org/reference/diamonds.html) can be found on the ggplot2 documentation site. 
-
-
-```r
-set.seed(1410) # Make the sample reproducible
-diamonds <- ggplot2::diamonds # load the data without loading the ggplot2 package
-dsmall <- diamonds[sample(nrow(diamonds), 1000), ] # create the subset
-dim(dsmall)
-```
-
-```
-## [1] 1000   10
-```
-
-
 
 <!---
 * [Northridge Earthquake](../Earthq.txt) **Right Click and select `save link as` to save this file to your class folder.** The Northridge earthquake data set comes from a set of telephone surveys on the experiences of Los Angeles, CA county residents following the 1994 Northridge earthquake. Subjects were asked for their demographic information and about damage to their home, sustaining injury, and psychological responses to the earthquake. The data used here include 506 randomly selected subjects with relevant variables for the problems. The data is owned by Professor Linda Borque of the UCLA School of Public Health, Department of Community Health Sciences and used with permission in conjunction with the textbook Practical Multivariate Analysis by Afifi et.al. The [codebook](../EarthqCodebook.txt) can be downloaded as a text file. 
@@ -163,7 +145,7 @@ dim(email)
 * [Full moon on Dementia](../../../data/dementia_moon.txt) A study observed 15 nursing home patients with dementia and recorded the number of aggressive incidents each day for 12 weeks. Then they totaled the counts of aggressive incidents per patient on "moon" days (full moon +/-1 day) and "other" days. 
 
 ```r
-moon <- read.delim("../../../static/data/dementia_moon.txt", sep="\t", header=TRUE)
+moon <- read.delim(here::here("static/data/dementia_moon.txt"), sep="\t", header=TRUE)
 dim(moon)
 ```
 
@@ -187,10 +169,10 @@ dim(hsb2)
 
 ## Lung Function
 
-* [Lung](../../../data/Lung_081217.txt) Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of various types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practical Multivariate Analysis, 5th edition by Afifi, May and Clark. The [codebook](../../../data/LungCodebook.txt) can be downloaded as a text file. 
+* [Lung](../../../data/Lung.txt) Tab-delimited text file. This data come from a study on chronic respiratory disease and the effects of various types of smog on lung function of children and adults in the Los Angeles area. More details on the origin and study design can be found in Practical Multivariate Analysis by Afifi et.al. The [codebook](../../../data/LungCodebook.txt) can be downloaded as a text file. 
 
 ```r
-fev <- read.delim("../../../static/data/Lung_081217.txt", header=TRUE,sep="\t")
+fev <- read.delim("../../../static/data/Lung.txt", header=TRUE,sep="\t")
 dim(fev)
 ```
 
@@ -249,5 +231,5 @@ dim(washpost)
 
 ---
 
-_This page last updated on2021-01-27 17:48:00_
+_This page last updated on2024-01-05 14:37:51_
 

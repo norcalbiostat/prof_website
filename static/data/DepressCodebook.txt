@@ -14,7 +14,8 @@ MARITAL    1 = Never married            Marital status
            2 = Married                
            3 = Divorced               
            4 = Separated              
-           5 = Widowed                
+           5 = Widowed
+	   6 = Missing                
                                       
 EDUCAT     1 = Less than high school    Education
            2 = Some high school       

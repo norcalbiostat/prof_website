@@ -1,11 +1,5 @@
 Codebook for the lung function data (Lung.txt)
 
-Definitions of selected terms: 
-* FEV: Forced expiratory volume measures how much air a person can exhale during a forced breath. The amount of air exhaled may be measured during the first (FEV1), second (FEV2), and/or third seconds (FEV3) of the forced breath. (Wikipedia)
-* FVC: Forced vital capacity is the total amount of air exhaled during the FEV test. (Wikipedia)
-
-
-
 Variable   Variable                   
 Name       Coding                       Description
 -------------------------------------------------------------------------------
