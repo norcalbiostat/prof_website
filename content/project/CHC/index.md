@@ -23,7 +23,7 @@ slides: ''
 profile: false
 ---
 
-As a member of the [Data Science Initiative](http://datascience.csuchico.edu), I have been working with the [Center for Healthy Communties](https://www.csuchico.edu/chc/) since 2019 as a statistical consultant, data manager, providing data skills training workshops and managing Data Science student interns. I help the CHC streamline and organize their data processes, research and program evaluation tasks. 
+I have been working with the [Center for Healthy Communties](https://www.csuchico.edu/chc/) since 2019 as a statistical consultant, data manager, providing data skills training workshops and managing Data Science student interns. I help the CHC streamline and organize their data processes, research and program evaluation tasks. 
 
 The primary contract that I work on is the **CalFresh Outreach Program**
 
