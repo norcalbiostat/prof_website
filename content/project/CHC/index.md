@@ -6,7 +6,7 @@ slug: chc
 categories: []
 tags:
 - Data-Science
-- Public-Health
+- Interdisciplinary
 - Featured
 summary: 'Working to help hungry students get the nutritious food they need to stay healthy and succeed.'
 authors: []
