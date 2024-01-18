@@ -45,7 +45,7 @@ hero_media = "book_cover.png"
 
 # Note. An optional note to show underneath the links.
 [cta_note]
-  label = 'Last updated May, 2023'
+  label = 'Last updated January, 2024'
 +++
 
 I teach the following courses at Chico State. The term where I last taught that class is listed in parentheses. 
