@@ -1,0 +1,291 @@
+---
+title: 'Tidy Tuesday: Mario Kart World Record'
+author: Robin Donatello
+date: '2021-05-25'
+slug: tidy-tuesday-mario-kart-world-record
+categories:
+  - tidy-tuesday
+tags:
+  - dplyr
+  - ggplot
+  - R
+  - Rmarkdown
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-05-25T12:59:52-07:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p>I’m finally venturing into the world of <a href="https://github.com/rfordatascience/tidytuesday">Tidy Tuesday</a>. This week is all about Mario Kart.</p>
+<div id="the-data" class="section level2">
+<h2>The Data</h2>
+<p>The data this week comes from Mario Kart World Records and contains world records for the classic (if you’re a 90’s kid) racing game on the Nintendo 64.</p>
+<p>This Video talks about the history of Mario Kart 64 World Records in greater detail. Despite it’s release back in 1996 (1997 in Europe and North America), it is still actiely played by many and new world records are achieved every month.</p>
+<p>The game consists of 16 individual tracks and world records can be achieved for the fastest single lap or the fastest completed race (three laps). Also, through the years, players discovered shortcuts in many of the tracks. Fortunately, shortcut and non-shortcut world records are listed separately.</p>
+<p>Furthermore, the Nintendo 64 was released for NTSC- and PAL-systems. On PAL-systems, the game runs a little slower. All times in this dataset are PAL-times, but they can be converted back to NTSC-times.</p>
+</div>
+<div id="import-data" class="section level2">
+<h2>Import data</h2>
+<p>Read in with <code>tidytuesdayR</code> package. This loads the readme and all the datasets for the week of interest.</p>
+<pre class="r"><code>library(tidyverse)
+# install.packages(&quot;tidytuesdayR&quot;)
+tuesdata &lt;- tidytuesdayR::tt_load(&#39;2021-05-25&#39;)</code></pre>
+<pre><code>## 
+##  Downloading file 1 of 2: `drivers.csv`
+##  Downloading file 2 of 2: `records.csv`</code></pre>
+<pre class="r"><code>records &lt;- tuesdata$records
+drivers &lt;- tuesdata$drivers</code></pre>
+</div>
+<div id="look-at-the-data" class="section level1">
+<h1>Look at the data</h1>
+<pre class="r"><code>str(records)</code></pre>
+<pre><code>## spec_tbl_df [2,334 x 9] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+##  $ track          : chr [1:2334] &quot;Luigi Raceway&quot; &quot;Luigi Raceway&quot; &quot;Luigi Raceway&quot; &quot;Luigi Raceway&quot; ...
+##  $ type           : chr [1:2334] &quot;Three Lap&quot; &quot;Three Lap&quot; &quot;Three Lap&quot; &quot;Three Lap&quot; ...
+##  $ shortcut       : chr [1:2334] &quot;No&quot; &quot;No&quot; &quot;No&quot; &quot;No&quot; ...
+##  $ player         : chr [1:2334] &quot;Salam&quot; &quot;Booth&quot; &quot;Salam&quot; &quot;Salam&quot; ...
+##  $ system_played  : chr [1:2334] &quot;NTSC&quot; &quot;NTSC&quot; &quot;NTSC&quot; &quot;NTSC&quot; ...
+##  $ date           : Date[1:2334], format: &quot;1997-02-15&quot; &quot;1997-02-16&quot; ...
+##  $ time_period    : chr [1:2334] &quot;2M 12.99S&quot; &quot;2M 9.99S&quot; &quot;2M 8.99S&quot; &quot;2M 6.99S&quot; ...
+##  $ time           : num [1:2334] 133 130 129 127 125 ...
+##  $ record_duration: num [1:2334] 1 0 12 7 54 0 0 27 0 64 ...
+##  - attr(*, &quot;spec&quot;)=
+##   .. cols(
+##   ..   track = col_character(),
+##   ..   type = col_character(),
+##   ..   shortcut = col_character(),
+##   ..   player = col_character(),
+##   ..   system_played = col_character(),
+##   ..   date = col_date(format = &quot;&quot;),
+##   ..   time_period = col_character(),
+##   ..   time = col_double(),
+##   ..   record_duration = col_double()
+##   .. )</code></pre>
+<p>Variables of interest for me are <code>time</code> which is in seconds, and probably <code>type</code> for the type of track, and <code>shortcut</code> because times will be different if the player used a shortcut.</p>
+<div id="question-to-explore-which-track-is-the-fastest" class="section level2">
+<h2>Question to explore: Which track is the fastest?</h2>
+<p>Start by looking at a distribution of record times totally overall.</p>
+<pre class="r"><code>ggplot(records, aes(x=time)) + geom_histogram()</code></pre>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<p><img src="/post/2021-05-25-tidy-tuesday-mario-kart-world-record/index.en_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Skewed right.. large peak around 45s ish. Makes me wonder if there is one track that is played more often. I bet the different time “groups” are due to different tracks.</p>
+<p>How many tracks are there?</p>
+<pre class="r"><code>table(records$track)</code></pre>
+<pre><code>## 
+##     Banshee Boardwalk       Bowser&#39;s Castle        Choco Mountain 
+##                    83                    69                   148 
+## D.K.&#39;s Jungle Parkway       Frappe Snowland       Kalimari Desert 
+##                   180                   180                   169 
+##    Koopa Troopa Beach         Luigi Raceway         Mario Raceway 
+##                    89                   147                   160 
+##          Moo Moo Farm          Rainbow Road         Royal Raceway 
+##                    81                   179                   149 
+##          Sherbet Land       Toad&#39;s Turnpike         Wario Stadium 
+##                   143                   196                   201 
+##          Yoshi Valley 
+##                   160</code></pre>
+<p>16 - not too many.. Banshee Boardwalk and Bowser’s Castle don’t seem to be played much because they don’t have a lot of records. Or perhaps one person dominated the record board and noone can beat them. Not a high turnover world record.</p>
+<pre class="r"><code>ggplot(records, aes(x=time)) + 
+  geom_histogram() + 
+  facet_wrap(~track)</code></pre>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<p><img src="/post/2021-05-25-tidy-tuesday-mario-kart-world-record/index.en_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>Rainbow Road has the highest variability in record times. Three peaks, probably something to do with track type or shortcuts.</p>
+<p>Going back to the original question, which track is the fastest, let’s just grab the minimum record time. Find the row with the minimum time.</p>
+<pre class="r"><code>records[which(records$time == min(records$time)),]</code></pre>
+<pre><code>## # A tibble: 1 x 9
+##   track       type    shortcut player system_played date       time_period  time
+##   &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;         &lt;date&gt;     &lt;chr&gt;       &lt;dbl&gt;
+## 1 Wario Stad~ Three ~ Yes      VAJ    NTSC          2020-07-30 14.59S       14.6
+## # ... with 1 more variable: record_duration &lt;dbl&gt;</code></pre>
+<p>That was a base R solution. Here is a ‘tidyverse’ solution.</p>
+<pre class="r"><code>records %&gt;%
+  arrange(time) %&gt;%
+  slice(1)</code></pre>
+<pre><code>## # A tibble: 1 x 9
+##   track       type    shortcut player system_played date       time_period  time
+##   &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt;    &lt;chr&gt;  &lt;chr&gt;         &lt;date&gt;     &lt;chr&gt;       &lt;dbl&gt;
+## 1 Wario Stad~ Three ~ Yes      VAJ    NTSC          2020-07-30 14.59S       14.6
+## # ... with 1 more variable: record_duration &lt;dbl&gt;</code></pre>
+<p>The fastest track time was on Wario Stadium, using a shortcut.</p>
+<div id="side-tangent" class="section level3">
+<h3>Side tangent</h3>
+<p>What is the time distribution separated by shortcut?</p>
+<pre class="r"><code>ggplot(records, aes(y=time, x=shortcut, fill = shortcut)) + 
+  geom_boxplot() + 
+  facet_wrap(~track)</code></pre>
+<p><img src="/post/2021-05-25-tidy-tuesday-mario-kart-world-record/index.en_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p>Shortcut doesn’t help Kalimari Desert…spread. The median is very different. Let’s look one more time at distribution, but switch to density so we can see overlap.</p>
+<pre class="r"><code>ggplot(records, aes(x=time, color = shortcut)) + 
+  geom_density() + 
+  facet_wrap(~track, scales = &quot;free&quot;)</code></pre>
+<p><img src="/post/2021-05-25-tidy-tuesday-mario-kart-world-record/index.en_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>This also shows us that shortcuts were discovered on all tracks except:</p>
+<ul>
+<li>Banshee Boardwalk</li>
+<li>Bowser’s Castle</li>
+<li>Koopa Troopa Beach</li>
+<li>Moo Moo Farm</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="how-does-tracks-relate-to-players-do-players-have-favorite-tracks" class="section level1">
+<h1>How does tracks relate to players? Do players have favorite tracks?</h1>
+<p>How many players?</p>
+<pre class="r"><code>length(unique(records$player))</code></pre>
+<pre><code>## [1] 65</code></pre>
+<p>Lets look at players with only a certain amount of world records.</p>
+<pre class="r"><code>records %&gt;% 
+  group_by(player) %&gt;%
+  summarise(n=n()) %&gt;% 
+  arrange(desc(n)) %&gt;% 
+  ggplot(aes(x=n)) + geom_histogram()</code></pre>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<p><img src="/post/2021-05-25-tidy-tuesday-mario-kart-world-record/index.en_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<p>Let’s only look at the players with more than 100 world records. The ELITE!</p>
+<pre class="r"><code>top.players &lt;- records %&gt;% 
+  group_by(player) %&gt;%
+  summarise(n=n()) %&gt;% 
+  filter(n&gt;100)
+
+top.players</code></pre>
+<pre><code>## # A tibble: 6 x 2
+##   player       n
+##   &lt;chr&gt;    &lt;int&gt;
+## 1 abney317   118
+## 2 Booth      141
+## 3 Dan        201
+## 4 MJ         197
+## 5 MR         351
+## 6 Penev      371</code></pre>
+<p>We have 6 players. Let’s get their track data.</p>
+<pre class="r"><code>top.player.tracks &lt;- top.players %&gt;%
+  left_join(records)</code></pre>
+<pre><code>## Joining, by = &quot;player&quot;</code></pre>
+<pre class="r"><code>head(top.player.tracks)</code></pre>
+<pre><code>## # A tibble: 6 x 10
+##   player      n track  type  shortcut system_played date       time_period  time
+##   &lt;chr&gt;   &lt;int&gt; &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;         &lt;date&gt;     &lt;chr&gt;       &lt;dbl&gt;
+## 1 abney3~   118 Luigi~ Thre~ Yes      NTSC          2016-03-22 1M 29.94S    89.9
+## 2 abney3~   118 Luigi~ Thre~ Yes      NTSC          2016-03-24 1M 27.45S    87.4
+## 3 abney3~   118 Luigi~ Thre~ Yes      NTSC          2021-02-09 44.97S       45.0
+## 4 abney3~   118 Luigi~ Thre~ Yes      NTSC          2021-02-09 44.45S       44.4
+## 5 abney3~   118 Luigi~ Thre~ Yes      NTSC          2021-02-09 42.47S       42.5
+## 6 abney3~   118 Luigi~ Thre~ Yes      NTSC          2021-02-09 39.05S       39.0
+## # ... with 1 more variable: record_duration &lt;dbl&gt;</code></pre>
+<p>Did they all use shortcuts?</p>
+<pre class="r"><code>table(top.player.tracks$shortcut)</code></pre>
+<pre><code>## 
+##  No Yes 
+## 912 467</code></pre>
+<p>no! Did they all use the same system?</p>
+<pre class="r"><code>table(top.player.tracks$system_played)</code></pre>
+<pre><code>## 
+## NTSC  PAL 
+##  198 1181</code></pre>
+<p>Look at distribution of track times by track and player</p>
+<pre class="r"><code>ggplot(top.player.tracks, aes(x=time, color=shortcut)) + 
+  geom_density() + 
+  facet_grid(track ~ player, scales=&quot;free&quot;)</code></pre>
+<pre><code>## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.</code></pre>
+<p><img src="/post/2021-05-25-tidy-tuesday-mario-kart-world-record/index.en_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>Hard to read, let’s change to one line per player.</p>
+<pre class="r"><code>ggplot(top.player.tracks, aes(x=time, color=player)) + 
+  geom_density() + 
+  facet_grid(track ~ shortcut, scales=&quot;free&quot;)</code></pre>
+<pre><code>## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.</code></pre>
+<p><img src="/post/2021-05-25-tidy-tuesday-mario-kart-world-record/index.en_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p>Look at shortcuts vs not totally separately so that the panels can wrap and be more visible. Especially for <em>Penev</em>. I can’t see what they’re doing at all.</p>
+<pre class="r"><code>top.player.tracks %&gt;%
+  filter(shortcut == &quot;No&quot;) %&gt;% 
+  ggplot(aes(x=time, color=player)) + 
+    geom_density() + 
+    facet_wrap(~track, scales=&quot;free&quot;)</code></pre>
+<pre><code>## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.
+
+## Warning: Groups with fewer than two data points have been dropped.</code></pre>
+<p><img src="/post/2021-05-25-tidy-tuesday-mario-kart-world-record/index.en_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<p>Things I noticed:</p>
+<ul>
+<li>There’s still two peaks for most maps, even though we’re looking at records that were won not using a shortcut. So there is something else going on that affects track time.</li>
+<li>PENEV dominated Yoshi Valley</li>
+<li>Only MR and PENEV play Toad’s Turnpike</li>
+<li>There are 7 maps or so that don’t have high turnover with records.</li>
+</ul>
+<div id="look-closer-at-banshee-boardwalk" class="section level2">
+<h2>look closer at Banshee Boardwalk</h2>
+<pre class="r"><code>top.player.tracks %&gt;%
+  filter(shortcut == &quot;No&quot;, 
+         track == &quot;Banshee Boardwalk&quot;) %&gt;% 
+  ggplot(aes(x=type, y=time, color=player)) + 
+  geom_point()</code></pre>
+<p><img src="/post/2021-05-25-tidy-tuesday-mario-kart-world-record/index.en_files/figure-html/unnamed-chunk-19-1.png" width="672" /></p>
+<p>That’s exactly what was driving the two distinct peaks for most if not all maps. That’s something we should have taken into consideration earlier on.</p>
+</div>
+</div>

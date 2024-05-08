@@ -36,7 +36,7 @@ Powerpoint templates are the current standard method for creating scientific pos
 
 * [Powerpoint template](http://www.posterpresentations.com/html/free_poster_templates.html). 
     - Trifold tabletop templates are seldom used. 
-    - Common sizes are 36" x 48"
+    - Common sizes are 36" x 48", but 24" x 36" is also okay for class purposes. 
     - Choose either a three, or four column layout by following the instructions along the right sidebar. 
 * Chico State Biology Student Research Symposium posters tend to be 4'x3'. See the 2022 [[event page here]](https://www.csuchico.edu/biol/events-seminars/student-research-symposium-2022.shtml) for guidance and templates. 
 
@@ -108,7 +108,7 @@ The following sections of information must be included in each poster. The choic
 * Use borders for the top, and bottom of the table
     - Use vertical borders sparingly. Probably only for the far left corner. 
     - Powerpoint has some good auto-formats you can use. 
-* New (but untested) option as of 2023 - create regression tables using [tbl_regression](https://www.danieldsjoberg.com/gtsummary/articles/tbl_regression.html#gt-functions-to-format-table), then save as an image using [gtsave](https://gt.rstudio.com/reference/gtsave.html)
+* Create regression tables using [tbl_regression](https://www.danieldsjoberg.com/gtsummary/articles/tbl_regression.html#gt-functions-to-format-table), then save as an image using [gtsave](https://gt.rstudio.com/reference/gtsave.html)
 
 ### Graphics
 * Copy/pasted graphics do not scale up well and will print out very pixelated or blurry. 
@@ -143,11 +143,11 @@ Your poster is a professional publication. It should reflect your campus properl
 
 
 
-# Printing (as appropriate - prices are as of 2022)
+# Printing (as appropriate - prices are as of 2024)
 
 * Don't wait until the morning of to print - this is ESPECIALLY true in Spring when there are multiple poster symposiums being conducted. 
 * Don't spend a fortune!
-* **Recommended option** Copy & Print center in the Library [website](https://www.csuchico.edu/copycenter/index.shtml). Prices range from $20 (18"x24") to $72 (36" x 48")
+* **Recommended option** Copy & Print center in the Library [website](https://www.csuchico.edu/copycenter/index.shtml). Prices range from $10 (18"x24") to $36 (36" x 48")
 * Staples $65
 * Ellis Art (Esplanade) $50-60
 

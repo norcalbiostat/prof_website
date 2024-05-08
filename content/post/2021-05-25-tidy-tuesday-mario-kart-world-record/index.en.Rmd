@@ -1,0 +1,224 @@
+---
+title: 'Tidy Tuesday: Mario Kart World Record'
+author: Robin Donatello
+date: '2021-05-25'
+slug: tidy-tuesday-mario-kart-world-record
+categories:
+  - tidy-tuesday
+tags:
+  - dplyr
+  - ggplot
+  - R
+  - Rmarkdown
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-05-25T12:59:52-07:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+I'm finally venturing into the world of [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday). This week is all about Mario Kart. 
+
+## The Data 
+The data this week comes from Mario Kart World Records and contains world records for the classic (if you’re a 90’s kid) racing game on the Nintendo 64.
+
+This Video talks about the history of Mario Kart 64 World Records in greater detail. Despite it’s release back in 1996 (1997 in Europe and North America), it is still actiely played by many and new world records are achieved every month.
+
+The game consists of 16 individual tracks and world records can be achieved for the fastest single lap or the fastest completed race (three laps). Also, through the years, players discovered shortcuts in many of the tracks. Fortunately, shortcut and non-shortcut world records are listed separately.
+
+Furthermore, the Nintendo 64 was released for NTSC- and PAL-systems. On PAL-systems, the game runs a little slower. All times in this dataset are PAL-times, but they can be converted back to NTSC-times.
+
+
+## Import data
+Read in with `tidytuesdayR` package. This loads the readme and all the datasets for the week of interest.
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+# install.packages("tidytuesdayR")
+tuesdata <- tidytuesdayR::tt_load('2021-05-25')
+records <- tuesdata$records
+drivers <- tuesdata$drivers
+```
+
+# Look at the data
+
+```{r}
+str(records)
+```
+
+Variables of interest for me are `time` which is in seconds, and probably `type` for the type of track, and `shortcut` because times will be different if the player used a shortcut.
+
+## Question to explore: Which track is the fastest?
+Start by looking at a distribution of record times totally overall. 
+
+```{r}
+ggplot(records, aes(x=time)) + geom_histogram()
+```
+
+Skewed right.. large peak around 45s ish. Makes me wonder if there is one track that is played more often. I bet the different time "groups" are due to different tracks. 
+
+How many tracks are there? 
+```{r}
+table(records$track)
+```
+
+16 - not too many.. Banshee Boardwalk and Bowser's Castle don't seem to be played much because they don't have a lot of records. Or perhaps one person dominated the record board and noone can beat them. Not a high turnover world record.
+
+```{r}
+ggplot(records, aes(x=time)) + 
+  geom_histogram() + 
+  facet_wrap(~track)
+```
+
+Rainbow Road has the highest variability in record times. Three peaks, probably something to do with track type or shortcuts.
+
+Going back to the original question, which track is the fastest, let's just grab the minimum record time. Find the row with the minimum time.
+
+```{r}
+records[which(records$time == min(records$time)),]
+```
+
+That was a base R solution. Here is a 'tidyverse' solution.
+
+```{r}
+records %>%
+  arrange(time) %>%
+  slice(1)
+```
+
+The fastest track time was on Wario Stadium, using a shortcut. 
+
+### Side tangent
+What is the time distribution separated by shortcut? 
+```{r}
+ggplot(records, aes(y=time, x=shortcut, fill = shortcut)) + 
+  geom_boxplot() + 
+  facet_wrap(~track)
+```
+
+Shortcut doesn't help Kalimari Desert...spread. The median is very different. Let's look one more time at distribution, but switch to density so we can see overlap. 
+```{r}
+ggplot(records, aes(x=time, color = shortcut)) + 
+  geom_density() + 
+  facet_wrap(~track, scales = "free")
+```
+
+This also shows us that shortcuts were discovered on all tracks except: 
+
+* Banshee Boardwalk
+* Bowser's Castle
+* Koopa Troopa Beach
+* Moo Moo Farm
+
+# How does tracks relate to players? Do players have favorite tracks? 
+
+How many players? 
+```{r}
+length(unique(records$player))
+```
+
+Lets look at players with only a certain amount of world records. 
+```{r}
+records %>% 
+  group_by(player) %>%
+  summarise(n=n()) %>% 
+  arrange(desc(n)) %>% 
+  ggplot(aes(x=n)) + geom_histogram()
+```
+
+Let's only look at the players with more than 100 world records. The ELITE!
+
+```{r}
+top.players <- records %>% 
+  group_by(player) %>%
+  summarise(n=n()) %>% 
+  filter(n>100)
+
+top.players
+```
+
+We have 6 players. Let's get their track data. 
+
+```{r}
+top.player.tracks <- top.players %>%
+  left_join(records)
+
+head(top.player.tracks)
+```
+
+Did they all use shortcuts? 
+
+```{r}
+table(top.player.tracks$shortcut)
+```
+
+no! Did they all use the same system? 
+
+```{r}
+table(top.player.tracks$system_played)
+```
+
+Look at distribution of track times by track and player
+
+```{r}
+ggplot(top.player.tracks, aes(x=time, color=shortcut)) + 
+  geom_density() + 
+  facet_grid(track ~ player, scales="free")
+```
+
+Hard to read, let's change to one line per player. 
+
+```{r}
+ggplot(top.player.tracks, aes(x=time, color=player)) + 
+  geom_density() + 
+  facet_grid(track ~ shortcut, scales="free")
+```
+
+Look at shortcuts vs not totally separately so that the panels can wrap and be more visible. Especially for _Penev_. I can't see what they're doing at all. 
+
+```{r}
+top.player.tracks %>%
+  filter(shortcut == "No") %>% 
+  ggplot(aes(x=time, color=player)) + 
+    geom_density() + 
+    facet_wrap(~track, scales="free")
+```
+
+
+Things I noticed: 
+
+* There's still two peaks for most maps, even though we're looking at records that were won not using a shortcut. So there is something else going on that affects track time. 
+* PENEV dominated Yoshi Valley
+* Only MR and PENEV play Toad's Turnpike
+* There are 7 maps or so that don't have high turnover with records. 
+
+## look closer at Banshee Boardwalk
+
+```{r}
+top.player.tracks %>%
+  filter(shortcut == "No", 
+         track == "Banshee Boardwalk") %>% 
+  ggplot(aes(x=type, y=time, color=player)) + 
+  geom_point()
+```
+
+That's exactly what was driving the two distinct peaks for most if not all maps. That's something we should have taken into consideration earlier on. 
+
+
+
+
+
+
+
+
+
+
+
+
+

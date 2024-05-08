@@ -28,6 +28,51 @@
   </url>
   
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2021-05-25T12:59:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/dplyr/</loc>
+    <lastmod>2021-05-25T12:59:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-05-25T12:59:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/ggplot/</loc>
+    <lastmod>2021-05-25T12:59:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/r/</loc>
+    <lastmod>2021-05-25T12:59:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/rmarkdown/</loc>
+    <lastmod>2021-05-25T12:59:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-05-25T12:59:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/2021-05-25-tidy-tuesday-mario-kart-world-record/</loc>
+    <lastmod>2021-05-25T12:59:52-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/tidy-tuesday/</loc>
+    <lastmod>2021-05-25T12:59:52-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication-type/2/</loc>
     <lastmod>2020-08-27T17:06:20-07:00</lastmod>
   </url>
@@ -40,11 +85,6 @@
   <url>
     <loc>/publication/nursing_evaluation/</loc>
     <lastmod>2020-08-27T17:06:20-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-09-21T19:21:22-07:00</lastmod>
   </url>
   
   <url>
@@ -73,11 +113,6 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-08-27T17:06:20-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/advising3/</loc>
     <lastmod>2020-07-09T17:59:30-07:00</lastmod>
   </url>
@@ -89,7 +124,7 @@
   
   <url>
     <loc>/teaching/data/</loc>
-    <lastmod>2020-09-21T19:21:22-07:00</lastmod>
+    <lastmod>2021-01-27T17:49:01-08:00</lastmod>
   </url>
   
   <url>
@@ -248,16 +283,6 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-07-09T17:59:30-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/dplyr/</loc>
-    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/category/efficiency/</loc>
     <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
@@ -268,23 +293,8 @@
   </url>
   
   <url>
-    <loc>/tag/ggplot/</loc>
-    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/category/programming/</loc>
     <lastmod>2020-07-09T17:59:30-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/r/</loc>
-    <lastmod>2020-07-09T17:59:30-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/rmarkdown/</loc>
-    <lastmod>2020-06-24T17:53:11-07:00</lastmod>
   </url>
   
   <url>
