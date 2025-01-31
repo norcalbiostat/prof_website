@@ -10,7 +10,7 @@ tags:
 - Featured
 summary: 'Annual weekend long undergraduate data challenge event. Friendly competition with food, fun and prizes.'
 authors: []
-external_link: 'https://chicodatafest.netlify.app/'
+external_link: 'https://norcaldatafest.netlify.app/'
 image:
   caption: ''
   focal_point: ''

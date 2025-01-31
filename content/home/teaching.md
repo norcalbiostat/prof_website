@@ -51,15 +51,15 @@ hero_media = "book_cover.png"
 I teach the following courses at Chico State. The term where I last taught that class is listed in parentheses. 
 
 - MATH 105: Introduction to Statistics (F23)
-- MATH 130: [Introduction to R](https://norcalbiostat.github.io/MATH130/) (S23)
+- MATH 130: [Introduction to R](https://norcalbiostat.github.io/MATH130/) (S25)
 - MATH 185: Data Science for Social Good (pending)
 - MATH 315: [Applied Statistical Methods I](https://math315.netlify.app/) (S24)
 - MATH 350: [Intro. to Probability and Statistics](https://math350.netlify.app/) (S22)
 - MATH 385: Introduction to Data Science (F18)
 - MATH 456: [Applied Statistical Methods II](https://math456.netlify.app/) (S24)
-- MATH 458: [Sampling Methods](https://sampling-458.netlify.app/) (S23)
+- MATH 458: [Sampling Methods](https://sampling-458.netlify.app/) (S25)
 - MATH 485: [Advanced Data Science](https://data485.netlify.app/) (S22)
-- MATH 615: [Data Analysis for Graduate Research](https://math615.netlify.app/) (F23)
+- MATH 615: [Data Analysis for Graduate Research](https://math615.netlify.app/) (F24)
 
 
 And have created, curated, or contributed to the following teaching materials, most of which (textbook excepted) are licenced under [CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/). 
