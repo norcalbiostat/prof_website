@@ -1,7 +1,7 @@
 ---
 authors:
 - Irfan Ainuddin
-bio: A soil scientist and burgeoning ceramic artist I am obsessed with clay in all of its potential forms
+bio: 
 education:
   courses:
   - course: PhD Student  - Land and Atmospheric Sciences
@@ -37,7 +37,9 @@ user_groups:
 - Alumni
 ---
 
-Irf is a PhD Student at University of Minnesota - Land and Atmospheric Sciences, studying permafrost affected soils to understand permafrost genesis and morphology, quantify organic carbon stocks, and apply geospatial techniques to map distributions of permafrost
+Irf is a PhD Student at University of Minnesota - Land and Atmospheric Sciences, studying permafrost affected soils to understand permafrost genesis and morphology, quantify organic carbon stocks, and apply geospatial techniques to map distributions of permafrost. 
+
+> A soil scientist and burgeoning ceramic artist I am obsessed with clay in all of its potential forms
 
 See Irfan's webpage at: http://planetirf.org/ and his capstone project at http://www.soilboxes.com:3838/app2/.
 

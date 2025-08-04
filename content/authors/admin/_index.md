@@ -19,24 +19,25 @@ education:
 email: "rdonatello@csuchico.edu"
 interests:
 - Racial Equity in STEM
-- Data Science
+- Applied Statistics & Data Science
+- Automating tasks using R
 - Student Success
 - Data Editing and Imputation
-- Gardening for food
-- Pitbulls and puppies
-- Being outdoors
+- Homesteading / DIY
+- Sports and activities with my Pitbulls
+- Culturing fermented foods
 
 organizations:
 - name: California State University, Chico
   url: "https://www.csuchico.edu/math/"
-role: Associate Professor of Statistics and Data Science
+role: Professor of Statistics and Data Science
 social:
 #- icon: envelope
 #  icon_pack: fas
 #  link: '#contact'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/norcalbiostat
+# - icon: twitter
+#   icon_pack: fab
+#   link: https://twitter.com/norcalbiostat
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?hl=en&user=5qY9V6IAAAAJ
@@ -66,13 +67,14 @@ user_groups:
 ---
 
 
-When I'm not on campus, typically i'm growing :carrot::ear_of_rice::tomato::eggplant::green_apple: for my family, out adventuring with my :dog:🧔:poodle: , or getting some :video_game::game_die::books: time in. 
+When I'm not on campus, typically i'm growing :carrot::ear_of_rice::tomato::eggplant::green_apple: for my family, out adventuring with my :dog:🧔🐕 , or getting some :video_game::game_die::books: time in. 
 
 Campus life consists of: 
 
 * [Teaching](#teaching) the next generation of Scientists how to harness the power of Statistics and Data in a responsible and ethical manner. 
-* Providing Statistical consulting and analytical support for many [projects](#projects) on and off campus. 
+* Providing Statistical consulting and analytical support for many projects on and off campus through the [Wildcat Data Hub](https://datascience.csuchico.edu/datahub)
 * Supporting students in their academic adventures through intensive advising and [research](/students). 
+* Providing Research support for the [Center of Healthy Communities](https://chcchicostate.org/)
 * Leading the [Data Science Initative (DSI)](https://datascience.csuchico.edu/) to develop Data Science capacity on our campus.
 
 

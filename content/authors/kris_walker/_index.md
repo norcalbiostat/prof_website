@@ -40,8 +40,6 @@ user_groups:
 
 Kris Walker is an undergraduate Mathematics major (Statistics emphasis). Kris is especially interested in probability theory, statistical learning, and programming in C++, R, and Python. 
 
-Kris was accepted into the PhD in Statistics at Carnegie Mellon University starting Fall 2021! 
-
 
 ## Projects
 
