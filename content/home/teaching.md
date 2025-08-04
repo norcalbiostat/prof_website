@@ -52,7 +52,6 @@ I teach the following courses at Chico State. The term where I last taught that 
 
 - MATH 105: Introduction to Statistics (F25)
 - MATH 130: [Introduction to R](https://norcalbiostat.github.io/MATH130/) (F25)
-- MATH 185: Data Science for Social Good (pending)
 - MATH 315: [Applied Statistical Methods I](https://math315.netlify.app/) (S24)
 - MATH 350: [Intro. to Probability and Statistics](https://math350.netlify.app/) (S22)
 - MATH 385: Introduction to Data Science (F18)
@@ -66,7 +65,7 @@ I teach the following courses at Chico State. The term where I last taught that 
 
 And have created, curated, or contributed to the following teaching materials, most of which (textbook excepted) are licenced under [CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/). 
 
-* [That book -->](https://www.routledge.com/Practical-Multivariate-Analysis/Afifi-May-Donatello-Clark/p/book/9781032088471)
+* [Practical Multivariate Analysis 6th ed](https://www.routledge.com/Practical-Multivariate-Analysis/Afifi-May-Donatello-Clark/p/book/9781032088471)
 * [Curated data sets](data/)
 Wherever possible I try to use real world, non pre-processed data in the classroom. 
 * [Applied Statistics Notebook](https://norcalbiostat.github.io/AppliedStatistics_notes/)
