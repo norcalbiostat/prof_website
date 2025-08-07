@@ -20,8 +20,8 @@ interests:
 - Health & Performance Analytics
 - Music & Visual Storytelling
 organizations:
-- name: University of California, Los Angeles
-role: Master of Applied Statistics and Data Science (MASDS)
+- name: California State University, Chico
+role: BS Statistics, DS Certificate
 social:
 - icon: envelope
   icon_pack: fas
