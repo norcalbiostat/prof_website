@@ -45,21 +45,21 @@ hero_media = "book_cover.png"
 
 # Note. An optional note to show underneath the links.
 [cta_note]
-  label = 'Last updated August, 2025'
+  label = 'Last updated January, 2026'
 +++
 
 I teach the following courses at Chico State. The term where I last taught that class is listed in parentheses. 
 
 - MATH 105: Introduction to Statistics (F25)
-- MATH 130: [Introduction to R](https://norcalbiostat.github.io/MATH130/) (F25)
-- MATH 315: [Applied Statistical Methods I](https://math315.netlify.app/) (S24)
+- MATH 130: [Introduction to R](https://math130.netlify.app//) (S26)
+- MATH 315: [Applied Statistical Methods I](https://math315.netlify.app/) (S26)
 - MATH 350: [Intro. to Probability and Statistics](https://math350.netlify.app/) (S22)
 - MATH 385: Introduction to Data Science (F18)
 - MATH 456: [Applied Statistical Methods II](https://math456.netlify.app/) (S24)
 - MATH 458: [Sampling Methods](https://sampling-458.netlify.app/) (S25)
 - MATH 485: [Advanced Data Science](https://data485.netlify.app/) (S22)
-- MATH 500: Data Science Seminar (S25)
-- MATH 589: Field Experience in Statistics and Data Science (S25)
+- MATH 500: Data Science Seminar (S26)
+- MATH 589: Field Experience in Statistics and Data Science (F25)
 - MATH 615: [Data Analysis for Graduate Research](https://math615.netlify.app/) (F25)
 
 
