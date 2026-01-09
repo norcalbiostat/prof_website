@@ -104,7 +104,7 @@ coordinates = {latitude = "39.731073", longitude = "-121.845712"}
 
 # Office hours
 # A list of your office hours. To remove, set to an empty list `[]`.
-office_hours = ["Office Hours for F24: TBD"]
+office_hours = ["Office Hours for S26:  Mon 3-5pm, Tue 1-2pm, Wed 2-3pm"]
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
 appointment_url = "https://dr-donatello.youcanbook.me/"
