@@ -52,7 +52,7 @@ I teach the following courses at Chico State. The term where I last taught that 
 
 - MATH 105: Introduction to Statistics (F25)
 - MATH 130: [Introduction to R](https://math130.netlify.app//) (S26)
-- MATH 315: Applied Statistical Methods I (S26)
+- MATH 315: [Applied Statistical Methods I](https://math315.netlify.app/) (S26)
 - MATH 350: [Intro. to Probability and Statistics](https://math350.netlify.app/) (S22)
 - MATH 385: Introduction to Data Science (F18)
 - MATH 456: [Applied Statistical Methods II](https://math456.netlify.app/) (S24)
