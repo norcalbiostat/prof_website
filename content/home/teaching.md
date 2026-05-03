@@ -54,18 +54,18 @@ I teach the following courses at Chico State. The term where I last taught that 
 - MATH 130: [Introduction to R](https://math130.netlify.app//) (S26)
 - MATH 315: [Applied Statistical Methods I](https://math315.netlify.app/) (S26)
 - MATH 350: [Intro. to Probability and Statistics](https://math350.netlify.app/) (S22)
-- MATH 385: Introduction to Data Science (F18)
+- MATH 385: Introduction to Data Science (F26)
 - MATH 456: [Applied Statistical Methods II](https://math456.netlify.app/) (S24)
 - MATH 458: [Sampling Methods](https://sampling-458.netlify.app/) (S25)
 - MATH 485: [Advanced Data Science](https://data485.netlify.app/) (S22)
 - MATH 500: Data Science Seminar (S26)
 - MATH 589: Field Experience in Statistics and Data Science (F25)
 - MATH 615: [Data Analysis for Graduate Research](https://math615.netlify.app/) (F25)
-
+- MATH 689: Qualitative Analysis for investigating Wicked Problems (Pilot F26)
 
 And have created, curated, or contributed to the following teaching materials, most of which (textbook excepted) are licenced under [CC-BY-NC](https://creativecommons.org/licenses/by-nc/4.0/). 
 
-* [Practical Multivariate Analysis 6th ed](https://www.routledge.com/Practical-Multivariate-Analysis/Afifi-May-Donatello-Clark/p/book/9781032088471)
+* [Practical Multivariate Analysis 6th ed](https://www.routledge.com/Practical-Multivariate-Analysis/Afifi-May-Donatello-Clark/p/book/9781032088471) 7th ed in progress!
 * [Curated data sets](data/)
 Wherever possible I try to use real world, non pre-processed data in the classroom. 
 * [Applied Statistics Notebook](https://norcalbiostat.github.io/AppliedStatistics_notes/)

@@ -8,7 +8,7 @@ tags: []
 subtitle: ''
 summary: ''
 authors: []
-lastmod: '2022-11-26T10:33:34-08:00'
+lastmod: '2026-05-03'
 featured: no
 image:
   caption: ''
@@ -19,7 +19,7 @@ projects: []
 ---
 
 
-This post contains general guidelines on how to make a scientific poster. You should always check the standards and requirements for the specific conference, site or session where you will be presenting. _Updated 11-2023_
+This post contains general guidelines on how to make a scientific poster. You should always check the standards and requirements for the specific conference, site or session where you will be presenting. _Updated 05-2026_
 
 # Quick links to content on this page
 
@@ -36,14 +36,12 @@ Powerpoint templates are the current standard method for creating scientific pos
 
 * [Powerpoint template](http://www.posterpresentations.com/html/free_poster_templates.html). 
     - Trifold tabletop templates are seldom used. 
-    - Common sizes are 36" x 48", but 24" x 36" is also okay for class purposes. 
+    - Common sizes for professional conferences are 36" x 48" (3h'x4w'), but 24" x 36" (2h'x3w') is also okay for class purposes.  
     - Choose either a three, or four column layout by following the instructions along the right sidebar. 
-* Chico State Biology Student Research Symposium posters tend to be 4'x3'. See the 2022 [[event page here]](https://www.csuchico.edu/biol/events-seminars/student-research-symposium-2022.shtml) for guidance and templates. 
 
 ## Collaboration
 
 * If you are working with a partner on this project, you can upload your powerpoint template to Google Drive. It will keep the correct scaling and allow you to simultaneously edit the file.
-
 
 
 # Content
@@ -65,14 +63,12 @@ The following sections of information must be included in each poster. The choic
 4. **Sample characteristics**
     - This is where _Table 1_ goes, a concise univariate description of your sample. 
     - Analysis sample size, N(%) for each categorical variable, mean(sd) (or mean/median) for each continuous measurement. 
-    - Could be a candidate for [tbl_summary](https://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html)
+    - Recommendation to use [tbl_summary](https://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html)
 5. **Results**
     - No more than 2 graphs or tables for bivariate comparisons
     - One multivariate table or plot. Here are some options
         - [tbl_regression](https://www.danieldsjoberg.com/gtsummary/articles/tbl_regression.html)
-        - The `coefplot()` function in the `arm` package. [Example](https://friendly.github.io/VisMLM-course/examples/coefplots-demo.html)
         - [Forestplot](https://cran.r-project.org/web/packages/forestplot/vignettes/forestplot.html)
-        
     - At least one coefficient, the primary explanatory variable, must be interpreted in context of the problem. 
     - You are just stating results here, not justifying, explaining or connecting any meanings. 
 6. **Conclusions/discussion**
@@ -84,6 +80,7 @@ The following sections of information must be included in each poster. The choic
     - Connect to current research. Possibly more citations here. 
 8. **References**
     - Font size can be reduced to 8 or 6 minimum. 
+    - Should include an AI disclosure statemetn
 9. **Acknowledgements & Contact info**
     - Any help you received from a person not listed as an author should be acknowledged.
     - You do not need to acknowledge your instructor for class projects.
@@ -104,11 +101,12 @@ The following sections of information must be included in each poster. The choic
 
 
 ### Tables
-* Build them in PowerPoint tables directly
-* Use borders for the top, and bottom of the table
+* Build tables in R directly as much as possible using `gtsummary` functions like [tbl_regression](https://www.danieldsjoberg.com/gtsummary/articles/tbl_regression.html#gt-functions-to-format-table) and [tbl_summary](https://www.danieldsjoberg.com/gtsummary/reference/tbl_summary.html), then save as an image using [gtsave](https://gt.rstudio.com/reference/gtsave.html)
+    - See this [gallery](https://www.danieldsjoberg.com/gtsummary/articles/gallery.html) of nicely formatted table options
+* Otherwise build them in PowerPoint tables directly
+    - Use borders for the top, and bottom of the table
     - Use vertical borders sparingly. Probably only for the far left corner. 
     - Powerpoint has some good auto-formats you can use. 
-* Create regression tables using [tbl_regression](https://www.danieldsjoberg.com/gtsummary/articles/tbl_regression.html#gt-functions-to-format-table), then save as an image using [gtsave](https://gt.rstudio.com/reference/gtsave.html)
 
 ### Graphics
 * Copy/pasted graphics do not scale up well and will print out very pixelated or blurry. 
@@ -131,7 +129,7 @@ Your poster is a professional publication. It should reflect your campus properl
 * [[University Naming]](https://www.csuchico.edu/style-guide/visual/naming.shtml)
 * [[Color Palette]](https://www.csuchico.edu/style-guide/visual/colors.shtml)
 * [[Logo and Seal]](https://www.csuchico.edu/style-guide/visual/logos.shtml)
-    - Note that certain logos are restricted for Athletics, or for official use. Use the institutional logo, or the institutional wordmark. 
+    - Note that certain logos are restricted for Athletics, or for official use. Use the institutional logo, or the institutional wordmark. The Seal is **NOT** appropriate for campus use. 
 
 
 ### Colors in plots
@@ -140,16 +138,17 @@ Your poster is a professional publication. It should reflect your campus properl
     - https://www.w3schools.com/colors/colors_groups.asp
     - http://paletton.com
 * R Cookbook guide for colors in ggplot2: http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/ 
-
+* Consider a colorblind friendly palette, that will also look readable in grayscale such as [Viridis](https://ggplot2.tidyverse.org/reference/scale_viridis.html)
 
 
 # Printing (as appropriate - prices are as of 2024)
 
 * Don't wait until the morning of to print - this is ESPECIALLY true in Spring when there are multiple poster symposiums being conducted. 
-* Don't spend a fortune!
+* Don't spend more than $50! (Most off campus printers will cost more than this)
 * **Recommended option** Copy & Print center in the Library [website](https://www.csuchico.edu/copycenter/index.shtml). Prices range from $10 (18"x24") to $36 (36" x 48")
-* Staples $65
-* Ellis Art (Esplanade) $50-60
+    - The basement is expensive
+    - May be in black and white only for 2026
+* Some departments have large plotters available for students to use. (2026 - most of these are not available this year.)
 
 
 # Evaluation Criteria
